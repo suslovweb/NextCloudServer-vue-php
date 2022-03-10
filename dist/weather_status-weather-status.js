@@ -1,3 +1,2316 @@
-/*! For license information please see weather_status-weather-status.js.LICENSE.txt */
-!function(){var M,n={93365:function(M,t,n){var u={"./af":36026,"./af.js":36026,"./ar":28093,"./ar-dz":41943,"./ar-dz.js":41943,"./ar-kw":23969,"./ar-kw.js":23969,"./ar-ly":40594,"./ar-ly.js":40594,"./ar-ma":18369,"./ar-ma.js":18369,"./ar-sa":32579,"./ar-sa.js":32579,"./ar-tn":76442,"./ar-tn.js":76442,"./ar.js":28093,"./az":86425,"./az.js":86425,"./be":22004,"./be.js":22004,"./bg":42982,"./bg.js":42982,"./bm":21067,"./bm.js":21067,"./bn":8366,"./bn.js":8366,"./bo":95040,"./bo.js":95040,"./br":521,"./br.js":521,"./bs":83242,"./bs.js":83242,"./ca":73046,"./ca.js":73046,"./cs":25794,"./cs.js":25794,"./cv":28231,"./cv.js":28231,"./cy":10927,"./cy.js":10927,"./da":42832,"./da.js":42832,"./de":29415,"./de-at":3331,"./de-at.js":3331,"./de-ch":45524,"./de-ch.js":45524,"./de.js":29415,"./dv":44700,"./dv.js":44700,"./el":88752,"./el.js":88752,"./en-SG":16706,"./en-SG.js":16706,"./en-au":90444,"./en-au.js":90444,"./en-ca":65959,"./en-ca.js":65959,"./en-gb":62762,"./en-gb.js":62762,"./en-ie":40909,"./en-ie.js":40909,"./en-il":79909,"./en-il.js":79909,"./en-nz":75200,"./en-nz.js":75200,"./eo":27447,"./eo.js":27447,"./es":86756,"./es-do":47049,"./es-do.js":47049,"./es-us":57133,"./es-us.js":57133,"./es.js":86756,"./et":72182,"./et.js":72182,"./eu":14419,"./eu.js":14419,"./fa":2916,"./fa.js":2916,"./fi":49964,"./fi.js":49964,"./fo":26094,"./fo.js":26094,"./fr":35833,"./fr-ca":56994,"./fr-ca.js":56994,"./fr-ch":2740,"./fr-ch.js":2740,"./fr.js":35833,"./fy":69542,"./fy.js":69542,"./ga":93264,"./ga.js":93264,"./gd":77457,"./gd.js":77457,"./gl":83043,"./gl.js":83043,"./gom-latn":28379,"./gom-latn.js":28379,"./gu":406,"./gu.js":406,"./he":73219,"./he.js":73219,"./hi":99834,"./hi.js":99834,"./hr":28754,"./hr.js":28754,"./hu":93945,"./hu.js":93945,"./hy-am":81319,"./hy-am.js":81319,"./id":24875,"./id.js":24875,"./is":23724,"./is.js":23724,"./it":79906,"./it-ch":34303,"./it-ch.js":34303,"./it.js":79906,"./ja":77105,"./ja.js":77105,"./jv":15026,"./jv.js":15026,"./ka":67416,"./ka.js":67416,"./kk":79734,"./kk.js":79734,"./km":60757,"./km.js":60757,"./kn":58369,"./kn.js":58369,"./ko":77687,"./ko.js":77687,"./ku":95544,"./ku.js":95544,"./ky":85431,"./ky.js":85431,"./lb":13613,"./lb.js":13613,"./lo":34252,"./lo.js":34252,"./lt":84619,"./lt.js":84619,"./lv":93760,"./lv.js":93760,"./me":93393,"./me.js":93393,"./mi":12369,"./mi.js":12369,"./mk":48664,"./mk.js":48664,"./ml":23099,"./ml.js":23099,"./mn":98539,"./mn.js":98539,"./mr":778,"./mr.js":778,"./ms":39970,"./ms-my":82625,"./ms-my.js":82625,"./ms.js":39970,"./mt":15714,"./mt.js":15714,"./my":53055,"./my.js":53055,"./nb":73945,"./nb.js":73945,"./ne":63645,"./ne.js":63645,"./nl":4829,"./nl-be":12823,"./nl-be.js":12823,"./nl.js":4829,"./nn":23756,"./nn.js":23756,"./pa-in":97877,"./pa-in.js":97877,"./pl":53066,"./pl.js":53066,"./pt":28677,"./pt-br":81592,"./pt-br.js":81592,"./pt.js":28677,"./ro":32722,"./ro.js":32722,"./ru":59138,"./ru.js":59138,"./sd":32568,"./sd.js":32568,"./se":49753,"./se.js":49753,"./si":58024,"./si.js":58024,"./sk":31058,"./sk.js":31058,"./sl":43452,"./sl.js":43452,"./sq":2795,"./sq.js":2795,"./sr":26976,"./sr-cyrl":38819,"./sr-cyrl.js":38819,"./sr.js":26976,"./ss":7467,"./ss.js":7467,"./sv":42787,"./sv.js":42787,"./sw":80298,"./sw.js":80298,"./ta":57532,"./ta.js":57532,"./te":76076,"./te.js":76076,"./tet":40452,"./tet.js":40452,"./tg":64794,"./tg.js":64794,"./th":48245,"./th.js":48245,"./tl-ph":36056,"./tl-ph.js":36056,"./tlh":15249,"./tlh.js":15249,"./tr":22053,"./tr.js":22053,"./tzl":39871,"./tzl.js":39871,"./tzm":39574,"./tzm-latn":19210,"./tzm-latn.js":19210,"./tzm.js":39574,"./ug-cn":91532,"./ug-cn.js":91532,"./uk":11432,"./uk.js":11432,"./ur":88523,"./ur.js":88523,"./uz":54958,"./uz-latn":68735,"./uz-latn.js":68735,"./uz.js":54958,"./vi":83398,"./vi.js":83398,"./x-pseudo":56665,"./x-pseudo.js":56665,"./yo":11642,"./yo.js":11642,"./zh-cn":5462,"./zh-cn.js":5462,"./zh-hk":92530,"./zh-hk.js":92530,"./zh-tw":97333,"./zh-tw.js":97333};function e(M){var t=N(M);return n(t)}function N(M){if(!n.o(u,M)){var t=new Error("Cannot find module '"+M+"'");throw t.code="MODULE_NOT_FOUND",t}return u[M]}e.keys=function(){return Object.keys(u)},e.resolve=N,M.exports=e,e.id=93365},59464:function(M,n,u){"use strict";var e=u(20144),N=u(22200),A=u(26932),j=u(80351),i=u.n(j),D=u(9944),r=u(79440),L=u.n(r),g=u(56286),I=u.n(g),a=u(88408),y=u.n(a),c=u(74466),s=u.n(c),o=u(33521),T=u.n(o),w=u(41009),C=u.n(w),z=u(4820),x=u(79753);function E(M,t,n,u,e,N,A){try{var j=M[N](A),i=j.value}catch(M){return void n(M)}j.done?t(i):Promise.resolve(i).then(u,e)}function h(M){return function(){var t=this,n=arguments;return new Promise((function(u,e){var N=M.apply(t,n);function A(M){E(N,u,e,A,j,"next",M)}function j(M){E(N,u,e,A,j,"throw",M)}A(void 0)}))}}var d=function(){var M=h(regeneratorRuntime.mark((function M(t,n){var u,e;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return u=(0,x.generateOcsUrl)("apps/weather_status/api/v1/location"),M.next=3,z.default.put(u,{address:"",lat:t,lon:n});case 3:return e=M.sent,M.abrupt("return",e.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(t,n){return M.apply(this,arguments)}}(),O=function(){var M=h(regeneratorRuntime.mark((function M(t){var n,u;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return n=(0,x.generateOcsUrl)("apps/weather_status/api/v1/location"),M.next=3,z.default.put(n,{address:t,lat:null,lon:null});case 3:return u=M.sent,M.abrupt("return",u.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(t){return M.apply(this,arguments)}}(),S=function(){var M=h(regeneratorRuntime.mark((function M(t){var n,u;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return n=(0,x.generateOcsUrl)("apps/weather_status/api/v1/mode"),M.next=3,z.default.put(n,{mode:t});case 3:return u=M.sent,M.abrupt("return",u.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(t){return M.apply(this,arguments)}}(),Q=function(){var M=h(regeneratorRuntime.mark((function M(){var t,n;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return t=(0,x.generateOcsUrl)("apps/weather_status/api/v1/use-personal"),M.next=3,z.default.put(t);case 3:return n=M.sent,M.abrupt("return",n.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(){return M.apply(this,arguments)}}(),l=function(){var M=h(regeneratorRuntime.mark((function M(){var t,n;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return t=(0,x.generateOcsUrl)("apps/weather_status/api/v1/location"),M.next=3,z.default.get(t);case 3:return n=M.sent,M.abrupt("return",n.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(){return M.apply(this,arguments)}}(),m=function(){var M=h(regeneratorRuntime.mark((function M(){var t,n;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return t=(0,x.generateOcsUrl)("apps/weather_status/api/v1/forecast"),M.next=3,z.default.get(t);case 3:return n=M.sent,M.abrupt("return",n.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(){return M.apply(this,arguments)}}(),k=function(){var M=h(regeneratorRuntime.mark((function M(){var t,n;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return t=(0,x.generateOcsUrl)("apps/weather_status/api/v1/favorites"),M.next=3,z.default.get(t);case 3:return n=M.sent,M.abrupt("return",n.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(){return M.apply(this,arguments)}}(),Y=function(){var M=h(regeneratorRuntime.mark((function M(t){var n,u;return regeneratorRuntime.wrap((function(M){for(;;)switch(M.prev=M.next){case 0:return n=(0,x.generateOcsUrl)("apps/weather_status/api/v1/favorites"),M.next=3,z.default.put(n,{favorites:t});case 3:return u=M.sent,M.abrupt("return",u.data.ocs.data);case 5:case"end":return M.stop()}}),M)})));return function(t){return M.apply(this,arguments)}}();function p(M,t,n,u,e,N,A){try{var j=M[N](A),i=j.value}catch(M){return void n(M)}j.done?t(i):Promise.resolve(i).then(u,e)}function v(M){return function(){var t=this,n=arguments;return new Promise((function(u,e){var N=M.apply(t,n);function A(M){p(N,u,e,A,j,"next",M)}function j(M){p(N,u,e,A,j,"throw",M)}A(void 0)}))}}var U={clearsky_day:{icon:"icon-clearsky-day",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} clear sky later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} clear sky",{temperature:M,unit:n})}},clearsky_night:{icon:"icon-clearsky-night",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} clear sky later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} clear sky",{temperature:M,unit:n})}},cloudy:{icon:"icon-cloudy",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} cloudy later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} cloudy",{temperature:M,unit:n})}},fair_day:{icon:"icon-fair-day",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} fair weather later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} fair weather",{temperature:M,unit:n})}},fair_night:{icon:"icon-fair-night",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} fair weather later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} fair weather",{temperature:M,unit:n})}},partlycloudy_day:{icon:"icon-partlycloudy-day",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} partly cloudy later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} partly cloudy",{temperature:M,unit:n})}},partlycloudy_night:{icon:"icon-partlycloudy-night",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} partly cloudy later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} partly cloudy",{temperature:M,unit:n})}},fog:{icon:"icon-fog",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} foggy later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} foggy",{temperature:M,unit:n})}},lightrain:{icon:"icon-lightrain",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} light rain later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} light rain",{temperature:M,unit:n})}},rain:{icon:"icon-rain",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} rain later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} rain",{temperature:M,unit:n})}},heavyrain:{icon:"icon-heavyrain",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} heavy rain later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} heavy rain",{temperature:M,unit:n})}},rainshowers_day:{icon:"icon-rainshowers-day",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} rain showers later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} rain showers",{temperature:M,unit:n})}},rainshowers_night:{icon:"icon-rainshowers-night",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} rain showers later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} rain showers",{temperature:M,unit:n})}},lightrainshowers_day:{icon:"icon-light-rainshowers-day",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} light rain showers later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} light rain showers",{temperature:M,unit:n})}},lightrainshowers_night:{icon:"icon-light-rainshowers-night",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} light rain showers later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} light rain showers",{temperature:M,unit:n})}},heavyrainshowers_day:{icon:"icon-heavy-rainshowers-day",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} heavy rain showers later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} heavy rain showers",{temperature:M,unit:n})}},heavyrainshowers_night:{icon:"icon-heavy-rainshowers-night",text:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u?t("weather_status","{temperature} {unit} heavy rain showers later today",{temperature:M,unit:n}):t("weather_status","{temperature} {unit} heavy rain showers",{temperature:M,unit:n})}}},b={name:"App",components:{Actions:L(),ActionButton:I(),ActionInput:y(),ActionLink:s(),ActionSeparator:T(),ActionText:C()},props:{inline:{type:Boolean,default:!1}},data:function(){return{locale:(0,D.getLocale)(),loading:!0,errorMessage:"",mode:1,address:null,lat:null,lon:null,offset:5,forecasts:[],loop:null,favorites:[],showFavorites:!1}},computed:{useFahrenheitLocale:function(){return["en_US","en_MH","en_FM","en_PW","en_KY","en_LR"].includes(this.locale)},temperatureUnit:function(){return this.useFahrenheitLocale?"°F":"°C"},locationText:function(){return t("weather_status","More weather for {adr}",{adr:this.address})},temperature:function(){return this.getTemperature(this.forecasts,0)},futureTemperature:function(){return this.getTemperature(this.forecasts,this.offset)},weatherCode:function(){return this.getWeatherCode(this.forecasts,0)},futureWeatherCode:function(){return this.getWeatherCode(this.forecasts,this.offset)},weatherIcon:function(){return this.getWeatherIcon(this.weatherCode,this.loading)},futureWeatherIcon:function(){return this.getWeatherIcon(this.futureWeatherCode,this.loading)},currentWeatherMessage:function(){return this.loading?t("weather_status","Loading weather"):this.errorMessage?this.errorMessage:this.getWeatherMessage(this.weatherCode,this.temperature)},forecastMessage:function(){return this.loading?t("weather_status","Loading weather"):this.getWeatherMessage(this.futureWeatherCode,this.futureTemperature,!0)},weatherLinkTarget:function(){return"https://www.windy.com/-Rain-thunder-rain?rain,"+this.lat+","+this.lon+",11"},gotWeather:function(){return this.address&&!this.errorMessage},addRemoveFavoriteIcon:function(){return this.currentAddressIsFavorite?"icon-starred":"icon-star"},addRemoveFavoriteText:function(){return this.currentAddressIsFavorite?t("weather_status","Remove from favorites"):t("weather_status","Add as favorite")},currentAddressIsFavorite:function(){var M=this;return this.favorites.find((function(t){return t===M.address}))},toggleFavoritesIcon:function(){return this.showFavorites?"icon-triangle-s":"icon-triangle-e"},displayedFavorites:function(){return this.showFavorites?this.favorites:[]}},mounted:function(){this.initWeatherStatus()},methods:{initWeatherStatus:function(){var M=this;return v(regeneratorRuntime.mark((function n(){var u,e;return regeneratorRuntime.wrap((function(n){for(;;)switch(n.prev=n.next){case 0:return n.prev=0,n.next=3,l();case 3:return u=n.sent,M.lat=u.lat,M.lon=u.lon,M.address=u.address,M.mode=u.mode,1===M.mode?M.askBrowserLocation():2===M.mode&&M.startLoop(),n.next=11,k();case 11:e=n.sent,M.favorites=e,n.next=22;break;case 15:if(n.prev=15,n.t0=n.catch(0),"ECONNABORTED"!==(null===n.t0||void 0===n.t0?void 0:n.t0.code)){n.next=20;break}return console.info("The weather status request was cancelled because the user navigates."),n.abrupt("return");case 20:n.t0.response&&401===n.t0.response.status?(0,A.x2)(t("weather_status","You are not logged in.")):(0,A.x2)(t("weather_status","There was an error getting the weather status information.")),console.error(n.t0);case 22:case"end":return n.stop()}}),n,null,[[0,15]])})))()},startLoop:function(){var M=this;clearInterval(this.loop),this.lat&&this.lon?(this.loop=setInterval((function(){return M.getForecast()}),36e5),this.getForecast()):this.loading=!1},askBrowserLocation:function(){var M=this;this.loading=!0,this.errorMessage="",navigator.geolocation&&window.isSecureContext?navigator.geolocation.getCurrentPosition((function(t){console.debug("browser location success"),M.lat=t.coords.latitude,M.lon=t.coords.longitude,M.saveMode(1),M.mode=1,M.saveLocation(M.lat,M.lon)}),(function(t){console.debug("location permission refused"),console.debug(t),M.saveMode(2),M.mode=2,M.lat&&M.lon?M.startLoop():M.usePersonalAddress()})):(console.debug("no secure context!"),this.saveMode(2),this.mode=2,this.startLoop())},getForecast:function(){var M=this;return v(regeneratorRuntime.mark((function n(){return regeneratorRuntime.wrap((function(n){for(;;)switch(n.prev=n.next){case 0:return n.prev=0,n.next=3,m();case 3:M.forecasts=n.sent,n.next=10;break;case 6:n.prev=6,n.t0=n.catch(0),M.errorMessage=t("weather_status","No weather information found"),console.debug(n.t0);case 10:M.loading=!1;case 11:case"end":return n.stop()}}),n,null,[[0,6]])})))()},setAddress:function(M){var n=this;return v(regeneratorRuntime.mark((function u(){var e;return regeneratorRuntime.wrap((function(u){for(;;)switch(u.prev=u.next){case 0:return n.loading=!0,n.errorMessage="",u.prev=2,u.next=5,O(M);case 5:(e=u.sent).success?(n.lat=e.lat,n.lon=e.lon,n.address=e.address,n.mode=2,n.startLoop()):(n.errorMessage=t("weather_status","Location not found"),n.loading=!1),u.next=13;break;case 9:u.prev=9,u.t0=u.catch(2),u.t0.response&&401===u.t0.response.status?(0,A.x2)(t("weather_status","You are not logged in.")):(0,A.x2)(t("weather_status","There was an error setting the location address.")),n.loading=!1;case 13:case"end":return u.stop()}}),u,null,[[2,9]])})))()},saveLocation:function(M,n){var u=this;return v(regeneratorRuntime.mark((function e(){var N;return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.prev=0,e.next=3,d(M,n);case 3:N=e.sent,u.address=N.address,u.startLoop(),e.next=12;break;case 8:e.prev=8,e.t0=e.catch(0),e.t0.response&&401===e.t0.response.status?(0,A.x2)(t("weather_status","You are not logged in.")):(0,A.x2)(t("weather_status","There was an error setting the location.")),console.debug(e.t0);case 12:case"end":return e.stop()}}),e,null,[[0,8]])})))()},saveMode:function(M){return v(regeneratorRuntime.mark((function n(){return regeneratorRuntime.wrap((function(n){for(;;)switch(n.prev=n.next){case 0:return n.prev=0,n.next=3,S(M);case 3:n.next=9;break;case 5:n.prev=5,n.t0=n.catch(0),n.t0.response&&401===n.t0.response.status?(0,A.x2)(t("weather_status","You are not logged in.")):(0,A.x2)(t("weather_status","There was an error saving the mode.")),console.debug(n.t0);case 9:case"end":return n.stop()}}),n,null,[[0,5]])})))()},onBrowserLocationClick:function(){this.askBrowserLocation()},usePersonalAddress:function(){var M=this;return v(regeneratorRuntime.mark((function n(){var u;return regeneratorRuntime.wrap((function(n){for(;;)switch(n.prev=n.next){case 0:return M.loading=!0,n.prev=1,n.next=4,Q();case 4:u=n.sent,M.lat=u.lat,M.lon=u.lon,M.address=u.address,M.mode=2,M.startLoop(),n.next=17;break;case 12:n.prev=12,n.t0=n.catch(1),n.t0.response&&401===n.t0.response.status?(0,A.x2)(t("weather_status","You are not logged in.")):(0,A.x2)(t("weather_status","There was an error using personal address.")),console.debug(n.t0),M.loading=!1;case 17:case"end":return n.stop()}}),n,null,[[1,12]])})))()},onAddressSubmit:function(){var M=this.$refs.addressInput.$el.querySelector('input[type="text"]').value;this.setAddress(M)},getLocalizedTemperature:function(M){return this.useFahrenheitLocale?1.8*M+32:M},onAddRemoveFavoriteClick:function(){var M=this.currentAddressIsFavorite;if(M){var t=this.favorites.indexOf(M);-1!==t&&this.favorites.splice(t,1)}else this.favorites.push(this.address);Y(this.favorites)},onFavoriteClick:function(M,t){if(M.target.classList.contains("action-button__icon")){var n=this.favorites.indexOf(t);-1!==n&&this.favorites.splice(n,1),Y(this.favorites)}else t!==this.address&&this.setAddress(t)},formatTime:function(M){return i()(M).format("LT")},getTemperature:function(M){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;return M.length>t?M[t].data.instant.details.air_temperature:""},getWeatherCode:function(M){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;return M.length>t?M[t].data.next_1_hours.summary.symbol_code:""},getWeatherIcon:function(M,t){return t?"icon-loading-small":M&&M in U?U[M].icon:"icon-fair-day"},getWeatherMessage:function(M,n){var u=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return M&&M in U?U[M].text(Math.round(this.getLocalizedTemperature(n)),this.temperatureUnit,u):t("weather_status","Set location for weather")}}},f=b,Z=u(93379),G=u.n(Z),W=u(7795),B=u.n(W),P=u(90569),_=u.n(P),R=u(3565),F=u.n(R),J=u(19216),H=u.n(J),V=u(44589),X=u.n(V),q=u(62554),$={};$.styleTagTransform=X(),$.setAttributes=F(),$.insert=_().bind(null,"head"),$.domAPI=B(),$.insertStyleElement=H(),G()(q.Z,$),q.Z&&q.Z.locals&&q.Z.locals;var K=(0,u(51900).Z)(f,(function(){var M=this,t=M.$createElement,n=M._self._c||t;return n("li",{class:{inline:M.inline}},[n("div",{attrs:{id:"weather-status-menu-item"}},[n("Actions",{staticClass:"weather-status-menu-item__subheader",attrs:{"default-icon":M.weatherIcon,"menu-title":M.currentWeatherMessage}},[M.gotWeather?n("ActionText",{attrs:{icon:M.futureWeatherIcon}},[M._v("\n\t\t\t\t"+M._s(M.forecastMessage)+"\n\t\t\t")]):M._e(),M._v(" "),M.gotWeather?n("ActionLink",{attrs:{icon:"icon-address",target:"_blank",href:M.weatherLinkTarget,"close-after-click":!0}},[M._v("\n\t\t\t\t"+M._s(M.locationText)+"\n\t\t\t")]):M._e(),M._v(" "),M.gotWeather?n("ActionButton",{attrs:{icon:M.addRemoveFavoriteIcon},on:{click:M.onAddRemoveFavoriteClick}},[M._v("\n\t\t\t\t"+M._s(M.addRemoveFavoriteText)+"\n\t\t\t")]):M._e(),M._v(" "),M.address&&!M.errorMessage?n("ActionSeparator"):M._e(),M._v(" "),n("ActionButton",{attrs:{icon:"icon-crosshair","close-after-click":!0},on:{click:M.onBrowserLocationClick}},[M._v("\n\t\t\t\t"+M._s(M.t("weather_status","Detect location"))+"\n\t\t\t")]),M._v(" "),n("ActionInput",{ref:"addressInput",attrs:{disabled:!1,icon:"icon-rename",type:"text",value:""},on:{submit:M.onAddressSubmit}},[M._v("\n\t\t\t\t"+M._s(M.t("weather_status","Set custom address"))+"\n\t\t\t")]),M._v(" "),n("ActionButton",{directives:[{name:"show",rawName:"v-show",value:M.favorites.length>0,expression:"favorites.length > 0"}],attrs:{icon:M.toggleFavoritesIcon},on:{click:function(t){M.showFavorites=!M.showFavorites}}},[M._v("\n\t\t\t\t"+M._s(M.t("weather_status","Favorites"))+"\n\t\t\t")]),M._v(" "),M._l(M.displayedFavorites,(function(t){return n("ActionButton",{key:t,attrs:{icon:"icon-starred"},on:{click:function(n){return M.onFavoriteClick(n,t)}}},[M._v("\n\t\t\t\t"+M._s(t)+"\n\t\t\t")])}))],2)],1)])}),[],!1,null,null,null).exports;u.nc=btoa((0,N.getRequestToken)()),e.default.prototype.t=t,document.addEventListener("DOMContentLoaded",(function(){OCA.Dashboard&&OCA.Dashboard.registerStatus("weather",(function(M){return new(e.default.extend(K))({propsData:{inline:!0}}).$mount(M)}))}))},62554:function(M,t,n){"use strict";var u=n(87537),e=n.n(u),N=n(23645),A=n.n(N),j=n(61667),i=n.n(j),D=new URL(n(87320),n.b),r=new URL(n(3953),n.b),L=new URL(n(71211),n.b),g=new URL(n(87760),n.b),I=new URL(n(30570),n.b),a=new URL(n(74351),n.b),y=new URL(n(26625),n.b),c=new URL(n(16767),n.b),s=new URL(n(53748),n.b),o=new URL(n(26320),n.b),T=new URL(n(26157),n.b),w=new URL(n(37837),n.b),C=new URL(n(94776),n.b),z=new URL(n(14593),n.b),x=new URL(n(53107),n.b),E=new URL(n(97251),n.b),h=new URL(n(18138),n.b),d=new URL(n(53254),n.b),O=new URL(n(50663),n.b),S=new URL(n(75322),n.b),Q=A()(e()),l=i()(D),m=i()(r),k=i()(L),Y=i()(g),p=i()(I),v=i()(a),U=i()(y),b=i()(c),f=i()(s),Z=i()(o),G=i()(T),W=i()(w),B=i()(C),P=i()(z),_=i()(x),R=i()(E),F=i()(h),J=i()(d),H=i()(O),V=i()(S);Q.push([M.id,".icon-weather-status{background-image:url("+l+")}body.theme--dark .icon-weather-status{background-image:url("+m+")}.icon-clearsky-day{background-image:url("+k+")}.icon-clearsky-night{background-image:url("+Y+")}.icon-cloudy{background-image:url("+p+")}.icon-fair-day{background-image:url("+v+")}.icon-fair-night{background-image:url("+U+")}.icon-partlycloudy-day{background-image:url("+b+")}.icon-partlycloudy-night{background-image:url("+f+")}.icon-fog{background-image:url("+Z+")}.icon-lightrain{background-image:url("+G+")}.icon-rain{background-image:url("+W+")}.icon-heavyrain{background-image:url("+B+")}.icon-light-rainshowers-day{background-image:url("+P+")}.icon-light-rainshowers-night{background-image:url("+_+")}.icon-rainshowers-day{background-image:url("+R+")}.icon-rainshowers-night{background-image:url("+F+")}.icon-heavy-rainshowers-day{background-image:url("+J+")}.icon-heavy-rainshowers-night{background-image:url("+H+")}.icon-crosshair{background-color:var(--color-main-text);padding:0 !important;mask:url("+V+") no-repeat;mask-size:18px 18px;mask-position:center;-webkit-mask:url("+V+") no-repeat;-webkit-mask-size:18px 18px;-webkit-mask-position:center;min-width:44px !important;min-height:44px !important}li:not(.inline) .weather-status-menu-item__header{display:block;align-items:center;color:var(--color-main-text);padding:10px 12px 5px 12px;box-sizing:border-box;opacity:1;white-space:nowrap;width:100%;text-align:center;max-width:250px;text-overflow:ellipsis;min-width:175px}li:not(.inline) .weather-status-menu-item__subheader{width:100%}li:not(.inline) .weather-status-menu-item__subheader .trigger>.icon{background-color:var(--color-main-background);background-size:16px;border:0;border-radius:0;font-weight:normal;padding-left:40px}li:not(.inline) .weather-status-menu-item__subheader .trigger>.icon:hover,li:not(.inline) .weather-status-menu-item__subheader .trigger>.icon:focus{box-shadow:inset 4px 0 var(--color-primary-element)}.inline .weather-status-menu-item__subheader{width:100%}.inline .weather-status-menu-item__subheader .trigger>.icon{background-size:16px;border:0;border-radius:var(--border-radius-pill);font-weight:normal;padding-left:40px}.inline .weather-status-menu-item__subheader .trigger>.icon.icon-loading-small::after{left:21px}li{list-style-type:none}","",{version:3,sources:["webpack://./apps/weather_status/src/App.vue"],names:[],mappings:"AAwgBA,qBACC,wDAAA,CAED,sCACC,wDAAA,CAED,mBACC,wDAAA,CAED,qBACC,wDAAA,CAED,aACC,wDAAA,CAED,eACC,wDAAA,CAED,iBACC,wDAAA,CAED,uBACC,wDAAA,CAED,yBACC,wDAAA,CAED,UACC,wDAAA,CAED,gBACC,yDAAA,CAED,WACC,yDAAA,CAED,gBACC,yDAAA,CAED,4BACC,yDAAA,CAED,8BACC,yDAAA,CAED,sBACC,yDAAA,CAED,wBACC,yDAAA,CAED,4BACC,yDAAA,CAED,8BACC,yDAAA,CAED,gBACI,uCAAA,CACA,oBAAA,CACA,uDAAA,CACA,mBAAA,CACA,oBAAA,CACA,+DAAA,CACA,2BAAA,CACA,4BAAA,CACA,yBAAA,CACA,0BAAA,CAIH,kDACC,aAAA,CACA,kBAAA,CACA,4BAAA,CACA,0BAAA,CACA,qBAAA,CACA,SAAA,CACA,kBAAA,CACA,UAAA,CACA,iBAAA,CACA,eAAA,CACA,sBAAA,CACA,eAAA,CAGD,qDACC,UAAA,CAEA,oEACC,6CAAA,CACA,oBAAA,CACA,QAAA,CACA,eAAA,CACA,kBAAA,CACA,iBAAA,CAEA,oJAEC,mDAAA,CAMJ,6CACC,UAAA,CAEA,4DACC,oBAAA,CACA,QAAA,CACA,uCAAA,CACA,kBAAA,CACA,iBAAA,CAGC,sFACC,SAAA,CAMJ,GACC,oBAAA",sourcesContent:["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.icon-weather-status {\n\tbackground-image: url('./../img/app-dark.svg');\n}\nbody.theme--dark .icon-weather-status {\n\tbackground-image: url('./../img/app.svg');\n}\n.icon-clearsky-day {\n\tbackground-image: url('./../img/sun.svg');\n}\n.icon-clearsky-night {\n\tbackground-image: url('./../img/moon.svg');\n}\n.icon-cloudy {\n\tbackground-image: url('./../img/cloud-cloud.svg');\n}\n.icon-fair-day {\n\tbackground-image: url('./../img/sun-small-cloud.svg');\n}\n.icon-fair-night {\n\tbackground-image: url('./../img/moon-small-cloud.svg');\n}\n.icon-partlycloudy-day {\n\tbackground-image: url('./../img/sun-cloud.svg');\n}\n.icon-partlycloudy-night {\n\tbackground-image: url('./../img/moon-cloud.svg');\n}\n.icon-fog {\n\tbackground-image: url('./../img/fog.svg');\n}\n.icon-lightrain {\n\tbackground-image: url('./../img/light-rain.svg');\n}\n.icon-rain {\n\tbackground-image: url('./../img/rain.svg');\n}\n.icon-heavyrain {\n\tbackground-image: url('./../img/heavy-rain.svg');\n}\n.icon-light-rainshowers-day {\n\tbackground-image: url('./../img/sun-cloud-light-rain.svg');\n}\n.icon-light-rainshowers-night {\n\tbackground-image: url('./../img/moon-cloud-light-rain.svg');\n}\n.icon-rainshowers-day {\n\tbackground-image: url('./../img/sun-cloud-rain.svg');\n}\n.icon-rainshowers-night {\n\tbackground-image: url('./../img/moon-cloud-rain.svg');\n}\n.icon-heavy-rainshowers-day {\n\tbackground-image: url('./../img/sun-cloud-heavy-rain.svg');\n}\n.icon-heavy-rainshowers-night {\n\tbackground-image: url('./../img/moon-cloud-heavy-rain.svg');\n}\n.icon-crosshair {\n    background-color: var(--color-main-text);\n    padding: 0 !important;\n    mask: url(./../img/cross.svg) no-repeat;\n    mask-size: 18px 18px;\n    mask-position: center;\n    -webkit-mask: url(./../img/cross.svg) no-repeat;\n    -webkit-mask-size: 18px 18px;\n    -webkit-mask-position: center;\n    min-width: 44px !important;\n    min-height: 44px !important;\n}\n\nli:not(.inline) .weather-status-menu-item {\n\t&__header {\n\t\tdisplay: block;\n\t\talign-items: center;\n\t\tcolor: var(--color-main-text);\n\t\tpadding: 10px 12px 5px 12px;\n\t\tbox-sizing: border-box;\n\t\topacity: 1;\n\t\twhite-space: nowrap;\n\t\twidth: 100%;\n\t\ttext-align: center;\n\t\tmax-width: 250px;\n\t\ttext-overflow: ellipsis;\n\t\tmin-width: 175px;\n\t}\n\n\t&__subheader {\n\t\twidth: 100%;\n\n\t\t.trigger > .icon {\n\t\t\tbackground-color: var(--color-main-background);\n\t\t\tbackground-size: 16px;\n\t\t\tborder: 0;\n\t\t\tborder-radius: 0;\n\t\t\tfont-weight: normal;\n\t\t\tpadding-left: 40px;\n\n\t\t\t&:hover,\n\t\t\t&:focus {\n\t\t\t\tbox-shadow: inset 4px 0 var(--color-primary-element);\n\t\t\t}\n\t\t}\n\t}\n}\n\n.inline .weather-status-menu-item__subheader {\n\twidth: 100%;\n\n\t.trigger > .icon {\n\t\tbackground-size: 16px;\n\t\tborder: 0;\n\t\tborder-radius: var(--border-radius-pill);\n\t\tfont-weight: normal;\n\t\tpadding-left: 40px;\n\n\t\t&.icon-loading-small {\n\t\t\t&::after {\n\t\t\t\tleft: 21px;\n\t\t\t}\n\t\t}\n\t}\n}\n\nli {\n\tlist-style-type: none;\n}\n"],sourceRoot:""}]),t.Z=Q},87320:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0MC4yMiAyMTAuMDRjMzguNDggMCA2OS43OC0zMS4zIDY5Ljc4LTY5Ljc4cy0zMS4zLTY5Ljc4LTY5Ljc4LTY5Ljc4Yy0zOC40NyAwLTY5Ljc4IDMxLjMtNjkuNzggNjkuNzhzMzEuMyA2OS43OCA2OS43OCA2OS43OE0xMzIuOCAzOC45YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBWMzguOU0xMzIuOCAyNDEuNjN2MzEuNDZhNy40MyA3LjQzIDAgMDAxNC44NSAwdi0zMS40NmE3LjQzIDcuNDMgMCAwMC0xNC44NSAwTTg5LjU0IDU5LjkxYTcuNDMgNy40MyAwIDAwNi40My0xMS4xNEw4MC4yNCAyMS41M2E3LjQzIDcuNDMgMCAwMC0xMi44NiA3LjQzTDgzLjEgNTYuMmE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU0xODcuMiAyMjEuNjJhNy40MyA3LjQzIDAgMDAtMi43MiAxMC4xNEwyMDAuMiAyNTlhNy40MiA3LjQyIDAgMTAxMi44Ni03LjQybC0xNS43My0yNy4yNWE3LjQzIDcuNDMgMCAwMC0xMC4xNS0yLjcxTTE4Ljc2IDcwLjE0YTcuNDMgNy40MyAwIDAwMi43MiAxMC4xNUw0OC43MiA5NmE3LjQyIDcuNDIgMCAxMDcuNDMtMTIuODZMMjguOSA2Ny40MmE3LjQzIDcuNDMgMCAwMC0xMC4xNCAyLjcyTTI1OC45NyAyMDAuMjRsLTI3LjI1LTE1LjczYTcuNDMgNy40MyAwIDAwLTcuNDIgMTIuODdsMjcuMjQgMTUuNzNhNy40IDcuNCAwIDAwMTAuMTQtMi43MiA3LjQzIDcuNDMgMCAwMC0yLjcxLTEwLjE1TTQ2LjI4IDE0MC4yN2MwLTQuMS0zLjMzLTcuNDItNy40My03LjQySDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZjNC4xIDAgNy40My0zLjMzIDcuNDMtNy40M00yNzMuMDUgMTMyLjg1aC0zMS40NmE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZhNy40MyA3LjQzIDAgMDAwLTE0Ljg1TTQ4LjczIDE4NC41MUwyMS41IDIwMC4yNGE3LjQzIDcuNDMgMCAxMDcuNDIgMTIuODZsMjcuMjUtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40My0xMi44Nk0yNTEuNTQgNjcuNDJMMjI0LjMgODMuMTVBNy40MyA3LjQzIDAgMDAyMzEuNzIgOTZsMjcuMjQtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40Mi0xMi44Nk04My4xIDIyNC4zNGwtMTUuNzMgMjcuMjRhNy40MyA3LjQzIDAgMDAxMi44NyA3LjQzbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDAwLTEyLjg3LTcuNDJNMTg3LjIgNTguOTFhNy40IDcuNCAwIDAwMTAuMTQtMi43MWwxNS43My0yNy4yNWE3LjQzIDcuNDMgMCAxMC0xMi44Ni03LjQybC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDIuNzEgMTAuMTQiLz48L3N2Zz4="},3953:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTE0MC4yMiAyMTAuMDRjMzguNDggMCA2OS43OC0zMS4zIDY5Ljc4LTY5Ljc4cy0zMS4zLTY5Ljc4LTY5Ljc4LTY5Ljc4Yy0zOC40NyAwLTY5Ljc4IDMxLjMtNjkuNzggNjkuNzhzMzEuMyA2OS43OCA2OS43OCA2OS43OE0xMzIuOCAzOC45YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBWMzguOU0xMzIuOCAyNDEuNjN2MzEuNDZhNy40MyA3LjQzIDAgMDAxNC44NSAwdi0zMS40NmE3LjQzIDcuNDMgMCAwMC0xNC44NSAwTTg5LjU0IDU5LjkxYTcuNDMgNy40MyAwIDAwNi40My0xMS4xNEw4MC4yNCAyMS41M2E3LjQzIDcuNDMgMCAwMC0xMi44NiA3LjQzTDgzLjEgNTYuMmE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU0xODcuMiAyMjEuNjJhNy40MyA3LjQzIDAgMDAtMi43MiAxMC4xNEwyMDAuMiAyNTlhNy40MiA3LjQyIDAgMTAxMi44Ni03LjQybC0xNS43My0yNy4yNWE3LjQzIDcuNDMgMCAwMC0xMC4xNS0yLjcxTTE4Ljc2IDcwLjE0YTcuNDMgNy40MyAwIDAwMi43MiAxMC4xNUw0OC43MiA5NmE3LjQyIDcuNDIgMCAxMDcuNDMtMTIuODZMMjguOSA2Ny40MmE3LjQzIDcuNDMgMCAwMC0xMC4xNCAyLjcyTTI1OC45NyAyMDAuMjRsLTI3LjI1LTE1LjczYTcuNDMgNy40MyAwIDAwLTcuNDIgMTIuODdsMjcuMjQgMTUuNzNhNy40IDcuNCAwIDAwMTAuMTQtMi43MiA3LjQzIDcuNDMgMCAwMC0yLjcxLTEwLjE1TTQ2LjI4IDE0MC4yN2MwLTQuMS0zLjMzLTcuNDItNy40My03LjQySDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZjNC4xIDAgNy40My0zLjMzIDcuNDMtNy40M00yNzMuMDUgMTMyLjg1aC0zMS40NmE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZhNy40MyA3LjQzIDAgMDAwLTE0Ljg1TTQ4LjczIDE4NC41MUwyMS41IDIwMC4yNGE3LjQzIDcuNDMgMCAxMDcuNDIgMTIuODZsMjcuMjUtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40My0xMi44Nk0yNTEuNTQgNjcuNDJMMjI0LjMgODMuMTVBNy40MyA3LjQzIDAgMDAyMzEuNzIgOTZsMjcuMjQtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40Mi0xMi44Nk04My4xIDIyNC4zNGwtMTUuNzMgMjcuMjRhNy40MyA3LjQzIDAgMDAxMi44NyA3LjQzbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDAwLTEyLjg3LTcuNDJNMTg3LjIgNTguOTFhNy40IDcuNCAwIDAwMTAuMTQtMi43MWwxNS43My0yNy4yNWE3LjQzIDcuNDMgMCAxMC0xMi44Ni03LjQybC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDIuNzEgMTAuMTQiLz48L2c+PC9zdmc+"},30570:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjk0LjcxIiBoZWlnaHQ9IjE4OS4xNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTA5LjAzIDExOS4yYzAtMjkuMTkgMjYuNC01Mi45NCA1OC44Ni01Mi45NCA3LjAyIDAgMTMuODEgMS4wOCAyMC4yOSAzLjIyYTU0LjM2IDU0LjM2IDAgMDEyNS4wNC0xNC4zNkE1MS45NSA1MS45NSAwIDAwMTY2LjkgMjYuM2MtNC4yMSAwLTguNDEuNTItMTIuNDggMS41Mi0zIC43NC02LjE1LS40NC03LjktMi45OWE1Ny4xMyA1Ny4xMyAwIDAwLTg1LjU4LTkuODQgNTYuOTUgNTYuOTUgMCAwMC0xOC4zMyAzNi42NSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjY5LjM0LTEuMzguNjgtMi4wNSAxLjA2LS42Mi4zNC0xLjI5LjYtMS45OC43NkE0NC4zIDQ0LjMgMCAwMDkuOCA3NC42NmE0My4yIDQzLjIgMCAwMC05LjggMjcuNThjMCAyNC4xOSAxOS43OCA0My44NiA0NC4xIDQzLjg2aDUyLjk2YTQ4LjA0IDQ4LjA0IDAgMDExMi4wMy0yNC42M2MtLjAzLS43Ni0uMDUtMS41MS0uMDUtMi4yNyIgZmlsbD0iIzYxYzllNyIvPjxwYXRoIGQ9Ik0yNjkuMjUgMTIwLjRhNy40MyA3LjQzIDAgMDEtNC40Ni05LjUgMjguODUgMjguODUgMCAwMDEuNzItOS44MmMwLTE0LjEtMTAuMjctMjYuMTYtMjQuNy0zMC45YTQzLjYzIDQzLjYzIDAgMDAtMjEuMDgtMS41NWMtOS45IDEuNjgtMTguNzQgNi43LTI0LjUgMTQuMTJhNy40MyA3LjQzIDAgMDEtOC44IDIuMjYgNDkuMTIgNDkuMTIgMCAwMC0xOS41My0zLjk2Yy0yNC4yNyAwLTQ0LjAyIDE3LjEtNDQuMDIgMzguMSAwIDEuMzQuMDkgMi43My4yNiA0LjFhNy4zOSA3LjM5IDAgMDEtMi4yMyA2LjI2IDM0LjMgMzQuMyAwIDAwLTkuNzEgMTYuNTMgMzEuMDMgMzEuMDMgMCAwMC4wMiAxNC44NWM0IDE2LjEzIDIwLjYyIDI4LjI3IDQwLjQ2IDI4LjI3aDEwMC42M2MyMi44MiAwIDQxLjM4LTE2LjA0IDQxLjM4LTM1Ljc2IDAtMTQuNDUtOS45OS0yNy40MS0yNS40NC0zMyIgZmlsbD0iIzQ0OTJhOCIvPjwvc3ZnPg=="},75322:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNMjIgMTJoLTRNNiAxMkgyTTEyIDZWMk0xMiAyMnYtNCIvPjwvc3ZnPg=="},26320:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU0LjQ0IiBoZWlnaHQ9IjI1Ni4zOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjMzLjMgNzEuNThhNy40MiA3LjQyIDAgMDEtMi42My0zLjg0IDU1LjUgNTUuNSAwIDAwLTUzLjA4LTM5Ljg3Yy00LjUgMC05IC41NS0xMy4zNSAxLjYzLTMgLjc0LTYuMTUtLjQ1LTcuOS0zQTYxLjEgNjEuMSAwIDAwMTA2IC4wMSA2MC44OSA2MC44OSAwIDAwNjQuODMgMTZhNjAuODcgNjAuODcgMCAwMC0xOS42IDM5LjIgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNC0xLjQ3LjcyLTIuMiAxLjEyLS42MS4zNS0xLjI4LjYtMS45Ny43NUE0Ny40OCA0Ny40OCAwIDAwMTAuNSA3OS4zNyA0Ni4zIDQ2LjMgMCAwMDAgMTA4LjkyYzAgMjUuOTEgMjEuMiA0NyA0Ny4yNiA0N0gyMDQuNmMyNi4wNiAwIDQ3LjI3LTIxLjA5IDQ3LjI3LTQ3YTQ2LjYgNDYuNiAwIDAwLTE4LjU2LTM3LjM0TTIzMS4zMiAxODcuOTFjMC00LjEtMy4zMy03LjQzLTcuNDMtNy40M0gyOC44N2E3LjQyIDcuNDIgMCAxMDAgMTQuODZoMTk1LjAyYzQuMSAwIDcuNDMtMy4zNCA3LjQzLTcuNDNNMjEzLjE0IDI0MS41NEgxOC4xMmE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMTk1LjAyYTcuNDIgNy40MiAwIDEwMC0xNC44NU02Mi4yOCAyMTEuNDNhNy40MiA3LjQyIDAgMTAwIDE0Ljg1aDcxLjQ3YTcuNDMgNy40MyAwIDAwMC0xNC44NUg2Mi4yOE0yNDcgMjExLjQzaC03MS40OGE3LjQyIDcuNDIgMCAxMDAgMTQuODVIMjQ3YTcuNDMgNy40MyAwIDAwMC0xNC44NSIvPjwvZz48L3N2Zz4="},94776:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUxLjg4IiBoZWlnaHQ9IjI1OC42NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjUxLjg1IDEwOC45YTQ2LjYgNDYuNiAwIDAwLTE4LjU2LTM3LjM0IDcuNDMgNy40MyAwIDAxLTIuNjMtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzUgMS42Mi0zIC43NC02LjE1LS40NS03LjktM0E2MS4xIDYxLjEgMCAwMDEwNiAwYTYwLjg5IDYwLjg5IDAgMDAtNDEuMTggMTUuOTcgNjAuODcgNjAuODcgMCAwMC0xOS42IDM5LjIgNy40MyA3LjQzIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42MS4zNC0xLjI4LjYtMS45Ny43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjNBNDYuMyA0Ni4zIDAgMDAtLjAxIDEwOC45YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNiA0N0gyMDQuNmMyNi4wNyAwIDQ3LjI3LTIxLjA4IDQ3LjI3LTQ3IiBmaWxsPSIjNDQ5MmE4Ii8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTY2LjY2IDIyMy40NGE3LjQyIDcuNDIgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MiA3LjQyIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0xMDcuNCAyNTguNjJhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04LjkzLTI5LjE4YTcuNDIgNy40MiAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjVNMTU5LjIyIDIxMy4wNmE3LjQzIDcuNDMgMCAwMC00LjkzIDkuMjhsOC45NCAyOS4xN2E3LjQzIDcuNDMgMCAxMDE0LjItNC4zNUwxNjguNSAyMThhNy40MyA3LjQzIDAgMDAtOS4yNy00LjkzTTEyOC44NCAyMjMuNDRhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04LjkzLTI5LjE4YTcuNDMgNy40MyAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMTkxLjAzIDIyMy40NGE3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThBNy40MiA3LjQyIDAgMTAxNzUgMTg5bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNiIvPjwvZz48L3N2Zz4="},26157:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjk0LjcxIiBoZWlnaHQ9IjI1OC41NyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMTA5LjA0IDExOS4xOGMwLTI5LjIgMjYuNC01Mi45NSA1OC44Ny01Mi45NSA3IDAgMTMuOCAxLjA4IDIwLjI4IDMuMjJhNTQuMzIgNTQuMzIgMCAwMTI1LjA0LTE0LjM1IDUxLjkzIDUxLjkzIDAgMDAtNDYuMzItMjguODNjLTQuMjEgMC04LjQxLjUxLTEyLjQ3IDEuNTItMyAuNzUtNi4xNi0uNDUtNy45MS0zQTU3LjE1IDU3LjE1IDAgMDA5OS40Ni4wMmMtMTQuMyAwLTI3Ljk3IDUuMzEtMzguNTEgMTQuOTVhNTYuOTMgNTYuOTMgMCAwMC0xOC4zMyAzNi42NSA3LjQzIDcuNDMgMCAwMS00LjIgNmMtLjY4LjMyLTEuMzcuNjgtMi4wNSAxLjA1LS42Mi4zNS0xLjI5LjYtMS45OC43NUE0NC4zIDQ0LjMgMCAwMDkuOCA3NC42NCA0My4yIDQzLjIgMCAwMDAgMTAyLjJjMCAyNC4xOCAxOS43OCA0My44NiA0NC4xIDQzLjg2aDUyLjk2YTQ4LjA0IDQ4LjA0IDAgMDExMi4wMy0yNC42M2MtLjAzLS43Ni0uMDUtMS41MS0uMDUtMi4yNk02NC45OSAyNTguNTlhNy40NCA3LjQ0IDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMTI3LjE3IDI1OC41OWE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0xODkuMzYgMjU4LjU5YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2Ii8+PC9nPjxwYXRoIGQ9Ik0yNjkuMjYgMTIwLjQyYTcuNDMgNy40MyAwIDAxLTQuNDYtOS41IDI4Ljg2IDI4Ljg2IDAgMDAxLjczLTkuODJjMC0xNC4xLTEwLjI4LTI2LjE1LTI0LjctMzAuOTFhNDMuNTcgNDMuNTcgMCAwMC0yMS4wOS0xLjU1Yy05LjkgMS42OS0xOC43NCA2LjctMjQuNDkgMTQuMTJhNy40MyA3LjQzIDAgMDEtOC44IDIuMjggNDkuMTIgNDkuMTIgMCAwMC0xOS41NC0zLjk2Yy0yNC4yNyAwLTQ0LjAyIDE3LjA5LTQ0LjAyIDM4LjA5IDAgMS4zNS4wOSAyLjczLjI2IDQuMWE3LjQzIDcuNDMgMCAwMS0yLjIzIDYuMjYgMzQuMjEgMzQuMjEgMCAwMC05LjcxIDE2LjUzIDMxLjAzIDMxLjAzIDAgMDAuMDMgMTQuODVjNCAxNi4xMyAyMC42MSAyOC4yNyA0MC40NSAyOC4yN2gxMDAuNjNjMjIuODIgMCA0MS4zOC0xNi4wNSA0MS4zOC0zNS43NiAwLTE0LjQ2LTkuOTgtMjcuNDEtMjUuNDQtMzMiIGZpbGw9IiM0NDkyYTgiLz48L3N2Zz4="},50663:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzE4Ljk0IiBoZWlnaHQ9IjI4OS42MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjg1LjA0IDEyNy42YTcuNDIgNy40MiAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NS02LjE1LS40NS03LjktM2E2MS4xIDYxLjEgMCAwMC01MC4zMy0yNi40OCA2MC44OSA2MC44OSAwIDAwLTQxLjE4IDE1Ljk4IDYwLjg4IDYwLjg4IDAgMDAtMTkuNiAzOS4xOSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjczLjM1LTEuNDcuNzMtMi4yIDEuMTMtLjYyLjM0LTEuMjkuNi0xLjk4Ljc1YTQ3LjQ4IDQ3LjQ4IDAgMDAtMjYuMzUgMTYuMyA0Ni4yOSA0Ni4yOSAwIDAwLTEwLjUxIDI5LjU1YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNyA0N2gxNTcuMzRjMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zMyIgcGFpbnQtb3JkZXI9InN0cm9rZSBmaWxsIG1hcmtlcnMiLz48cGF0aCBkPSJNOTEuOTggMjg3LjFhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjVNMTU0LjE2IDI4Ny4xYTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTIxNi4zNSAyODcuMWE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xMTYuNTggMjU5Ljk3YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2TTE3OC43NiAyNTkuOTdhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMjc4LjMzIDI4Ny4wOWE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0yNDAuNzMgMjU5Ljk1YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxwYXRoIGQ9Ik03OS44Mi0uMDVjLTMuMzcgMS4wMi02LjY5IDIuMi05Ljk2IDMuNTQtNTcuNTUgMjMuNTctODUuMiA4OS41Ni02MS42MyAxNDcuMTIgOC4xOSAyMCAyMS42MSAzNi44NCAzOC44IDQ5LjA3YTYxLjYgNjEuNiAwIDAxLTEwLjgtMzQuODNjMC0xNC4zIDQuOTMtMjguMTMgMTMuOTYtMzkuMjJhNjIuNjYgNjIuNjYgMCAwMTUuOTktNi4zNiAxMjUuODIgMTI1LjgyIDAgMDEtMS42OS03MC4wOUExMjguNDMgMTI4LjQzIDAgMDE3OS44Mi0uMDV6IiBmaWxsPSIjZTFjMDE0Ii8+PC9zdmc+"},53107:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzE4Ljk0IiBoZWlnaHQ9IjI4OS42MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjg1LjA0IDEyNy42YTcuNDIgNy40MiAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NS02LjE1LS40NS03LjktM2E2MS4xIDYxLjEgMCAwMC01MC4zMy0yNi40OCA2MC44OSA2MC44OSAwIDAwLTQxLjE4IDE1Ljk4IDYwLjg4IDYwLjg4IDAgMDAtMTkuNiAzOS4xOSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjczLjM1LTEuNDcuNzMtMi4yIDEuMTMtLjYyLjM0LTEuMjkuNi0xLjk4Ljc1YTQ3LjQ4IDQ3LjQ4IDAgMDAtMjYuMzUgMTYuMyA0Ni4yOSA0Ni4yOSAwIDAwLTEwLjUxIDI5LjU1YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNyA0N2gxNTcuMzRjMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zMyIgcGFpbnQtb3JkZXI9InN0cm9rZSBmaWxsIG1hcmtlcnMiLz48cGF0aCBkPSJNMTE5Ljk1IDI4OS42M2E3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xODIuMTMgMjg5LjYzYTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45My0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTI0NC4zMiAyODkuNjNhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjUiLz48L2c+PHBhdGggZD0iTTgwLjY2LS45Qzc3LjI5LjE0IDczLjk3IDEuMzIgNzAuNyAyLjY2IDEzLjE1IDI2LjIyLTE0LjUgOTIuMjEgOS4wNyAxNDkuNzdjOC4xOSAyMCAyMS42MSAzNi44NCAzOC44IDQ5LjA3QTYxLjYgNjEuNiAwIDAxMzcuMDcgMTY0YzAtMTQuMyA0LjkzLTI4LjEzIDEzLjk2LTM5LjIyYTYyLjY2IDYyLjY2IDAgMDE1Ljk5LTYuMzYgMTI1LjgyIDEyNS44MiAwIDAxLTEuNjktNzAuMDlBMTI4LjQzIDEyOC40MyAwIDAxODAuNjYtLjg5eiIgZmlsbD0iI2UxYzAxNCIvPjwvc3ZnPg=="},18138:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzE4Ljk0IiBoZWlnaHQ9IjI4OS42MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjg1LjA0IDEyNy42YTcuNDIgNy40MiAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NS02LjE1LS40NS03LjktM2E2MS4xIDYxLjEgMCAwMC01MC4zMy0yNi40OCA2MC44OSA2MC44OSAwIDAwLTQxLjE4IDE1Ljk4IDYwLjg4IDYwLjg4IDAgMDAtMTkuNiAzOS4xOSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjczLjM1LTEuNDcuNzMtMi4yIDEuMTMtLjYyLjM0LTEuMjkuNi0xLjk4Ljc1YTQ3LjQ4IDQ3LjQ4IDAgMDAtMjYuMzUgMTYuMyA0Ni4yOSA0Ni4yOSAwIDAwLTEwLjUxIDI5LjU1YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNyA0N2gxNTcuMzRjMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zMyIgcGFpbnQtb3JkZXI9InN0cm9rZSBmaWxsIG1hcmtlcnMiLz48cGF0aCBkPSJNMTI1LjAzIDI4Ny45NGE3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xODcuMjEgMjg3Ljk0YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45My0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTI0OS40IDI4Ny45NGE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xNDkuNjMgMjYwLjhhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE3YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMjExLjgxIDI2MC44YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xN2E3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NSAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2Ii8+PC9nPjxwYXRoIGQ9Ik03OS44Mi0uMDVjLTMuMzcgMS4wMi02LjY5IDIuMi05Ljk2IDMuNTQtNTcuNTUgMjMuNTctODUuMiA4OS41Ni02MS42MyAxNDcuMTIgOC4xOSAyMCAyMS42MSAzNi44NCAzOC44IDQ5LjA3YTYxLjYgNjEuNiAwIDAxLTEwLjgtMzQuODNjMC0xNC4zIDQuOTMtMjguMTMgMTMuOTYtMzkuMjJhNjIuNjYgNjIuNjYgMCAwMTUuOTktNi4zNiAxMjUuODIgMTI1LjgyIDAgMDEtMS42OS03MC4wOUExMjguNDMgMTI4LjQzIDAgMDE3OS44Mi0uMDV6IiBmaWxsPSIjZTFjMDE0Ii8+PC9zdmc+"},53748:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjM4LjMiIGhlaWdodD0iMjI4LjU3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM2MWM5ZTciPjxwYXRoIGQ9Ik05MS42NCA2Ni41NEw4Ni40NiA4NS45bDE4LjUyLTcuNjYgMTYuOCAxMC45MS0xLjU1LTE5Ljk3IDE1LjU3LTEyLjYyLTE5LjQ4LTQuNjktNy4xOS0xOC43LTEwLjQ4IDE3LjA3LTIwLjAxIDEuMDQgMTMgMTUuMjZNMTc2Ljc5IDQ1LjQ2bC03LjY3LTEwLjMtMy41MSAxMi4zNS0xMi4xNyA0LjEgMTAuNjYgNy4xNi4xNCAxMi44NCAxMC4xLTcuOTIgMTIuMjcgMy44My00LjQyLTEyLjA2IDcuNDMtMTAuNDgtMTIuODMuNDgiLz48cGF0aCBkPSJNMjEyLjE3IDE1NS42NGE1LjI1IDUuMjUgMCAwMS0xLjg3LTIuNzMgMzkuNTIgMzkuNTIgMCAwMC0zNy43OS0yOC4zOGMtMy4yIDAtNi40LjM5LTkuNSAxLjE2YTUuMjkgNS4yOSAwIDAxLTUuNjMtMi4xNCA0My41IDQzLjUgMCAwMC02NS4xNC03LjQ4IDQzLjM1IDQzLjM1IDAgMDAtMTMuOTUgMjcuOSA1LjMgNS4zIDAgMDEtMyA0LjI4Yy0uNTIuMjQtMS4wNC41MS0xLjU2LjgtLjQ0LjI0LS45MS40Mi0xLjQuNTNhMzMuODQgMzMuODQgMCAwMC0xOC43NyAxMS42IDMyLjk5IDMyLjk5IDAgMDAtNy40OCAyMS4wNWMwIDE4LjQ0IDE1LjEgMzMuNDUgMzMuNjUgMzMuNDVoMTEyYzE4LjU2IDAgMzMuNjYtMTUgMzMuNjYtMzMuNDVhMzMuMiAzMy4yIDAgMDAtMTMuMjItMjYuNTkiIHBhaW50LW9yZGVyPSJzdHJva2UgZmlsbCBtYXJrZXJzIi8+PC9nPjxwYXRoIGQ9Ik04Mi45LS4zM2ExMTcuNjIgMTE3LjYyIDAgMDAtMTAuMyAzLjY3QzEzLjA2IDI3LjczLTE1LjU1IDk2IDguODQgMTU1LjU0YTExNi40MyAxMTYuNDMgMCAwMDI2LjM2IDM5LjI0IDQ1LjYyIDQ1LjYyIDAgMDEtMS44Ny0xMi45QTQ2LjMgNDYuMyAwIDAxNDMuNyAxNTIuN2wuMDEtLjAxYTQ2LjU5IDQ2LjU5IDAgMDEyMC41Mi0xNC40N0ExMzAuNCAxMzAuNCAwIDAxNTYuNyA1MC42IDEzMi44OCAxMzIuODggMCAwMTgyLjktLjMyeiIgZmlsbD0iI2UxYzAxNCIvPjwvc3ZnPg=="},26625:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjM4LjMiIGhlaWdodD0iMjI4LjU3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM2MWM5ZTciPjxwYXRoIGQ9Ik05OC40MyAxMDIuMTJsLTUuMTkgMTkuMzYgMTguNTMtNy42NSAxNi44IDEwLjktMS41Ni0xOS45NyAxNS41OC0xMi42MS0xOS40OS00LjctNy4xOC0xOC43LTEwLjQ4IDE3LjA4LTIwLjAyIDEuMDQgMTMuMDEgMTUuMjVNMTc2Ljc5IDQ1LjQ2bC03LjY3LTEwLjMtMy41MSAxMi4zNS0xMi4xNyA0LjEgMTAuNjYgNy4xNi4xNCAxMi44NCAxMC4xLTcuOTIgMTIuMjcgMy44My00LjQyLTEyLjA2IDcuNDMtMTAuNDgtMTIuODMuNDgiLz48cGF0aCBkPSJNMjIwLjc2IDE3OS41OWEzLjUzIDMuNTMgMCAwMS0xLjI2LTEuODQgMjYuNTQgMjYuNTQgMCAwMC0zMS43Ni0xOC4yOCAzLjU1IDMuNTUgMCAwMS0zLjc4LTEuNDQgMjkuMjEgMjkuMjEgMCAwMC01My4xMiAxMy43MiAzLjU2IDMuNTYgMCAwMS0yIDIuODdjLS4zNi4xNy0uNzEuMzUtMS4wNi41NC0uMy4xNi0uNjEuMjgtLjk1LjM1YTIyLjczIDIyLjczIDAgMDAtMTIuNiA3LjggMjIuMTUgMjIuMTUgMCAwMC01LjAyIDE0LjEzIDIyLjU2IDIyLjU2IDAgMDAyMi42IDIyLjQ3aDc1LjIzYTIyLjU2IDIyLjU2IDAgMDAyMi42LTIyLjQ3IDIyLjMgMjIuMyAwIDAwLTguODgtMTcuODUiIHBhaW50LW9yZGVyPSJzdHJva2UgZmlsbCBtYXJrZXJzIi8+PC9nPjxwYXRoIGQ9Ik04Mi40Ny0uMDJhMTE3LjYyIDExNy42MiAwIDAwLTEwLjMgMy42N0MxMi42MyAyOC4wMy0xNS45NyA5Ni4zIDguNDEgMTU1Ljg1YTExNS45MSAxMTUuOTEgMCAwMDYyLjkgNjMuNCAxMTYuMTggMTE2LjE4IDAgMDA1NC4zOSA4LjczYy0xNC40LTIuNzQtMjUuNDUtMTUuNDQtMjUuNDUtMzAuNTcgMC0zLjQ2LjU5LTYuODYgMS43LTEwLjA5YTEzMC40MiAxMzAuNDIgMCAwMS00MC4xMi01My4zNSAxMzAuNCAxMzAuNCAwIDAxLTUuNTYtODMuMDZBMTMyLjg4IDEzMi44OCAwIDAxODIuNDctLjAyeiIgZmlsbD0iI2UxYzAxNCIvPjwvc3ZnPg=="},87760:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTg5LjYzIiBoZWlnaHQ9IjIyOC40IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02Mi4xMSAxMzRhMTMwLjQgMTMwLjQgMCAwMS01LjU1LTgzLjA1QTEzMi44OSAxMzIuODkgMCAwMTgyLjc2IDBhMTE3LjY0IDExNy42NCAwIDAwLTEwLjMgMy42N0MxMi45MiAyOC4wNy0xNS43IDk2LjM0IDguNyAxNTUuODhhMTE1LjkxIDExNS45MSAwIDAwNjIuODkgNjMuNCAxMTUuOTMgMTE1LjkzIDAgMDA4OS4zLjM2YzMuMzktMS4zOSA2LjctMi45MiA5LjkyLTQuNjJhMTMyLjY2IDEzMi42NiAwIDAxLTU0LjQtMTcuOTIgMTMwLjQ1IDEzMC40NSAwIDAxLTU0LjMtNjMuMSIgZmlsbD0iI2UxYzAxNCIvPjxwYXRoIGQ9Ik0xMjIuMTUgMTIzLjNsLTUuMTkgMTkuMzcgMTguNTItNy42NSAxNi44MSAxMC45LTEuNTYtMTkuOTcgMTUuNTgtMTIuNjEtMTkuNDktNC43LTcuMTgtMTguNy0xMC40OCAxNy4wOC0yMC4wMiAxLjA0IDEzLjAxIDE1LjI1TTE3Ni43OSA0NS40NmwtNy42Ny0xMC4zLTMuNTEgMTIuMzUtMTIuMTcgNC4xIDEwLjY2IDcuMTYuMTQgMTIuODQgMTAuMS03LjkyIDEyLjI3IDMuODMtNC40Mi0xMi4wNiA3LjQzLTEwLjQ4LTEyLjgzLjQ4IiBmaWxsPSIjNjFjOWU3Ii8+PC9zdmc+"},37837:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUxLjg3IiBoZWlnaHQ9IjIyMy40NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNDcuMjYgMTU1LjlIMjA0LjZjMjYuMDYgMCA0Ny4yNy0yMS4xIDQ3LjI3LTQ3YTQ2LjYgNDYuNiAwIDAwLTE4LjU2LTM3LjM0IDcuNDMgNy40MyAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NC02LjE1LS40NS03LjktM0E2MS4xIDYxLjEgMCAwMDEwNi4wMSAwYTYwLjg5IDYwLjg5IDAgMDAtNDEuMTggMTUuOTggNjAuODggNjAuODggMCAwMC0xOS42IDM5LjE5IDcuNDIgNy40MiAwIDAxLTQuMiA2Yy0uNzQuMzUtMS40OC43My0yLjIgMS4xMy0uNjIuMzQtMS4yOS42LTEuOTguNzVhNDcuNDcgNDcuNDcgMCAwMC0yNi4zNSAxNi4zQTQ2LjMgNDYuMyAwIDAwMCAxMDguOWMwIDI1LjkyIDIxLjIgNDcgNDcuMjYgNDciIGZpbGw9IiM0NDkyYTgiLz48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNNTUuNTUgMTc5Ljc0YTcuNDIgNy40MiAwIDAwLTQuOTIgOS4yOGw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDEwMTQuMi00LjM1bC04Ljk0LTI5LjE3YTcuNDIgNy40MiAwIDAwLTkuMjgtNC45M00xMTcuNzQgMTc5Ljc0YTcuNDMgNy40MyAwIDAwLTQuOTMgOS4yOGw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwMTQuMi00LjM1bC04Ljk0LTI5LjE3YTcuNDMgNy40MyAwIDAwLTkuMjctNC45M00xNzkuOTIgMTc5Ljc0YTcuNDMgNy40MyAwIDAwLTQuOTIgOS4yOGw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwMTQuMi00LjM1bC04Ljk0LTI5LjE3YTcuNDMgNy40MyAwIDAwLTkuMjgtNC45MyIvPjwvZz48L3N2Zz4="},53254:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjI5MS4zMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTUuNTcgOTIuNTRjMCA5LjI3IDMuNDMgMTguMDIgOS41NCAyNC43NmE2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzggNzUuNzIgNzUuNzIgMCAwMTI1LjYxLTQ1LjggMzYuOTcgMzYuOTcgMCAwMC01Ni4zNyAzMS40IiBmaWxsPSIjZGVjNjBmIi8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTI4OC42IDEyOS4zYTcuNDIgNy40MiAwIDAxLTIuNjMtMy44NUE1NS41IDU1LjUgMCAwMDIzMi45IDg1LjZjLTQuNSAwLTkgLjU0LTEzLjM0IDEuNjItMyAuNzUtNi4xNS0uNDUtNy45LTNhNjEuMSA2MS4xIDAgMDAtNTAuMzMtMjYuNDggNjAuODkgNjAuODkgMCAwMC00MS4xOCAxNS45OCA2MC44OCA2MC44OCAwIDAwLTE5LjYgMzkuMTkgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42Mi4zNC0xLjI5LjYtMS45OC43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjMgNDYuMjkgNDYuMjkgMCAwMC0xMC41MSAyOS41NWMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zM005NS4zNSAyNjMuNzdhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjVNMTU3LjUzIDI2My43N2E3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0yMTkuNzIgMjYzLjc3YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik04NS4wOCA3LjQ1djIwLjg5YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDEwLTE0Ljg1IDBNNjAuNDEgNDQuMzZhNy40MyA3LjQzIDAgMDA2LjQyLTExLjE0TDU2LjQgMTUuMTJhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40NGwxMC40NSAxOC4wOWE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU00MC42MSA1NEwyMi41MiA0My41NmE3LjQzIDcuNDMgMCAxMC03LjQzIDEyLjg2bDE4LjEgMTAuNDVBNy40MyA3LjQzIDAgMDA0MC42MiA1NE0zNS43MyA5Mi41NGMwLTQuMS0zLjMyLTcuNDMtNy40Mi03LjQzSDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMjAuOWM0LjEgMCA3LjQyLTMuMzIgNy40Mi03LjQyTTQwLjYxIDEzMS4wN2E3LjQzIDcuNDMgMCAxMC03LjQyLTEyLjg2bC0xOC4xIDEwLjQ0YTcuNDMgNy40MyAwIDEwNy40MyAxMi44N2wxOC4xLTEwLjQ1TTEyMC45IDQzLjM2YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4wOWE3LjQzIDcuNDMgMCAwMC0xMi44Ni03LjQybC0xMC40NSAxOC4xYTcuNDMgNy40MyAwIDAwMi43MiAxMC4xMyIvPjwvZz48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMTk0LjQxIDI5MC41OWE3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0xMzIuNyAyODkuMzlhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk1LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMjgwLjE3IDI2MS42YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTI1NC44NiAyODguNDFhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjUiLz48L2c+PC9zdmc+"},14593:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjI5MS4zMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTUuNTcgOTIuNTRjMCA5LjI3IDMuNDMgMTguMDIgOS41NCAyNC43NmE2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzggNzUuNzIgNzUuNzIgMCAwMTI1LjYxLTQ1LjggMzYuOTcgMzYuOTcgMCAwMC01Ni4zNyAzMS40IiBmaWxsPSIjZGVjNjBmIi8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTI4OC42IDEyOS4zYTcuNDIgNy40MiAwIDAxLTIuNjMtMy44NUE1NS41IDU1LjUgMCAwMDIzMi45IDg1LjZjLTQuNSAwLTkgLjU0LTEzLjM0IDEuNjItMyAuNzUtNi4xNS0uNDUtNy45LTNhNjEuMSA2MS4xIDAgMDAtNTAuMzMtMjYuNDggNjAuODkgNjAuODkgMCAwMC00MS4xOCAxNS45OCA2MC44OCA2MC44OCAwIDAwLTE5LjYgMzkuMTkgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42Mi4zNC0xLjI5LjYtMS45OC43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjMgNDYuMjkgNDYuMjkgMCAwMC0xMC41MSAyOS41NWMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zM00xMjMuNTIgMjkxLjMzYTcuNDEgNy40MSAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTE4NS43IDI5MS4zM2E3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTMtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0yNDcuODkgMjkxLjMzYTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik04NS4wOCA3LjQ1djIwLjg5YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDEwLTE0Ljg1IDBNNjAuNDEgNDQuMzZhNy40MyA3LjQzIDAgMDA2LjQyLTExLjE0TDU2LjQgMTUuMTJhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40NGwxMC40NSAxOC4wOWE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU00MC42MSA1NEwyMi41MiA0My41NmE3LjQzIDcuNDMgMCAxMC03LjQzIDEyLjg2bDE4LjEgMTAuNDVBNy40MyA3LjQzIDAgMDA0MC42MiA1NE0zNS43MyA5Mi41NGMwLTQuMS0zLjMyLTcuNDMtNy40Mi03LjQzSDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMjAuOWM0LjEgMCA3LjQyLTMuMzIgNy40Mi03LjQyTTQwLjYxIDEzMS4wN2E3LjQzIDcuNDMgMCAxMC03LjQyLTEyLjg2bC0xOC4xIDEwLjQ0YTcuNDMgNy40MyAwIDEwNy40MyAxMi44N2wxOC4xLTEwLjQ1TTEyMC45IDQzLjM2YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4wOWE3LjQzIDcuNDMgMCAwMC0xMi44Ni03LjQybC0xMC40NSAxOC4xYTcuNDMgNy40MyAwIDAwMi43MiAxMC4xMyIvPjwvZz48L3N2Zz4="},97251:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjI5MS4zMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTUuNTcgOTIuNTRjMCA5LjI3IDMuNDMgMTguMDIgOS41NCAyNC43NmE2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzggNzUuNzIgNzUuNzIgMCAwMTI1LjYxLTQ1LjggMzYuOTcgMzYuOTcgMCAwMC01Ni4zNyAzMS40IiBmaWxsPSIjZGVjNjBmIi8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTI4OC42IDEyOS4zYTcuNDIgNy40MiAwIDAxLTIuNjMtMy44NUE1NS41IDU1LjUgMCAwMDIzMi45IDg1LjZjLTQuNSAwLTkgLjU0LTEzLjM0IDEuNjItMyAuNzUtNi4xNS0uNDUtNy45LTNhNjEuMSA2MS4xIDAgMDAtNTAuMzMtMjYuNDggNjAuODkgNjAuODkgMCAwMC00MS4xOCAxNS45OCA2MC44OCA2MC44OCAwIDAwLTE5LjYgMzkuMTkgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42Mi4zNC0xLjI5LjYtMS45OC43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjMgNDYuMjkgNDYuMjkgMCAwMC0xMC41MSAyOS41NWMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zM00xMTYuOTIgMjY0Ljk3YTcuNDEgNy40MSAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTE3OS4xIDI2NC45N2E3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTMtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0yNDEuMjkgMjY0Ljk3YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik04NS4wOCA3LjQ1djIwLjg5YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDEwLTE0Ljg1IDBNNjAuNDEgNDQuMzZhNy40MyA3LjQzIDAgMDA2LjQyLTExLjE0TDU2LjQgMTUuMTJhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40NGwxMC40NSAxOC4wOWE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU00MC42MSA1NEwyMi41MiA0My41NmE3LjQzIDcuNDMgMCAxMC03LjQzIDEyLjg2bDE4LjEgMTAuNDVBNy40MyA3LjQzIDAgMDA0MC42MiA1NE0zNS43MyA5Mi41NGMwLTQuMS0zLjMyLTcuNDMtNy40Mi03LjQzSDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMjAuOWM0LjEgMCA3LjQyLTMuMzIgNy40Mi03LjQyTTQwLjYxIDEzMS4wN2E3LjQzIDcuNDMgMCAxMC03LjQyLTEyLjg2bC0xOC4xIDEwLjQ0YTcuNDMgNy40MyAwIDEwNy40MyAxMi44N2wxOC4xLTEwLjQ1TTEyMC45IDQzLjM2YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4wOWE3LjQzIDcuNDMgMCAwMC0xMi44Ni03LjQybC0xMC40NSAxOC4xYTcuNDMgNy40MyAwIDAwMi43MiAxMC4xMyIvPjwvZz48cGF0aCBkPSJNMjE1Ljk4IDI5MS43OWE3LjQxIDcuNDEgMCAwMDcuMS05LjZMMjE0LjE1IDI1M2E3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NSAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2TTE1NC4yNyAyOTAuNTlhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjYiIGZpbGw9IiM2MWM5ZTciLz48L3N2Zz4="},16767:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjIxMy42MSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjg4LjYgMTI5LjM3YTcuMzggNy4zOCAwIDAxLTIuNjMtMy44NCA1NS41MSA1NS41MSAwIDAwLTUzLjA4LTM5Ljg3Yy00LjUgMC05IC41NS0xMy4zNCAxLjYzLTMgLjc1LTYuMTUtLjQ1LTcuOS0zYTYxLjEgNjEuMSAwIDAwLTkxLjUxLTEwLjUgNjAuODkgNjAuODkgMCAwMC0xOS42IDM5LjIgNy40NCA3LjQ0IDAgMDEtNC4yIDZjLS43My4zNC0xLjQ3LjcxLTIuMiAxLjExLS42Mi4zNS0xLjI5LjYtMS45OC43NWE0Ny41NCA0Ny41NCAwIDAwLTI2LjM1IDE2LjMgNDYuMzMgNDYuMzMgMCAwMC0xMC41MSAyOS41NmMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42MyA0Ni42MyAwIDAwLTE4LjU2LTM3LjM0IiBmaWxsPSIjNjFjOWU3Ii8+PGcgZmlsbD0iI2RlYzYwZiI+PHBhdGggZD0iTTU1LjU3IDkyLjU3YTM2LjcgMzYuNyAwIDAwOS41NCAyNC43NiA2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzkgNzUuNjggNzUuNjggMCAwMTI1LjYxLTQ1Ljc4IDM2Ljk3IDM2Ljk3IDAgMDAtNTYuMzcgMzEuNDFNOTIuNSAzNS43N2M0LjEgMCA3LjQzLTMuMzMgNy40My03LjQzVjcuNDVhNy40MiA3LjQyIDAgMTAtMTQuODUgMHYyMC45YzAgNC4wOSAzLjMzIDcuNDIgNy40MyA3LjQyTTUzLjk3IDQwLjdhNy40MiA3LjQyIDAgMTAxMi44Ny03LjQybC0xMC40NS0xOC4xYTcuNDMgNy40MyAwIDAwLTEyLjg2IDcuNDNsMTAuNDQgMTguMU0xNS4xIDU2LjQ0bDE4LjA5IDEwLjQ1YTcuNDcgNy40NyAwIDAwMTAuMTQtMi43MiA3LjQzIDcuNDMgMCAwMC0yLjcxLTEwLjE1bC0xOC4xLTEwLjQ1YTcuNDMgNy40MyAwIDAwLTcuNDMgMTIuODdNNy40MiAxMDAuMDRIMjguM2E3LjQzIDcuNDMgMCAwMDAtMTQuODZINy40MWE3LjQyIDcuNDIgMCAxMDAgMTQuODZNNDMuMzMgMTIwLjk3YTcuNDIgNy40MiAwIDAwLTEwLjE0LTIuNzJsLTE4LjEgMTAuNDRhNy40MyA3LjQzIDAgMDA3LjQzIDEyLjg2bDE4LjEtMTAuNDRhNy40MyA3LjQzIDAgMDAyLjcxLTEwLjE0TTEyMC45IDQzLjM3YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4xYTcuNDMgNy40MyAwIDAwLTEyLjg2LTcuNDJsLTEwLjQ1IDE4LjFhNy40MyA3LjQzIDAgMDAyLjcyIDEwLjE0Ii8+PC9nPjwvc3ZnPg=="},74351:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI1NyAyMTkuNzRhNC4zIDQuMyAwIDAxLTEuNTMtMi4yNCAzMi4zOCAzMi4zOCAwIDAwLTMwLjk2LTIzLjI2Yy0yLjYzIDAtNS4yNS4zMi03Ljc4Ljk1YTQuMzMgNC4zMyAwIDAxLTQuNjEtMS43NSAzNS42MyAzNS42MyAwIDAwLTUzLjM4LTYuMTMgMzUuNTIgMzUuNTIgMCAwMC0xMS40MyAyMi44NyA0LjM0IDQuMzQgMCAwMS0yLjQ1IDMuNWMtLjQyLjItLjg2LjQyLTEuMjguNjUtLjM2LjItLjc1LjM1LTEuMTUuNDRhMjcuNzMgMjcuNzMgMCAwMC0xNS4zNyA5LjUgMjcuMDMgMjcuMDMgMCAwMC02LjEzIDE3LjI1IDI3LjUyIDI3LjUyIDAgMDAyNy41NiAyNy40aDkxLjc3YzE1LjIgMCAyNy41Ny0xMi4yOSAyNy41Ny0yNy40YTI3LjIgMjcuMiAwIDAwLTEwLjgyLTIxLjc4IiBmaWxsPSIjNjFjOWU3IiBwYWludC1vcmRlcj0ic3Ryb2tlIGZpbGwgbWFya2VycyIvPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik0xNDAuMiA3MC43M0E2OS44NiA2OS44NiAwIDAwNzAuNCAxNDAuNWMwIDMzLjMzIDIzLjUgNjEuMjcgNTQuOCA2OC4xNGE0MC42IDQwLjYgMCAwMTEwLjAzLTUuMSA0OC42MSA0OC42MSAwIDAxMTQuNy0yNS41OGguMDFhNDguNTkgNDguNTkgMCAwMTUzLjUtOC4wNSA2OS4zNSA2OS4zNSAwIDAwNi41Mi0yOS40MSA2OS44NiA2OS44NiAwIDAwLTY5Ljc4LTY5Ljc4em0tLjkgMTMxLjQ0bC0uMS4wNC0uMDQuMDMuMTMtLjA3ek0xMzIuOCAzOC45YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBWMzguOU04OS41NCA1OS45MWE3LjQzIDcuNDMgMCAwMDYuNDMtMTEuMTRMODAuMjQgMjEuNTNhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40M0w4My4xIDU2LjJhNy40MiA3LjQyIDAgMDA2LjQzIDMuNzFNMTguNzYgNzAuMTRhNy40MyA3LjQzIDAgMDAyLjcyIDEwLjE1TDQ4LjcyIDk2YTcuNDIgNy40MiAwIDEwNy40My0xMi44NkwyOC45IDY3LjQyYTcuNDMgNy40MyAwIDAwLTEwLjE0IDIuNzJNNDYuMjggMTQwLjI3YzAtNC4xLTMuMzMtNy40Mi03LjQzLTcuNDJINy40YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmM0LjEgMCA3LjQzLTMuMzMgNy40My03LjQzTTI3My4wNSAxMzIuODVoLTMxLjQ2YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmE3LjQzIDcuNDMgMCAwMDAtMTQuODVNNDguNzMgMTg0LjUxTDIxLjUgMjAwLjI0YTcuNDMgNy40MyAwIDEwNy40MiAxMi44NmwyNy4yNS0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQzLTEyLjg2TTI1MS41NCA2Ny40MkwyMjQuMyA4My4xNUE3LjQzIDcuNDMgMCAwMDIzMS43MiA5NmwyNy4yNC0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQyLTEyLjg2TTgzLjEgMjI0LjM0bC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDEyLjg3IDcuNDNsMTUuNzMtMjcuMjVhNy40MyA3LjQzIDAgMDAtMTIuODctNy40Mk0xODcuMiA1OC45MWE3LjQgNy40IDAgMDAxMC4xNC0yLjcxbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDEwLTEyLjg2LTcuNDJsLTE1LjczIDI3LjI0YTcuNDMgNy40MyAwIDAwMi43MSAxMC4xNCIvPjwvZz48L3N2Zz4="},71211:function(M){"use strict";M.exports="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZGVjNjBmIj48cGF0aCBkPSJNMTQwLjIyIDIxMC4wNGMzOC40OCAwIDY5Ljc4LTMxLjMgNjkuNzgtNjkuNzhzLTMxLjMtNjkuNzgtNjkuNzgtNjkuNzhjLTM4LjQ3IDAtNjkuNzggMzEuMy02OS43OCA2OS43OHMzMS4zIDY5Ljc4IDY5Ljc4IDY5Ljc4TTEzMi44IDM4LjlhNy40MyA3LjQzIDAgMDAxNC44NSAwVjcuNDRhNy40MyA3LjQzIDAgMDAtMTQuODUgMFYzOC45TTEzMi44IDI0MS42M3YzMS40NmE3LjQzIDcuNDMgMCAwMDE0Ljg1IDB2LTMxLjQ2YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBNODkuNTQgNTkuOTFhNy40MyA3LjQzIDAgMDA2LjQzLTExLjE0TDgwLjI0IDIxLjUzYTcuNDMgNy40MyAwIDAwLTEyLjg2IDcuNDNMODMuMSA1Ni4yYTcuNDIgNy40MiAwIDAwNi40MyAzLjcxTTE4Ny4yIDIyMS42MmE3LjQzIDcuNDMgMCAwMC0yLjcyIDEwLjE0TDIwMC4yIDI1OWE3LjQyIDcuNDIgMCAxMDEyLjg2LTcuNDJsLTE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDAwLTEwLjE1LTIuNzFNMTguNzYgNzAuMTRhNy40MyA3LjQzIDAgMDAyLjcyIDEwLjE1TDQ4LjcyIDk2YTcuNDIgNy40MiAwIDEwNy40My0xMi44NkwyOC45IDY3LjQyYTcuNDMgNy40MyAwIDAwLTEwLjE0IDIuNzJNMjU4Ljk3IDIwMC4yNGwtMjcuMjUtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40MiAxMi44N2wyNy4yNCAxNS43M2E3LjQgNy40IDAgMDAxMC4xNC0yLjcyIDcuNDMgNy40MyAwIDAwLTIuNzEtMTAuMTVNNDYuMjggMTQwLjI3YzAtNC4xLTMuMzMtNy40Mi03LjQzLTcuNDJINy40YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmM0LjEgMCA3LjQzLTMuMzMgNy40My03LjQzTTI3My4wNSAxMzIuODVoLTMxLjQ2YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmE3LjQzIDcuNDMgMCAwMDAtMTQuODVNNDguNzMgMTg0LjUxTDIxLjUgMjAwLjI0YTcuNDMgNy40MyAwIDEwNy40MiAxMi44NmwyNy4yNS0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQzLTEyLjg2TTI1MS41NCA2Ny40MkwyMjQuMyA4My4xNUE3LjQzIDcuNDMgMCAwMDIzMS43MiA5NmwyNy4yNC0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQyLTEyLjg2TTgzLjEgMjI0LjM0bC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDEyLjg3IDcuNDNsMTUuNzMtMjcuMjVhNy40MyA3LjQzIDAgMDAtMTIuODctNy40Mk0xODcuMiA1OC45MWE3LjQgNy40IDAgMDAxMC4xNC0yLjcxbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDEwLTEyLjg2LTcuNDJsLTE1LjczIDI3LjI0YTcuNDMgNy40MyAwIDAwMi43MSAxMC4xNCIgZmlsbD0iI2RlYzYwZiIvPjwvZz48L3N2Zz4K"}},u={};function e(M){var t=u[M];if(void 0!==t)return t.exports;var N=u[M]={id:M,loaded:!1,exports:{}};return n[M].call(N.exports,N,N.exports,e),N.loaded=!0,N.exports}e.m=n,e.amdD=function(){throw new Error("define cannot be used indirect")},e.amdO={},M=[],e.O=function(t,n,u,N){if(!n){var A=1/0;for(r=0;r<M.length;r++){n=M[r][0],u=M[r][1],N=M[r][2];for(var j=!0,i=0;i<n.length;i++)(!1&N||A>=N)&&Object.keys(e.O).every((function(M){return e.O[M](n[i])}))?n.splice(i--,1):(j=!1,N<A&&(A=N));if(j){M.splice(r--,1);var D=u();void 0!==D&&(t=D)}}return t}N=N||0;for(var r=M.length;r>0&&M[r-1][2]>N;r--)M[r]=M[r-1];M[r]=[n,u,N]},e.n=function(M){var t=M&&M.__esModule?function(){return M.default}:function(){return M};return e.d(t,{a:t}),t},e.d=function(M,t){for(var n in t)e.o(t,n)&&!e.o(M,n)&&Object.defineProperty(M,n,{enumerable:!0,get:t[n]})},e.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(M){if("object"==typeof window)return window}}(),e.o=function(M,t){return Object.prototype.hasOwnProperty.call(M,t)},e.r=function(M){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(M,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(M,"__esModule",{value:!0})},e.nmd=function(M){return M.paths=[],M.children||(M.children=[]),M},e.j=275,function(){e.b=document.baseURI||self.location.href;var M={275:0};e.O.j=function(t){return 0===M[t]};var t=function(t,n){var u,N,A=n[0],j=n[1],i=n[2],D=0;if(A.some((function(t){return 0!==M[t]}))){for(u in j)e.o(j,u)&&(e.m[u]=j[u]);if(i)var r=i(e)}for(t&&t(n);D<A.length;D++)N=A[D],e.o(M,N)&&M[N]&&M[N][0](),M[N]=0;return e.O(r)},n=self.webpackChunknextcloud=self.webpackChunknextcloud||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))}();var N=e.O(void 0,[874],(function(){return e(59464)}));N=e.O(N)}();
-//# sourceMappingURL=weather_status-weather-status.js.map?v=6c4d2ae74b2407cdafcd
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/@nextcloud/moment/node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@nextcloud/moment/node_modules/moment/locale/ sync ^\.\/.*$ ***!
+  \**********************************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/@nextcloud/moment/node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/@nextcloud/moment/node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/az.js",
+	"./be": "./node_modules/@nextcloud/moment/node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/@nextcloud/moment/node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/@nextcloud/moment/node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/@nextcloud/moment/node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/@nextcloud/moment/node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/@nextcloud/moment/node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/da.js",
+	"./de": "./node_modules/@nextcloud/moment/node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/@nextcloud/moment/node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/@nextcloud/moment/node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/@nextcloud/moment/node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/@nextcloud/moment/node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/el.js",
+	"./en-SG": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-SG.js",
+	"./en-SG.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-SG.js",
+	"./en-au": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/@nextcloud/moment/node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/@nextcloud/moment/node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/@nextcloud/moment/node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/@nextcloud/moment/node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/es.js",
+	"./et": "./node_modules/@nextcloud/moment/node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/@nextcloud/moment/node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/fy.js",
+	"./ga": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ga.js",
+	"./ga.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ga.js",
+	"./gd": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/@nextcloud/moment/node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/@nextcloud/moment/node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/id.js",
+	"./is": "./node_modules/@nextcloud/moment/node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/is.js",
+	"./it": "./node_modules/@nextcloud/moment/node_modules/moment/locale/it.js",
+	"./it-ch": "./node_modules/@nextcloud/moment/node_modules/moment/locale/it-ch.js",
+	"./it-ch.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/it-ch.js",
+	"./it.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/@nextcloud/moment/node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/@nextcloud/moment/node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/@nextcloud/moment/node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ko.js",
+	"./ku": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ku.js",
+	"./ku.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ku.js",
+	"./ky": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/@nextcloud/moment/node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/@nextcloud/moment/node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/@nextcloud/moment/node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/se.js",
+	"./si": "./node_modules/@nextcloud/moment/node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/@nextcloud/moment/node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/@nextcloud/moment/node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/@nextcloud/moment/node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/@nextcloud/moment/node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/@nextcloud/moment/node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/@nextcloud/moment/node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/@nextcloud/moment/node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/@nextcloud/moment/node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/@nextcloud/moment/node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/@nextcloud/moment/node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/@nextcloud/moment/node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/@nextcloud/moment/node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
+/***/ "./apps/weather_status/src/services/weatherStatusService.js":
+/*!******************************************************************!*\
+  !*** ./apps/weather_status/src/services/weatherStatusService.js ***!
+  \******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "fetchForecast": function() { return /* binding */ fetchForecast; },
+/* harmony export */   "getFavorites": function() { return /* binding */ getFavorites; },
+/* harmony export */   "getLocation": function() { return /* binding */ getLocation; },
+/* harmony export */   "saveFavorites": function() { return /* binding */ saveFavorites; },
+/* harmony export */   "setAddress": function() { return /* binding */ setAddress; },
+/* harmony export */   "setLocation": function() { return /* binding */ setLocation; },
+/* harmony export */   "setMode": function() { return /* binding */ setMode; },
+/* harmony export */   "usePersonalAddress": function() { return /* binding */ usePersonalAddress; }
+/* harmony export */ });
+/* harmony import */ var _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nextcloud/axios */ "./node_modules/@nextcloud/axios/dist/index.js");
+/* harmony import */ var _nextcloud_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @nextcloud/router */ "./node_modules/@nextcloud/router/dist/index.js");
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+/**
+ * @copyright Copyright (c) 2020, Julien Veyssier
+ *
+ * @author Julien Veyssier <eneiluj@posteo.net>
+ *
+ * @license AGPL-3.0-or-later
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+
+/**
+ *
+ *
+ * @param {string} lat the latitude
+ * @param {string} lon the longitude
+ * @return {Promise<object>}
+ */
+
+var setLocation = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(lat, lon) {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/location');
+            _context.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].put(url, {
+              address: '',
+              lat: lat,
+              lon: lon
+            });
+
+          case 3:
+            response = _context.sent;
+            return _context.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+
+  return function setLocation(_x, _x2) {
+    return _ref.apply(this, arguments);
+  };
+}();
+/**
+ *
+ * @param {string} address The location
+ * @return {Promise<object>}
+ */
+
+
+var setAddress = /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(address) {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/location');
+            _context2.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].put(url, {
+              address: address,
+              lat: null,
+              lon: null
+            });
+
+          case 3:
+            response = _context2.sent;
+            return _context2.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  }));
+
+  return function setAddress(_x3) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+/**
+ *
+ * @param {string} mode can be 1 browser or 2 custom
+ * @return {Promise<object>}
+ */
+
+
+var setMode = /*#__PURE__*/function () {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(mode) {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee3$(_context3) {
+      while (1) {
+        switch (_context3.prev = _context3.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/mode');
+            _context3.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].put(url, {
+              mode: mode
+            });
+
+          case 3:
+            response = _context3.sent;
+            return _context3.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context3.stop();
+        }
+      }
+    }, _callee3);
+  }));
+
+  return function setMode(_x4) {
+    return _ref3.apply(this, arguments);
+  };
+}();
+/**
+ *
+ * @return {Promise<object>}
+ */
+
+
+var usePersonalAddress = /*#__PURE__*/function () {
+  var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/use-personal');
+            _context4.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].put(url);
+
+          case 3:
+            response = _context4.sent;
+            return _context4.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, _callee4);
+  }));
+
+  return function usePersonalAddress() {
+    return _ref4.apply(this, arguments);
+  };
+}();
+/**
+ * Fetches the location information for current user
+ *
+ * @return {Promise<object>}
+ */
+
+
+var getLocation = /*#__PURE__*/function () {
+  var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee5$(_context5) {
+      while (1) {
+        switch (_context5.prev = _context5.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/location');
+            _context5.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(url);
+
+          case 3:
+            response = _context5.sent;
+            return _context5.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context5.stop();
+        }
+      }
+    }, _callee5);
+  }));
+
+  return function getLocation() {
+    return _ref5.apply(this, arguments);
+  };
+}();
+/**
+ * Fetches the weather forecast
+ *
+ * @return {Promise<object>}
+ */
+
+
+var fetchForecast = /*#__PURE__*/function () {
+  var _ref6 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee6$(_context6) {
+      while (1) {
+        switch (_context6.prev = _context6.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/forecast');
+            _context6.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(url);
+
+          case 3:
+            response = _context6.sent;
+            return _context6.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context6.stop();
+        }
+      }
+    }, _callee6);
+  }));
+
+  return function fetchForecast() {
+    return _ref6.apply(this, arguments);
+  };
+}();
+/**
+ * Fetches the location favorites
+ *
+ * @return {Promise<object>}
+ */
+
+
+var getFavorites = /*#__PURE__*/function () {
+  var _ref7 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee7$(_context7) {
+      while (1) {
+        switch (_context7.prev = _context7.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/favorites');
+            _context7.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(url);
+
+          case 3:
+            response = _context7.sent;
+            return _context7.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context7.stop();
+        }
+      }
+    }, _callee7);
+  }));
+
+  return function getFavorites() {
+    return _ref7.apply(this, arguments);
+  };
+}();
+/**
+ *
+ * @param {Array} favorites List of favorite addresses
+ * @return {Promise<object>}
+ */
+
+
+var saveFavorites = /*#__PURE__*/function () {
+  var _ref8 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee8(favorites) {
+    var url, response;
+    return regeneratorRuntime.wrap(function _callee8$(_context8) {
+      while (1) {
+        switch (_context8.prev = _context8.next) {
+          case 0:
+            url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_1__.generateOcsUrl)('apps/weather_status/api/v1/favorites');
+            _context8.next = 3;
+            return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].put(url, {
+              favorites: favorites
+            });
+
+          case 3:
+            response = _context8.sent;
+            return _context8.abrupt("return", response.data.ocs.data);
+
+          case 5:
+          case "end":
+            return _context8.stop();
+        }
+      }
+    }, _callee8);
+  }));
+
+  return function saveFavorites(_x5) {
+    return _ref8.apply(this, arguments);
+  };
+}();
+
+
+
+/***/ }),
+
+/***/ "./apps/weather_status/src/weather-status.js":
+/*!***************************************************!*\
+  !*** ./apps/weather_status/src/weather-status.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
+/* harmony import */ var _nextcloud_auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nextcloud/auth */ "./node_modules/@nextcloud/auth/dist/index.js");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ "./apps/weather_status/src/App.vue");
+/**
+ * @copyright Copyright (c) 2016 Julien Veyssier <eneiluj@posteo.net>
+ *
+ * @author Julien Veyssier <eneiluj@posteo.net>
+ *
+ * @license AGPL-3.0-or-later
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+
+ // eslint-disable-next-line camelcase
+
+__webpack_require__.nc = btoa((0,_nextcloud_auth__WEBPACK_IMPORTED_MODULE_0__.getRequestToken)());
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.t = t;
+document.addEventListener('DOMContentLoaded', function () {
+  if (!OCA.Dashboard) {
+    return;
+  }
+
+  OCA.Dashboard.registerStatus('weather', function (el) {
+    var Dashboard = vue__WEBPACK_IMPORTED_MODULE_2__["default"].extend(_App__WEBPACK_IMPORTED_MODULE_1__["default"]);
+    return new Dashboard({
+      propsData: {
+        inline: true
+      }
+    }).$mount(el);
+  });
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nextcloud/dialogs */ "./node_modules/@nextcloud/dialogs/dist/index.es.js");
+/* harmony import */ var _nextcloud_moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @nextcloud/moment */ "./node_modules/@nextcloud/moment/dist/index.js");
+/* harmony import */ var _nextcloud_moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_moment__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _nextcloud_l10n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @nextcloud/l10n */ "./node_modules/@nextcloud/l10n/dist/index.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_Actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/Actions */ "./node_modules/@nextcloud/vue/dist/Components/Actions.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_Actions__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_Actions__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/ActionButton */ "./node_modules/@nextcloud/vue/dist/Components/ActionButton.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionButton__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_ActionButton__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionInput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/ActionInput */ "./node_modules/@nextcloud/vue/dist/Components/ActionInput.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionInput__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_ActionInput__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/ActionLink */ "./node_modules/@nextcloud/vue/dist/Components/ActionLink.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionLink__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_ActionLink__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionSeparator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/ActionSeparator */ "./node_modules/@nextcloud/vue/dist/Components/ActionSeparator.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionSeparator__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_ActionSeparator__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionText__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/ActionText */ "./node_modules/@nextcloud/vue/dist/Components/ActionText.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_ActionText__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_ActionText__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/weatherStatusService */ "./apps/weather_status/src/services/weatherStatusService.js");
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+var MODE_BROWSER_LOCATION = 1;
+var MODE_MANUAL_LOCATION = 2;
+var weatherOptions = {
+  clearsky_day: {
+    icon: 'icon-clearsky-day',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} clear sky later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} clear sky', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  clearsky_night: {
+    icon: 'icon-clearsky-night',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} clear sky later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} clear sky', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  cloudy: {
+    icon: 'icon-cloudy',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} cloudy later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} cloudy', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  fair_day: {
+    icon: 'icon-fair-day',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} fair weather later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} fair weather', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  fair_night: {
+    icon: 'icon-fair-night',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} fair weather later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} fair weather', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  partlycloudy_day: {
+    icon: 'icon-partlycloudy-day',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} partly cloudy later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} partly cloudy', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  partlycloudy_night: {
+    icon: 'icon-partlycloudy-night',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} partly cloudy later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} partly cloudy', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  fog: {
+    icon: 'icon-fog',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} foggy later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} foggy', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  lightrain: {
+    icon: 'icon-lightrain',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} light rain later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} light rain', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  rain: {
+    icon: 'icon-rain',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} rain later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} rain', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  heavyrain: {
+    icon: 'icon-heavyrain',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} heavy rain later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} heavy rain', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  rainshowers_day: {
+    icon: 'icon-rainshowers-day',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} rain showers later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} rain showers', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  rainshowers_night: {
+    icon: 'icon-rainshowers-night',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} rain showers later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} rain showers', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  lightrainshowers_day: {
+    icon: 'icon-light-rainshowers-day',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} light rain showers later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} light rain showers', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  lightrainshowers_night: {
+    icon: 'icon-light-rainshowers-night',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} light rain showers later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} light rain showers', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  heavyrainshowers_day: {
+    icon: 'icon-heavy-rainshowers-day',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} heavy rain showers later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} heavy rain showers', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  },
+  heavyrainshowers_night: {
+    icon: 'icon-heavy-rainshowers-night',
+    text: function text(temperature, unit) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return later ? t('weather_status', '{temperature} {unit} heavy rain showers later today', {
+        temperature: temperature,
+        unit: unit
+      }) : t('weather_status', '{temperature} {unit} heavy rain showers', {
+        temperature: temperature,
+        unit: unit
+      });
+    }
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'App',
+  components: {
+    Actions: (_nextcloud_vue_dist_Components_Actions__WEBPACK_IMPORTED_MODULE_3___default()),
+    ActionButton: (_nextcloud_vue_dist_Components_ActionButton__WEBPACK_IMPORTED_MODULE_4___default()),
+    ActionInput: (_nextcloud_vue_dist_Components_ActionInput__WEBPACK_IMPORTED_MODULE_5___default()),
+    ActionLink: (_nextcloud_vue_dist_Components_ActionLink__WEBPACK_IMPORTED_MODULE_6___default()),
+    ActionSeparator: (_nextcloud_vue_dist_Components_ActionSeparator__WEBPACK_IMPORTED_MODULE_7___default()),
+    ActionText: (_nextcloud_vue_dist_Components_ActionText__WEBPACK_IMPORTED_MODULE_8___default())
+  },
+  props: {
+    inline: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data: function data() {
+    return {
+      locale: (0,_nextcloud_l10n__WEBPACK_IMPORTED_MODULE_2__.getLocale)(),
+      loading: true,
+      errorMessage: '',
+      mode: MODE_BROWSER_LOCATION,
+      address: null,
+      lat: null,
+      lon: null,
+      // how many hours ahead do we want to see the forecast?
+      offset: 5,
+      forecasts: [],
+      loop: null,
+      favorites: [],
+      showFavorites: false
+    };
+  },
+  computed: {
+    useFahrenheitLocale: function useFahrenheitLocale() {
+      return ['en_US', 'en_MH', 'en_FM', 'en_PW', 'en_KY', 'en_LR'].includes(this.locale);
+    },
+    temperatureUnit: function temperatureUnit() {
+      return this.useFahrenheitLocale ? '°F' : '°C';
+    },
+    locationText: function locationText() {
+      return t('weather_status', 'More weather for {adr}', {
+        adr: this.address
+      });
+    },
+    temperature: function temperature() {
+      return this.getTemperature(this.forecasts, 0);
+    },
+    futureTemperature: function futureTemperature() {
+      return this.getTemperature(this.forecasts, this.offset);
+    },
+    weatherCode: function weatherCode() {
+      return this.getWeatherCode(this.forecasts, 0);
+    },
+    futureWeatherCode: function futureWeatherCode() {
+      return this.getWeatherCode(this.forecasts, this.offset);
+    },
+    weatherIcon: function weatherIcon() {
+      return this.getWeatherIcon(this.weatherCode, this.loading);
+    },
+    futureWeatherIcon: function futureWeatherIcon() {
+      return this.getWeatherIcon(this.futureWeatherCode, this.loading);
+    },
+
+    /**
+     * The message displayed in the top right corner
+     *
+     * @return {string}
+     */
+    currentWeatherMessage: function currentWeatherMessage() {
+      if (this.loading) {
+        return t('weather_status', 'Loading weather');
+      } else if (this.errorMessage) {
+        return this.errorMessage;
+      } else {
+        return this.getWeatherMessage(this.weatherCode, this.temperature);
+      }
+    },
+    forecastMessage: function forecastMessage() {
+      if (this.loading) {
+        return t('weather_status', 'Loading weather');
+      } else {
+        return this.getWeatherMessage(this.futureWeatherCode, this.futureTemperature, true);
+      }
+    },
+    weatherLinkTarget: function weatherLinkTarget() {
+      return 'https://www.windy.com/-Rain-thunder-rain?rain,' + this.lat + ',' + this.lon + ',11';
+    },
+    gotWeather: function gotWeather() {
+      return this.address && !this.errorMessage;
+    },
+    addRemoveFavoriteIcon: function addRemoveFavoriteIcon() {
+      return this.currentAddressIsFavorite ? 'icon-starred' : 'icon-star';
+    },
+    addRemoveFavoriteText: function addRemoveFavoriteText() {
+      return this.currentAddressIsFavorite ? t('weather_status', 'Remove from favorites') : t('weather_status', 'Add as favorite');
+    },
+    currentAddressIsFavorite: function currentAddressIsFavorite() {
+      var _this = this;
+
+      return this.favorites.find(function (f) {
+        return f === _this.address;
+      });
+    },
+    toggleFavoritesIcon: function toggleFavoritesIcon() {
+      return this.showFavorites ? 'icon-triangle-s' : 'icon-triangle-e';
+    },
+    displayedFavorites: function displayedFavorites() {
+      return this.showFavorites ? this.favorites : [];
+    }
+  },
+  mounted: function mounted() {
+    this.initWeatherStatus();
+  },
+  methods: {
+    initWeatherStatus: function initWeatherStatus() {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+        var loc, favs;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.getLocation();
+
+              case 3:
+                loc = _context.sent;
+                _this2.lat = loc.lat;
+                _this2.lon = loc.lon;
+                _this2.address = loc.address;
+                _this2.mode = loc.mode;
+
+                if (_this2.mode === MODE_BROWSER_LOCATION) {
+                  _this2.askBrowserLocation();
+                } else if (_this2.mode === MODE_MANUAL_LOCATION) {
+                  _this2.startLoop();
+                }
+
+                _context.next = 11;
+                return _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.getFavorites();
+
+              case 11:
+                favs = _context.sent;
+                _this2.favorites = favs;
+                _context.next = 22;
+                break;
+
+              case 15:
+                _context.prev = 15;
+                _context.t0 = _context["catch"](0);
+
+                if (!((_context.t0 === null || _context.t0 === void 0 ? void 0 : _context.t0.code) === 'ECONNABORTED')) {
+                  _context.next = 20;
+                  break;
+                }
+
+                console.info('The weather status request was cancelled because the user navigates.');
+                return _context.abrupt("return");
+
+              case 20:
+                if (_context.t0.response && _context.t0.response.status === 401) {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'You are not logged in.'));
+                } else {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'There was an error getting the weather status information.'));
+                }
+
+                console.error(_context.t0);
+
+              case 22:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[0, 15]]);
+      }))();
+    },
+    startLoop: function startLoop() {
+      var _this3 = this;
+
+      clearInterval(this.loop);
+
+      if (this.lat && this.lon) {
+        this.loop = setInterval(function () {
+          return _this3.getForecast();
+        }, 60 * 1000 * 60);
+        this.getForecast();
+      } else {
+        this.loading = false;
+      }
+    },
+    askBrowserLocation: function askBrowserLocation() {
+      var _this4 = this;
+
+      this.loading = true;
+      this.errorMessage = '';
+
+      if (navigator.geolocation && window.isSecureContext) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          console.debug('browser location success');
+          _this4.lat = position.coords.latitude;
+          _this4.lon = position.coords.longitude;
+
+          _this4.saveMode(MODE_BROWSER_LOCATION);
+
+          _this4.mode = MODE_BROWSER_LOCATION;
+
+          _this4.saveLocation(_this4.lat, _this4.lon);
+        }, function (error) {
+          console.debug('location permission refused');
+          console.debug(error);
+
+          _this4.saveMode(MODE_MANUAL_LOCATION);
+
+          _this4.mode = MODE_MANUAL_LOCATION; // fallback on what we have if possible
+
+          if (_this4.lat && _this4.lon) {
+            _this4.startLoop();
+          } else {
+            _this4.usePersonalAddress();
+          }
+        });
+      } else {
+        console.debug('no secure context!');
+        this.saveMode(MODE_MANUAL_LOCATION);
+        this.mode = MODE_MANUAL_LOCATION;
+        this.startLoop();
+      }
+    },
+    getForecast: function getForecast() {
+      var _this5 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.prev = 0;
+                _context2.next = 3;
+                return _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.fetchForecast();
+
+              case 3:
+                _this5.forecasts = _context2.sent;
+                _context2.next = 10;
+                break;
+
+              case 6:
+                _context2.prev = 6;
+                _context2.t0 = _context2["catch"](0);
+                _this5.errorMessage = t('weather_status', 'No weather information found');
+                console.debug(_context2.t0);
+
+              case 10:
+                _this5.loading = false;
+
+              case 11:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, null, [[0, 6]]);
+      }))();
+    },
+    setAddress: function setAddress(address) {
+      var _this6 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
+        var loc;
+        return regeneratorRuntime.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _this6.loading = true;
+                _this6.errorMessage = '';
+                _context3.prev = 2;
+                _context3.next = 5;
+                return _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.setAddress(address);
+
+              case 5:
+                loc = _context3.sent;
+
+                if (loc.success) {
+                  _this6.lat = loc.lat;
+                  _this6.lon = loc.lon;
+                  _this6.address = loc.address;
+                  _this6.mode = MODE_MANUAL_LOCATION;
+
+                  _this6.startLoop();
+                } else {
+                  _this6.errorMessage = t('weather_status', 'Location not found');
+                  _this6.loading = false;
+                }
+
+                _context3.next = 13;
+                break;
+
+              case 9:
+                _context3.prev = 9;
+                _context3.t0 = _context3["catch"](2);
+
+                if (_context3.t0.response && _context3.t0.response.status === 401) {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'You are not logged in.'));
+                } else {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'There was an error setting the location address.'));
+                }
+
+                _this6.loading = false;
+
+              case 13:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3, null, [[2, 9]]);
+      }))();
+    },
+    saveLocation: function saveLocation(lat, lon) {
+      var _this7 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
+        var loc;
+        return regeneratorRuntime.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                _context4.prev = 0;
+                _context4.next = 3;
+                return _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.setLocation(lat, lon);
+
+              case 3:
+                loc = _context4.sent;
+                _this7.address = loc.address;
+
+                _this7.startLoop();
+
+                _context4.next = 12;
+                break;
+
+              case 8:
+                _context4.prev = 8;
+                _context4.t0 = _context4["catch"](0);
+
+                if (_context4.t0.response && _context4.t0.response.status === 401) {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'You are not logged in.'));
+                } else {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'There was an error setting the location.'));
+                }
+
+                console.debug(_context4.t0);
+
+              case 12:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4, null, [[0, 8]]);
+      }))();
+    },
+    saveMode: function saveMode(mode) {
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
+        return regeneratorRuntime.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                _context5.prev = 0;
+                _context5.next = 3;
+                return _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.setMode(mode);
+
+              case 3:
+                _context5.next = 9;
+                break;
+
+              case 5:
+                _context5.prev = 5;
+                _context5.t0 = _context5["catch"](0);
+
+                if (_context5.t0.response && _context5.t0.response.status === 401) {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'You are not logged in.'));
+                } else {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'There was an error saving the mode.'));
+                }
+
+                console.debug(_context5.t0);
+
+              case 9:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5, null, [[0, 5]]);
+      }))();
+    },
+    onBrowserLocationClick: function onBrowserLocationClick() {
+      this.askBrowserLocation();
+    },
+    usePersonalAddress: function usePersonalAddress() {
+      var _this8 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
+        var loc;
+        return regeneratorRuntime.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                _this8.loading = true;
+                _context6.prev = 1;
+                _context6.next = 4;
+                return _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.usePersonalAddress();
+
+              case 4:
+                loc = _context6.sent;
+                _this8.lat = loc.lat;
+                _this8.lon = loc.lon;
+                _this8.address = loc.address;
+                _this8.mode = MODE_MANUAL_LOCATION;
+
+                _this8.startLoop();
+
+                _context6.next = 17;
+                break;
+
+              case 12:
+                _context6.prev = 12;
+                _context6.t0 = _context6["catch"](1);
+
+                if (_context6.t0.response && _context6.t0.response.status === 401) {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'You are not logged in.'));
+                } else {
+                  (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_0__.showError)(t('weather_status', 'There was an error using personal address.'));
+                }
+
+                console.debug(_context6.t0);
+                _this8.loading = false;
+
+              case 17:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6, null, [[1, 12]]);
+      }))();
+    },
+    onAddressSubmit: function onAddressSubmit() {
+      var newAddress = this.$refs.addressInput.$el.querySelector('input[type="text"]').value;
+      this.setAddress(newAddress);
+    },
+    getLocalizedTemperature: function getLocalizedTemperature(celcius) {
+      return this.useFahrenheitLocale ? celcius * (9 / 5) + 32 : celcius;
+    },
+    onAddRemoveFavoriteClick: function onAddRemoveFavoriteClick() {
+      var currentIsFavorite = this.currentAddressIsFavorite;
+
+      if (currentIsFavorite) {
+        var i = this.favorites.indexOf(currentIsFavorite);
+
+        if (i !== -1) {
+          this.favorites.splice(i, 1);
+        }
+      } else {
+        this.favorites.push(this.address);
+      }
+
+      _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.saveFavorites(this.favorites);
+    },
+    onFavoriteClick: function onFavoriteClick(e, favAddress) {
+      // clicked on the icon
+      if (e.target.classList.contains('action-button__icon')) {
+        var i = this.favorites.indexOf(favAddress);
+
+        if (i !== -1) {
+          this.favorites.splice(i, 1);
+        }
+
+        _services_weatherStatusService__WEBPACK_IMPORTED_MODULE_9__.saveFavorites(this.favorites);
+      } else if (favAddress !== this.address) {
+        // clicked on the text
+        this.setAddress(favAddress);
+      }
+    },
+    formatTime: function formatTime(time) {
+      return _nextcloud_moment__WEBPACK_IMPORTED_MODULE_1___default()(time).format('LT');
+    },
+    getTemperature: function getTemperature(forecasts) {
+      var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      return forecasts.length > offset ? forecasts[offset].data.instant.details.air_temperature : '';
+    },
+    getWeatherCode: function getWeatherCode(forecasts) {
+      var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      return forecasts.length > offset ? forecasts[offset].data.next_1_hours.summary.symbol_code : '';
+    },
+    getWeatherIcon: function getWeatherIcon(weatherCode, loading) {
+      if (loading) {
+        return 'icon-loading-small';
+      } else {
+        return weatherCode && weatherCode in weatherOptions ? weatherOptions[weatherCode].icon : 'icon-fair-day';
+      }
+    },
+    getWeatherMessage: function getWeatherMessage(weatherCode, temperature) {
+      var later = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+      return weatherCode && weatherCode in weatherOptions ? weatherOptions[weatherCode].text(Math.round(this.getLocalizedTemperature(temperature)), this.temperatureUnit, later) : t('weather_status', 'Set location for weather');
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ "./node_modules/css-loader/dist/runtime/noSourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/app-dark.svg */ "./apps/weather_status/img/app-dark.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/app.svg */ "./apps/weather_status/img/app.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/sun.svg */ "./apps/weather_status/img/sun.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/moon.svg */ "./apps/weather_status/img/moon.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/cloud-cloud.svg */ "./apps/weather_status/img/cloud-cloud.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/sun-small-cloud.svg */ "./apps/weather_status/img/sun-small-cloud.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/moon-small-cloud.svg */ "./apps/weather_status/img/moon-small-cloud.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/sun-cloud.svg */ "./apps/weather_status/img/sun-cloud.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/moon-cloud.svg */ "./apps/weather_status/img/moon-cloud.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/fog.svg */ "./apps/weather_status/img/fog.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/light-rain.svg */ "./apps/weather_status/img/light-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/rain.svg */ "./apps/weather_status/img/rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/heavy-rain.svg */ "./apps/weather_status/img/heavy-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/sun-cloud-light-rain.svg */ "./apps/weather_status/img/sun-cloud-light-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_14___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/moon-cloud-light-rain.svg */ "./apps/weather_status/img/moon-cloud-light-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_15___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/sun-cloud-rain.svg */ "./apps/weather_status/img/sun-cloud-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_16___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/moon-cloud-rain.svg */ "./apps/weather_status/img/moon-cloud-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_17___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/sun-cloud-heavy-rain.svg */ "./apps/weather_status/img/sun-cloud-heavy-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_18___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/moon-cloud-heavy-rain.svg */ "./apps/weather_status/img/moon-cloud-heavy-rain.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_19___ = new URL(/* asset import */ __webpack_require__(/*! ./../img/cross.svg */ "./apps/weather_status/img/cross.svg"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_5___);
+var ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_6___);
+var ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_7___);
+var ___CSS_LOADER_URL_REPLACEMENT_8___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_8___);
+var ___CSS_LOADER_URL_REPLACEMENT_9___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_9___);
+var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_10___);
+var ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
+var ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
+var ___CSS_LOADER_URL_REPLACEMENT_13___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_13___);
+var ___CSS_LOADER_URL_REPLACEMENT_14___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_14___);
+var ___CSS_LOADER_URL_REPLACEMENT_15___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_15___);
+var ___CSS_LOADER_URL_REPLACEMENT_16___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_16___);
+var ___CSS_LOADER_URL_REPLACEMENT_17___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_17___);
+var ___CSS_LOADER_URL_REPLACEMENT_18___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_18___);
+var ___CSS_LOADER_URL_REPLACEMENT_19___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_19___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".icon-weather-status {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\nbody.theme--dark .icon-weather-status {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n.icon-clearsky-day {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n}\n.icon-clearsky-night {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n}\n.icon-cloudy {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n}\n.icon-fair-day {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n}\n.icon-fair-night {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ");\n}\n.icon-partlycloudy-day {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ");\n}\n.icon-partlycloudy-night {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ");\n}\n.icon-fog {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ");\n}\n.icon-lightrain {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ");\n}\n.icon-rain {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ");\n}\n.icon-heavyrain {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ");\n}\n.icon-light-rainshowers-day {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_13___ + ");\n}\n.icon-light-rainshowers-night {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_14___ + ");\n}\n.icon-rainshowers-day {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_15___ + ");\n}\n.icon-rainshowers-night {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_16___ + ");\n}\n.icon-heavy-rainshowers-day {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_17___ + ");\n}\n.icon-heavy-rainshowers-night {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_18___ + ");\n}\n.icon-crosshair {\n  background-color: var(--color-main-text);\n  padding: 0 !important;\n  mask: url(" + ___CSS_LOADER_URL_REPLACEMENT_19___ + ") no-repeat;\n  mask-size: 18px 18px;\n  mask-position: center;\n  -webkit-mask: url(" + ___CSS_LOADER_URL_REPLACEMENT_19___ + ") no-repeat;\n  -webkit-mask-size: 18px 18px;\n  -webkit-mask-position: center;\n  min-width: 44px !important;\n  min-height: 44px !important;\n}\nli:not(.inline) .weather-status-menu-item__header {\n  display: block;\n  align-items: center;\n  color: var(--color-main-text);\n  padding: 10px 12px 5px 12px;\n  box-sizing: border-box;\n  opacity: 1;\n  white-space: nowrap;\n  width: 100%;\n  text-align: center;\n  max-width: 250px;\n  text-overflow: ellipsis;\n  min-width: 175px;\n}\nli:not(.inline) .weather-status-menu-item__subheader {\n  width: 100%;\n}\nli:not(.inline) .weather-status-menu-item__subheader .trigger > .icon {\n  background-color: var(--color-main-background);\n  background-size: 16px;\n  border: 0;\n  border-radius: 0;\n  font-weight: normal;\n  padding-left: 40px;\n}\nli:not(.inline) .weather-status-menu-item__subheader .trigger > .icon:hover, li:not(.inline) .weather-status-menu-item__subheader .trigger > .icon:focus {\n  box-shadow: inset 4px 0 var(--color-primary-element);\n}\n.inline .weather-status-menu-item__subheader {\n  width: 100%;\n}\n.inline .weather-status-menu-item__subheader .trigger > .icon {\n  background-size: 16px;\n  border: 0;\n  border-radius: var(--border-radius-pill);\n  font-weight: normal;\n  padding-left: 40px;\n}\n.inline .weather-status-menu-item__subheader .trigger > .icon.icon-loading-small::after {\n  left: 21px;\n}\nli {\n  list-style-type: none;\n}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss&");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./apps/weather_status/src/App.vue":
+/*!*****************************************!*\
+  !*** ./apps/weather_status/src/App.vue ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _App_vue_vue_type_template_id_a14b84fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=a14b84fa& */ "./apps/weather_status/src/App.vue?vue&type=template&id=a14b84fa&");
+/* harmony import */ var _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js& */ "./apps/weather_status/src/App.vue?vue&type=script&lang=js&");
+/* harmony import */ var _App_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.vue?vue&type=style&index=0&lang=scss& */ "./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _App_vue_vue_type_template_id_a14b84fa___WEBPACK_IMPORTED_MODULE_0__.render,
+  _App_vue_vue_type_template_id_a14b84fa___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "apps/weather_status/src/App.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./apps/weather_status/src/App.vue?vue&type=script&lang=js&":
+/*!******************************************************************!*\
+  !*** ./apps/weather_status/src/App.vue?vue&type=script&lang=js& ***!
+  \******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=script&lang=js&");
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss&":
+/*!***************************************************************************!*\
+  !*** ./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss& ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=style&index=0&lang=scss&");
+
+
+/***/ }),
+
+/***/ "./apps/weather_status/src/App.vue?vue&type=template&id=a14b84fa&":
+/*!************************************************************************!*\
+  !*** ./apps/weather_status/src/App.vue?vue&type=template&id=a14b84fa& ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_a14b84fa___WEBPACK_IMPORTED_MODULE_0__.render; },
+/* harmony export */   "staticRenderFns": function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_a14b84fa___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns; }
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_a14b84fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=a14b84fa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=template&id=a14b84fa&");
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=template&id=a14b84fa&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/weather_status/src/App.vue?vue&type=template&id=a14b84fa& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": function() { return /* binding */ render; },
+/* harmony export */   "staticRenderFns": function() { return /* binding */ staticRenderFns; }
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("li", { class: { inline: _vm.inline } }, [
+    _c(
+      "div",
+      { attrs: { id: "weather-status-menu-item" } },
+      [
+        _c(
+          "Actions",
+          {
+            staticClass: "weather-status-menu-item__subheader",
+            attrs: {
+              "default-icon": _vm.weatherIcon,
+              "menu-title": _vm.currentWeatherMessage,
+            },
+          },
+          [
+            _vm.gotWeather
+              ? _c("ActionText", { attrs: { icon: _vm.futureWeatherIcon } }, [
+                  _vm._v(
+                    "\n\t\t\t\t" + _vm._s(_vm.forecastMessage) + "\n\t\t\t"
+                  ),
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.gotWeather
+              ? _c(
+                  "ActionLink",
+                  {
+                    attrs: {
+                      icon: "icon-address",
+                      target: "_blank",
+                      href: _vm.weatherLinkTarget,
+                      "close-after-click": true,
+                    },
+                  },
+                  [_vm._v("\n\t\t\t\t" + _vm._s(_vm.locationText) + "\n\t\t\t")]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.gotWeather
+              ? _c(
+                  "ActionButton",
+                  {
+                    attrs: { icon: _vm.addRemoveFavoriteIcon },
+                    on: { click: _vm.onAddRemoveFavoriteClick },
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t\t" +
+                        _vm._s(_vm.addRemoveFavoriteText) +
+                        "\n\t\t\t"
+                    ),
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.address && !_vm.errorMessage ? _c("ActionSeparator") : _vm._e(),
+            _vm._v(" "),
+            _c(
+              "ActionButton",
+              {
+                attrs: { icon: "icon-crosshair", "close-after-click": true },
+                on: { click: _vm.onBrowserLocationClick },
+              },
+              [
+                _vm._v(
+                  "\n\t\t\t\t" +
+                    _vm._s(_vm.t("weather_status", "Detect location")) +
+                    "\n\t\t\t"
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "ActionInput",
+              {
+                ref: "addressInput",
+                attrs: {
+                  disabled: false,
+                  icon: "icon-rename",
+                  type: "text",
+                  value: "",
+                },
+                on: { submit: _vm.onAddressSubmit },
+              },
+              [
+                _vm._v(
+                  "\n\t\t\t\t" +
+                    _vm._s(_vm.t("weather_status", "Set custom address")) +
+                    "\n\t\t\t"
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "ActionButton",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.favorites.length > 0,
+                    expression: "favorites.length > 0",
+                  },
+                ],
+                attrs: { icon: _vm.toggleFavoritesIcon },
+                on: {
+                  click: function ($event) {
+                    _vm.showFavorites = !_vm.showFavorites
+                  },
+                },
+              },
+              [
+                _vm._v(
+                  "\n\t\t\t\t" +
+                    _vm._s(_vm.t("weather_status", "Favorites")) +
+                    "\n\t\t\t"
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _vm._l(_vm.displayedFavorites, function (f) {
+              return _c(
+                "ActionButton",
+                {
+                  key: f,
+                  attrs: { icon: "icon-starred" },
+                  on: {
+                    click: function ($event) {
+                      return _vm.onFavoriteClick($event, f)
+                    },
+                  },
+                },
+                [_vm._v("\n\t\t\t\t" + _vm._s(f) + "\n\t\t\t")]
+              )
+            }),
+          ],
+          2
+        ),
+      ],
+      1
+    ),
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/app-dark.svg":
+/*!**********************************************!*\
+  !*** ./apps/weather_status/img/app-dark.svg ***!
+  \**********************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0MC4yMiAyMTAuMDRjMzguNDggMCA2OS43OC0zMS4zIDY5Ljc4LTY5Ljc4cy0zMS4zLTY5Ljc4LTY5Ljc4LTY5Ljc4Yy0zOC40NyAwLTY5Ljc4IDMxLjMtNjkuNzggNjkuNzhzMzEuMyA2OS43OCA2OS43OCA2OS43OE0xMzIuOCAzOC45YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBWMzguOU0xMzIuOCAyNDEuNjN2MzEuNDZhNy40MyA3LjQzIDAgMDAxNC44NSAwdi0zMS40NmE3LjQzIDcuNDMgMCAwMC0xNC44NSAwTTg5LjU0IDU5LjkxYTcuNDMgNy40MyAwIDAwNi40My0xMS4xNEw4MC4yNCAyMS41M2E3LjQzIDcuNDMgMCAwMC0xMi44NiA3LjQzTDgzLjEgNTYuMmE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU0xODcuMiAyMjEuNjJhNy40MyA3LjQzIDAgMDAtMi43MiAxMC4xNEwyMDAuMiAyNTlhNy40MiA3LjQyIDAgMTAxMi44Ni03LjQybC0xNS43My0yNy4yNWE3LjQzIDcuNDMgMCAwMC0xMC4xNS0yLjcxTTE4Ljc2IDcwLjE0YTcuNDMgNy40MyAwIDAwMi43MiAxMC4xNUw0OC43MiA5NmE3LjQyIDcuNDIgMCAxMDcuNDMtMTIuODZMMjguOSA2Ny40MmE3LjQzIDcuNDMgMCAwMC0xMC4xNCAyLjcyTTI1OC45NyAyMDAuMjRsLTI3LjI1LTE1LjczYTcuNDMgNy40MyAwIDAwLTcuNDIgMTIuODdsMjcuMjQgMTUuNzNhNy40IDcuNCAwIDAwMTAuMTQtMi43MiA3LjQzIDcuNDMgMCAwMC0yLjcxLTEwLjE1TTQ2LjI4IDE0MC4yN2MwLTQuMS0zLjMzLTcuNDItNy40My03LjQySDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZjNC4xIDAgNy40My0zLjMzIDcuNDMtNy40M00yNzMuMDUgMTMyLjg1aC0zMS40NmE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZhNy40MyA3LjQzIDAgMDAwLTE0Ljg1TTQ4LjczIDE4NC41MUwyMS41IDIwMC4yNGE3LjQzIDcuNDMgMCAxMDcuNDIgMTIuODZsMjcuMjUtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40My0xMi44Nk0yNTEuNTQgNjcuNDJMMjI0LjMgODMuMTVBNy40MyA3LjQzIDAgMDAyMzEuNzIgOTZsMjcuMjQtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40Mi0xMi44Nk04My4xIDIyNC4zNGwtMTUuNzMgMjcuMjRhNy40MyA3LjQzIDAgMDAxMi44NyA3LjQzbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDAwLTEyLjg3LTcuNDJNMTg3LjIgNTguOTFhNy40IDcuNCAwIDAwMTAuMTQtMi43MWwxNS43My0yNy4yNWE3LjQzIDcuNDMgMCAxMC0xMi44Ni03LjQybC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDIuNzEgMTAuMTQiLz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/app.svg":
+/*!*****************************************!*\
+  !*** ./apps/weather_status/img/app.svg ***!
+  \*****************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTE0MC4yMiAyMTAuMDRjMzguNDggMCA2OS43OC0zMS4zIDY5Ljc4LTY5Ljc4cy0zMS4zLTY5Ljc4LTY5Ljc4LTY5Ljc4Yy0zOC40NyAwLTY5Ljc4IDMxLjMtNjkuNzggNjkuNzhzMzEuMyA2OS43OCA2OS43OCA2OS43OE0xMzIuOCAzOC45YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBWMzguOU0xMzIuOCAyNDEuNjN2MzEuNDZhNy40MyA3LjQzIDAgMDAxNC44NSAwdi0zMS40NmE3LjQzIDcuNDMgMCAwMC0xNC44NSAwTTg5LjU0IDU5LjkxYTcuNDMgNy40MyAwIDAwNi40My0xMS4xNEw4MC4yNCAyMS41M2E3LjQzIDcuNDMgMCAwMC0xMi44NiA3LjQzTDgzLjEgNTYuMmE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU0xODcuMiAyMjEuNjJhNy40MyA3LjQzIDAgMDAtMi43MiAxMC4xNEwyMDAuMiAyNTlhNy40MiA3LjQyIDAgMTAxMi44Ni03LjQybC0xNS43My0yNy4yNWE3LjQzIDcuNDMgMCAwMC0xMC4xNS0yLjcxTTE4Ljc2IDcwLjE0YTcuNDMgNy40MyAwIDAwMi43MiAxMC4xNUw0OC43MiA5NmE3LjQyIDcuNDIgMCAxMDcuNDMtMTIuODZMMjguOSA2Ny40MmE3LjQzIDcuNDMgMCAwMC0xMC4xNCAyLjcyTTI1OC45NyAyMDAuMjRsLTI3LjI1LTE1LjczYTcuNDMgNy40MyAwIDAwLTcuNDIgMTIuODdsMjcuMjQgMTUuNzNhNy40IDcuNCAwIDAwMTAuMTQtMi43MiA3LjQzIDcuNDMgMCAwMC0yLjcxLTEwLjE1TTQ2LjI4IDE0MC4yN2MwLTQuMS0zLjMzLTcuNDItNy40My03LjQySDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZjNC4xIDAgNy40My0zLjMzIDcuNDMtNy40M00yNzMuMDUgMTMyLjg1aC0zMS40NmE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMzEuNDZhNy40MyA3LjQzIDAgMDAwLTE0Ljg1TTQ4LjczIDE4NC41MUwyMS41IDIwMC4yNGE3LjQzIDcuNDMgMCAxMDcuNDIgMTIuODZsMjcuMjUtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40My0xMi44Nk0yNTEuNTQgNjcuNDJMMjI0LjMgODMuMTVBNy40MyA3LjQzIDAgMDAyMzEuNzIgOTZsMjcuMjQtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40Mi0xMi44Nk04My4xIDIyNC4zNGwtMTUuNzMgMjcuMjRhNy40MyA3LjQzIDAgMDAxMi44NyA3LjQzbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDAwLTEyLjg3LTcuNDJNMTg3LjIgNTguOTFhNy40IDcuNCAwIDAwMTAuMTQtMi43MWwxNS43My0yNy4yNWE3LjQzIDcuNDMgMCAxMC0xMi44Ni03LjQybC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDIuNzEgMTAuMTQiLz48L2c+PC9zdmc+";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/cloud-cloud.svg":
+/*!*************************************************!*\
+  !*** ./apps/weather_status/img/cloud-cloud.svg ***!
+  \*************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjk0LjcxIiBoZWlnaHQ9IjE4OS4xNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTA5LjAzIDExOS4yYzAtMjkuMTkgMjYuNC01Mi45NCA1OC44Ni01Mi45NCA3LjAyIDAgMTMuODEgMS4wOCAyMC4yOSAzLjIyYTU0LjM2IDU0LjM2IDAgMDEyNS4wNC0xNC4zNkE1MS45NSA1MS45NSAwIDAwMTY2LjkgMjYuM2MtNC4yMSAwLTguNDEuNTItMTIuNDggMS41Mi0zIC43NC02LjE1LS40NC03LjktMi45OWE1Ny4xMyA1Ny4xMyAwIDAwLTg1LjU4LTkuODQgNTYuOTUgNTYuOTUgMCAwMC0xOC4zMyAzNi42NSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjY5LjM0LTEuMzguNjgtMi4wNSAxLjA2LS42Mi4zNC0xLjI5LjYtMS45OC43NkE0NC4zIDQ0LjMgMCAwMDkuOCA3NC42NmE0My4yIDQzLjIgMCAwMC05LjggMjcuNThjMCAyNC4xOSAxOS43OCA0My44NiA0NC4xIDQzLjg2aDUyLjk2YTQ4LjA0IDQ4LjA0IDAgMDExMi4wMy0yNC42M2MtLjAzLS43Ni0uMDUtMS41MS0uMDUtMi4yNyIgZmlsbD0iIzYxYzllNyIvPjxwYXRoIGQ9Ik0yNjkuMjUgMTIwLjRhNy40MyA3LjQzIDAgMDEtNC40Ni05LjUgMjguODUgMjguODUgMCAwMDEuNzItOS44MmMwLTE0LjEtMTAuMjctMjYuMTYtMjQuNy0zMC45YTQzLjYzIDQzLjYzIDAgMDAtMjEuMDgtMS41NWMtOS45IDEuNjgtMTguNzQgNi43LTI0LjUgMTQuMTJhNy40MyA3LjQzIDAgMDEtOC44IDIuMjYgNDkuMTIgNDkuMTIgMCAwMC0xOS41My0zLjk2Yy0yNC4yNyAwLTQ0LjAyIDE3LjEtNDQuMDIgMzguMSAwIDEuMzQuMDkgMi43My4yNiA0LjFhNy4zOSA3LjM5IDAgMDEtMi4yMyA2LjI2IDM0LjMgMzQuMyAwIDAwLTkuNzEgMTYuNTMgMzEuMDMgMzEuMDMgMCAwMC4wMiAxNC44NWM0IDE2LjEzIDIwLjYyIDI4LjI3IDQwLjQ2IDI4LjI3aDEwMC42M2MyMi44MiAwIDQxLjM4LTE2LjA0IDQxLjM4LTM1Ljc2IDAtMTQuNDUtOS45OS0yNy40MS0yNS40NC0zMyIgZmlsbD0iIzQ0OTJhOCIvPjwvc3ZnPg==";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/cross.svg":
+/*!*******************************************!*\
+  !*** ./apps/weather_status/img/cross.svg ***!
+  \*******************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNMjIgMTJoLTRNNiAxMkgyTTEyIDZWMk0xMiAyMnYtNCIvPjwvc3ZnPg==";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/fog.svg":
+/*!*****************************************!*\
+  !*** ./apps/weather_status/img/fog.svg ***!
+  \*****************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU0LjQ0IiBoZWlnaHQ9IjI1Ni4zOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjMzLjMgNzEuNThhNy40MiA3LjQyIDAgMDEtMi42My0zLjg0IDU1LjUgNTUuNSAwIDAwLTUzLjA4LTM5Ljg3Yy00LjUgMC05IC41NS0xMy4zNSAxLjYzLTMgLjc0LTYuMTUtLjQ1LTcuOS0zQTYxLjEgNjEuMSAwIDAwMTA2IC4wMSA2MC44OSA2MC44OSAwIDAwNjQuODMgMTZhNjAuODcgNjAuODcgMCAwMC0xOS42IDM5LjIgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNC0xLjQ3LjcyLTIuMiAxLjEyLS42MS4zNS0xLjI4LjYtMS45Ny43NUE0Ny40OCA0Ny40OCAwIDAwMTAuNSA3OS4zNyA0Ni4zIDQ2LjMgMCAwMDAgMTA4LjkyYzAgMjUuOTEgMjEuMiA0NyA0Ny4yNiA0N0gyMDQuNmMyNi4wNiAwIDQ3LjI3LTIxLjA5IDQ3LjI3LTQ3YTQ2LjYgNDYuNiAwIDAwLTE4LjU2LTM3LjM0TTIzMS4zMiAxODcuOTFjMC00LjEtMy4zMy03LjQzLTcuNDMtNy40M0gyOC44N2E3LjQyIDcuNDIgMCAxMDAgMTQuODZoMTk1LjAyYzQuMSAwIDcuNDMtMy4zNCA3LjQzLTcuNDNNMjEzLjE0IDI0MS41NEgxOC4xMmE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMTk1LjAyYTcuNDIgNy40MiAwIDEwMC0xNC44NU02Mi4yOCAyMTEuNDNhNy40MiA3LjQyIDAgMTAwIDE0Ljg1aDcxLjQ3YTcuNDMgNy40MyAwIDAwMC0xNC44NUg2Mi4yOE0yNDcgMjExLjQzaC03MS40OGE3LjQyIDcuNDIgMCAxMDAgMTQuODVIMjQ3YTcuNDMgNy40MyAwIDAwMC0xNC44NSIvPjwvZz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/heavy-rain.svg":
+/*!************************************************!*\
+  !*** ./apps/weather_status/img/heavy-rain.svg ***!
+  \************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUxLjg4IiBoZWlnaHQ9IjI1OC42NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjUxLjg1IDEwOC45YTQ2LjYgNDYuNiAwIDAwLTE4LjU2LTM3LjM0IDcuNDMgNy40MyAwIDAxLTIuNjMtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzUgMS42Mi0zIC43NC02LjE1LS40NS03LjktM0E2MS4xIDYxLjEgMCAwMDEwNiAwYTYwLjg5IDYwLjg5IDAgMDAtNDEuMTggMTUuOTcgNjAuODcgNjAuODcgMCAwMC0xOS42IDM5LjIgNy40MyA3LjQzIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42MS4zNC0xLjI4LjYtMS45Ny43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjNBNDYuMyA0Ni4zIDAgMDAtLjAxIDEwOC45YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNiA0N0gyMDQuNmMyNi4wNyAwIDQ3LjI3LTIxLjA4IDQ3LjI3LTQ3IiBmaWxsPSIjNDQ5MmE4Ii8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTY2LjY2IDIyMy40NGE3LjQyIDcuNDIgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MiA3LjQyIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0xMDcuNCAyNTguNjJhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04LjkzLTI5LjE4YTcuNDIgNy40MiAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjVNMTU5LjIyIDIxMy4wNmE3LjQzIDcuNDMgMCAwMC00LjkzIDkuMjhsOC45NCAyOS4xN2E3LjQzIDcuNDMgMCAxMDE0LjItNC4zNUwxNjguNSAyMThhNy40MyA3LjQzIDAgMDAtOS4yNy00LjkzTTEyOC44NCAyMjMuNDRhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04LjkzLTI5LjE4YTcuNDMgNy40MyAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMTkxLjAzIDIyMy40NGE3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThBNy40MiA3LjQyIDAgMTAxNzUgMTg5bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNiIvPjwvZz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/light-rain.svg":
+/*!************************************************!*\
+  !*** ./apps/weather_status/img/light-rain.svg ***!
+  \************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjk0LjcxIiBoZWlnaHQ9IjI1OC41NyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMTA5LjA0IDExOS4xOGMwLTI5LjIgMjYuNC01Mi45NSA1OC44Ny01Mi45NSA3IDAgMTMuOCAxLjA4IDIwLjI4IDMuMjJhNTQuMzIgNTQuMzIgMCAwMTI1LjA0LTE0LjM1IDUxLjkzIDUxLjkzIDAgMDAtNDYuMzItMjguODNjLTQuMjEgMC04LjQxLjUxLTEyLjQ3IDEuNTItMyAuNzUtNi4xNi0uNDUtNy45MS0zQTU3LjE1IDU3LjE1IDAgMDA5OS40Ni4wMmMtMTQuMyAwLTI3Ljk3IDUuMzEtMzguNTEgMTQuOTVhNTYuOTMgNTYuOTMgMCAwMC0xOC4zMyAzNi42NSA3LjQzIDcuNDMgMCAwMS00LjIgNmMtLjY4LjMyLTEuMzcuNjgtMi4wNSAxLjA1LS42Mi4zNS0xLjI5LjYtMS45OC43NUE0NC4zIDQ0LjMgMCAwMDkuOCA3NC42NCA0My4yIDQzLjIgMCAwMDAgMTAyLjJjMCAyNC4xOCAxOS43OCA0My44NiA0NC4xIDQzLjg2aDUyLjk2YTQ4LjA0IDQ4LjA0IDAgMDExMi4wMy0yNC42M2MtLjAzLS43Ni0uMDUtMS41MS0uMDUtMi4yNk02NC45OSAyNTguNTlhNy40NCA3LjQ0IDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMTI3LjE3IDI1OC41OWE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0xODkuMzYgMjU4LjU5YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2Ii8+PC9nPjxwYXRoIGQ9Ik0yNjkuMjYgMTIwLjQyYTcuNDMgNy40MyAwIDAxLTQuNDYtOS41IDI4Ljg2IDI4Ljg2IDAgMDAxLjczLTkuODJjMC0xNC4xLTEwLjI4LTI2LjE1LTI0LjctMzAuOTFhNDMuNTcgNDMuNTcgMCAwMC0yMS4wOS0xLjU1Yy05LjkgMS42OS0xOC43NCA2LjctMjQuNDkgMTQuMTJhNy40MyA3LjQzIDAgMDEtOC44IDIuMjggNDkuMTIgNDkuMTIgMCAwMC0xOS41NC0zLjk2Yy0yNC4yNyAwLTQ0LjAyIDE3LjA5LTQ0LjAyIDM4LjA5IDAgMS4zNS4wOSAyLjczLjI2IDQuMWE3LjQzIDcuNDMgMCAwMS0yLjIzIDYuMjYgMzQuMjEgMzQuMjEgMCAwMC05LjcxIDE2LjUzIDMxLjAzIDMxLjAzIDAgMDAuMDMgMTQuODVjNCAxNi4xMyAyMC42MSAyOC4yNyA0MC40NSAyOC4yN2gxMDAuNjNjMjIuODIgMCA0MS4zOC0xNi4wNSA0MS4zOC0zNS43NiAwLTE0LjQ2LTkuOTgtMjcuNDEtMjUuNDQtMzMiIGZpbGw9IiM0NDkyYTgiLz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/moon-cloud-heavy-rain.svg":
+/*!***********************************************************!*\
+  !*** ./apps/weather_status/img/moon-cloud-heavy-rain.svg ***!
+  \***********************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzE4Ljk0IiBoZWlnaHQ9IjI4OS42MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjg1LjA0IDEyNy42YTcuNDIgNy40MiAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NS02LjE1LS40NS03LjktM2E2MS4xIDYxLjEgMCAwMC01MC4zMy0yNi40OCA2MC44OSA2MC44OSAwIDAwLTQxLjE4IDE1Ljk4IDYwLjg4IDYwLjg4IDAgMDAtMTkuNiAzOS4xOSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjczLjM1LTEuNDcuNzMtMi4yIDEuMTMtLjYyLjM0LTEuMjkuNi0xLjk4Ljc1YTQ3LjQ4IDQ3LjQ4IDAgMDAtMjYuMzUgMTYuMyA0Ni4yOSA0Ni4yOSAwIDAwLTEwLjUxIDI5LjU1YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNyA0N2gxNTcuMzRjMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zMyIgcGFpbnQtb3JkZXI9InN0cm9rZSBmaWxsIG1hcmtlcnMiLz48cGF0aCBkPSJNOTEuOTggMjg3LjFhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjVNMTU0LjE2IDI4Ny4xYTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTIxNi4zNSAyODcuMWE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xMTYuNTggMjU5Ljk3YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2TTE3OC43NiAyNTkuOTdhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMjc4LjMzIDI4Ny4wOWE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0yNDAuNzMgMjU5Ljk1YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxwYXRoIGQ9Ik03OS44Mi0uMDVjLTMuMzcgMS4wMi02LjY5IDIuMi05Ljk2IDMuNTQtNTcuNTUgMjMuNTctODUuMiA4OS41Ni02MS42MyAxNDcuMTIgOC4xOSAyMCAyMS42MSAzNi44NCAzOC44IDQ5LjA3YTYxLjYgNjEuNiAwIDAxLTEwLjgtMzQuODNjMC0xNC4zIDQuOTMtMjguMTMgMTMuOTYtMzkuMjJhNjIuNjYgNjIuNjYgMCAwMTUuOTktNi4zNiAxMjUuODIgMTI1LjgyIDAgMDEtMS42OS03MC4wOUExMjguNDMgMTI4LjQzIDAgMDE3OS44Mi0uMDV6IiBmaWxsPSIjZTFjMDE0Ii8+PC9zdmc+";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/moon-cloud-light-rain.svg":
+/*!***********************************************************!*\
+  !*** ./apps/weather_status/img/moon-cloud-light-rain.svg ***!
+  \***********************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzE4Ljk0IiBoZWlnaHQ9IjI4OS42MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjg1LjA0IDEyNy42YTcuNDIgNy40MiAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NS02LjE1LS40NS03LjktM2E2MS4xIDYxLjEgMCAwMC01MC4zMy0yNi40OCA2MC44OSA2MC44OSAwIDAwLTQxLjE4IDE1Ljk4IDYwLjg4IDYwLjg4IDAgMDAtMTkuNiAzOS4xOSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjczLjM1LTEuNDcuNzMtMi4yIDEuMTMtLjYyLjM0LTEuMjkuNi0xLjk4Ljc1YTQ3LjQ4IDQ3LjQ4IDAgMDAtMjYuMzUgMTYuMyA0Ni4yOSA0Ni4yOSAwIDAwLTEwLjUxIDI5LjU1YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNyA0N2gxNTcuMzRjMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zMyIgcGFpbnQtb3JkZXI9InN0cm9rZSBmaWxsIG1hcmtlcnMiLz48cGF0aCBkPSJNMTE5Ljk1IDI4OS42M2E3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xODIuMTMgMjg5LjYzYTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45My0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTI0NC4zMiAyODkuNjNhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDEwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjUiLz48L2c+PHBhdGggZD0iTTgwLjY2LS45Qzc3LjI5LjE0IDczLjk3IDEuMzIgNzAuNyAyLjY2IDEzLjE1IDI2LjIyLTE0LjUgOTIuMjEgOS4wNyAxNDkuNzdjOC4xOSAyMCAyMS42MSAzNi44NCAzOC44IDQ5LjA3QTYxLjYgNjEuNiAwIDAxMzcuMDcgMTY0YzAtMTQuMyA0LjkzLTI4LjEzIDEzLjk2LTM5LjIyYTYyLjY2IDYyLjY2IDAgMDE1Ljk5LTYuMzYgMTI1LjgyIDEyNS44MiAwIDAxLTEuNjktNzAuMDlBMTI4LjQzIDEyOC40MyAwIDAxODAuNjYtLjg5eiIgZmlsbD0iI2UxYzAxNCIvPjwvc3ZnPg==";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/moon-cloud-rain.svg":
+/*!*****************************************************!*\
+  !*** ./apps/weather_status/img/moon-cloud-rain.svg ***!
+  \*****************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzE4Ljk0IiBoZWlnaHQ9IjI4OS42MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMjg1LjA0IDEyNy42YTcuNDIgNy40MiAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NS02LjE1LS40NS03LjktM2E2MS4xIDYxLjEgMCAwMC01MC4zMy0yNi40OCA2MC44OSA2MC44OSAwIDAwLTQxLjE4IDE1Ljk4IDYwLjg4IDYwLjg4IDAgMDAtMTkuNiAzOS4xOSA3LjQyIDcuNDIgMCAwMS00LjIgNmMtLjczLjM1LTEuNDcuNzMtMi4yIDEuMTMtLjYyLjM0LTEuMjkuNi0xLjk4Ljc1YTQ3LjQ4IDQ3LjQ4IDAgMDAtMjYuMzUgMTYuMyA0Ni4yOSA0Ni4yOSAwIDAwLTEwLjUxIDI5LjU1YzAgMjUuOTIgMjEuMiA0NyA0Ny4yNyA0N2gxNTcuMzRjMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zMyIgcGFpbnQtb3JkZXI9InN0cm9rZSBmaWxsIG1hcmtlcnMiLz48cGF0aCBkPSJNMTI1LjAzIDI4Ny45NGE3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xODcuMjEgMjg3Ljk0YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45My0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTI0OS40IDI4Ny45NGE3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMTAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0xNDkuNjMgMjYwLjhhNy40MyA3LjQzIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE3YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMjExLjgxIDI2MC44YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xN2E3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NSAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2Ii8+PC9nPjxwYXRoIGQ9Ik03OS44Mi0uMDVjLTMuMzcgMS4wMi02LjY5IDIuMi05Ljk2IDMuNTQtNTcuNTUgMjMuNTctODUuMiA4OS41Ni02MS42MyAxNDcuMTIgOC4xOSAyMCAyMS42MSAzNi44NCAzOC44IDQ5LjA3YTYxLjYgNjEuNiAwIDAxLTEwLjgtMzQuODNjMC0xNC4zIDQuOTMtMjguMTMgMTMuOTYtMzkuMjJhNjIuNjYgNjIuNjYgMCAwMTUuOTktNi4zNiAxMjUuODIgMTI1LjgyIDAgMDEtMS42OS03MC4wOUExMjguNDMgMTI4LjQzIDAgMDE3OS44Mi0uMDV6IiBmaWxsPSIjZTFjMDE0Ii8+PC9zdmc+";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/moon-cloud.svg":
+/*!************************************************!*\
+  !*** ./apps/weather_status/img/moon-cloud.svg ***!
+  \************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjM4LjMiIGhlaWdodD0iMjI4LjU3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM2MWM5ZTciPjxwYXRoIGQ9Ik05MS42NCA2Ni41NEw4Ni40NiA4NS45bDE4LjUyLTcuNjYgMTYuOCAxMC45MS0xLjU1LTE5Ljk3IDE1LjU3LTEyLjYyLTE5LjQ4LTQuNjktNy4xOS0xOC43LTEwLjQ4IDE3LjA3LTIwLjAxIDEuMDQgMTMgMTUuMjZNMTc2Ljc5IDQ1LjQ2bC03LjY3LTEwLjMtMy41MSAxMi4zNS0xMi4xNyA0LjEgMTAuNjYgNy4xNi4xNCAxMi44NCAxMC4xLTcuOTIgMTIuMjcgMy44My00LjQyLTEyLjA2IDcuNDMtMTAuNDgtMTIuODMuNDgiLz48cGF0aCBkPSJNMjEyLjE3IDE1NS42NGE1LjI1IDUuMjUgMCAwMS0xLjg3LTIuNzMgMzkuNTIgMzkuNTIgMCAwMC0zNy43OS0yOC4zOGMtMy4yIDAtNi40LjM5LTkuNSAxLjE2YTUuMjkgNS4yOSAwIDAxLTUuNjMtMi4xNCA0My41IDQzLjUgMCAwMC02NS4xNC03LjQ4IDQzLjM1IDQzLjM1IDAgMDAtMTMuOTUgMjcuOSA1LjMgNS4zIDAgMDEtMyA0LjI4Yy0uNTIuMjQtMS4wNC41MS0xLjU2LjgtLjQ0LjI0LS45MS40Mi0xLjQuNTNhMzMuODQgMzMuODQgMCAwMC0xOC43NyAxMS42IDMyLjk5IDMyLjk5IDAgMDAtNy40OCAyMS4wNWMwIDE4LjQ0IDE1LjEgMzMuNDUgMzMuNjUgMzMuNDVoMTEyYzE4LjU2IDAgMzMuNjYtMTUgMzMuNjYtMzMuNDVhMzMuMiAzMy4yIDAgMDAtMTMuMjItMjYuNTkiIHBhaW50LW9yZGVyPSJzdHJva2UgZmlsbCBtYXJrZXJzIi8+PC9nPjxwYXRoIGQ9Ik04Mi45LS4zM2ExMTcuNjIgMTE3LjYyIDAgMDAtMTAuMyAzLjY3QzEzLjA2IDI3LjczLTE1LjU1IDk2IDguODQgMTU1LjU0YTExNi40MyAxMTYuNDMgMCAwMDI2LjM2IDM5LjI0IDQ1LjYyIDQ1LjYyIDAgMDEtMS44Ny0xMi45QTQ2LjMgNDYuMyAwIDAxNDMuNyAxNTIuN2wuMDEtLjAxYTQ2LjU5IDQ2LjU5IDAgMDEyMC41Mi0xNC40N0ExMzAuNCAxMzAuNCAwIDAxNTYuNyA1MC42IDEzMi44OCAxMzIuODggMCAwMTgyLjktLjMyeiIgZmlsbD0iI2UxYzAxNCIvPjwvc3ZnPg==";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/moon-small-cloud.svg":
+/*!******************************************************!*\
+  !*** ./apps/weather_status/img/moon-small-cloud.svg ***!
+  \******************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjM4LjMiIGhlaWdodD0iMjI4LjU3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiM2MWM5ZTciPjxwYXRoIGQ9Ik05OC40MyAxMDIuMTJsLTUuMTkgMTkuMzYgMTguNTMtNy42NSAxNi44IDEwLjktMS41Ni0xOS45NyAxNS41OC0xMi42MS0xOS40OS00LjctNy4xOC0xOC43LTEwLjQ4IDE3LjA4LTIwLjAyIDEuMDQgMTMuMDEgMTUuMjVNMTc2Ljc5IDQ1LjQ2bC03LjY3LTEwLjMtMy41MSAxMi4zNS0xMi4xNyA0LjEgMTAuNjYgNy4xNi4xNCAxMi44NCAxMC4xLTcuOTIgMTIuMjcgMy44My00LjQyLTEyLjA2IDcuNDMtMTAuNDgtMTIuODMuNDgiLz48cGF0aCBkPSJNMjIwLjc2IDE3OS41OWEzLjUzIDMuNTMgMCAwMS0xLjI2LTEuODQgMjYuNTQgMjYuNTQgMCAwMC0zMS43Ni0xOC4yOCAzLjU1IDMuNTUgMCAwMS0zLjc4LTEuNDQgMjkuMjEgMjkuMjEgMCAwMC01My4xMiAxMy43MiAzLjU2IDMuNTYgMCAwMS0yIDIuODdjLS4zNi4xNy0uNzEuMzUtMS4wNi41NC0uMy4xNi0uNjEuMjgtLjk1LjM1YTIyLjczIDIyLjczIDAgMDAtMTIuNiA3LjggMjIuMTUgMjIuMTUgMCAwMC01LjAyIDE0LjEzIDIyLjU2IDIyLjU2IDAgMDAyMi42IDIyLjQ3aDc1LjIzYTIyLjU2IDIyLjU2IDAgMDAyMi42LTIyLjQ3IDIyLjMgMjIuMyAwIDAwLTguODgtMTcuODUiIHBhaW50LW9yZGVyPSJzdHJva2UgZmlsbCBtYXJrZXJzIi8+PC9nPjxwYXRoIGQ9Ik04Mi40Ny0uMDJhMTE3LjYyIDExNy42MiAwIDAwLTEwLjMgMy42N0MxMi42MyAyOC4wMy0xNS45NyA5Ni4zIDguNDEgMTU1Ljg1YTExNS45MSAxMTUuOTEgMCAwMDYyLjkgNjMuNCAxMTYuMTggMTE2LjE4IDAgMDA1NC4zOSA4LjczYy0xNC40LTIuNzQtMjUuNDUtMTUuNDQtMjUuNDUtMzAuNTcgMC0zLjQ2LjU5LTYuODYgMS43LTEwLjA5YTEzMC40MiAxMzAuNDIgMCAwMS00MC4xMi01My4zNSAxMzAuNCAxMzAuNCAwIDAxLTUuNTYtODMuMDZBMTMyLjg4IDEzMi44OCAwIDAxODIuNDctLjAyeiIgZmlsbD0iI2UxYzAxNCIvPjwvc3ZnPg==";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/moon.svg":
+/*!******************************************!*\
+  !*** ./apps/weather_status/img/moon.svg ***!
+  \******************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTg5LjYzIiBoZWlnaHQ9IjIyOC40IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02Mi4xMSAxMzRhMTMwLjQgMTMwLjQgMCAwMS01LjU1LTgzLjA1QTEzMi44OSAxMzIuODkgMCAwMTgyLjc2IDBhMTE3LjY0IDExNy42NCAwIDAwLTEwLjMgMy42N0MxMi45MiAyOC4wNy0xNS43IDk2LjM0IDguNyAxNTUuODhhMTE1LjkxIDExNS45MSAwIDAwNjIuODkgNjMuNCAxMTUuOTMgMTE1LjkzIDAgMDA4OS4zLjM2YzMuMzktMS4zOSA2LjctMi45MiA5LjkyLTQuNjJhMTMyLjY2IDEzMi42NiAwIDAxLTU0LjQtMTcuOTIgMTMwLjQ1IDEzMC40NSAwIDAxLTU0LjMtNjMuMSIgZmlsbD0iI2UxYzAxNCIvPjxwYXRoIGQ9Ik0xMjIuMTUgMTIzLjNsLTUuMTkgMTkuMzcgMTguNTItNy42NSAxNi44MSAxMC45LTEuNTYtMTkuOTcgMTUuNTgtMTIuNjEtMTkuNDktNC43LTcuMTgtMTguNy0xMC40OCAxNy4wOC0yMC4wMiAxLjA0IDEzLjAxIDE1LjI1TTE3Ni43OSA0NS40NmwtNy42Ny0xMC4zLTMuNTEgMTIuMzUtMTIuMTcgNC4xIDEwLjY2IDcuMTYuMTQgMTIuODQgMTAuMS03LjkyIDEyLjI3IDMuODMtNC40Mi0xMi4wNiA3LjQzLTEwLjQ4LTEyLjgzLjQ4IiBmaWxsPSIjNjFjOWU3Ii8+PC9zdmc+";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/rain.svg":
+/*!******************************************!*\
+  !*** ./apps/weather_status/img/rain.svg ***!
+  \******************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUxLjg3IiBoZWlnaHQ9IjIyMy40NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNDcuMjYgMTU1LjlIMjA0LjZjMjYuMDYgMCA0Ny4yNy0yMS4xIDQ3LjI3LTQ3YTQ2LjYgNDYuNiAwIDAwLTE4LjU2LTM3LjM0IDcuNDMgNy40MyAwIDAxLTIuNjQtMy44NSA1NS41IDU1LjUgMCAwMC01My4wOC0zOS44NmMtNC41IDAtOSAuNTQtMTMuMzQgMS42Mi0zIC43NC02LjE1LS40NS03LjktM0E2MS4xIDYxLjEgMCAwMDEwNi4wMSAwYTYwLjg5IDYwLjg5IDAgMDAtNDEuMTggMTUuOTggNjAuODggNjAuODggMCAwMC0xOS42IDM5LjE5IDcuNDIgNy40MiAwIDAxLTQuMiA2Yy0uNzQuMzUtMS40OC43My0yLjIgMS4xMy0uNjIuMzQtMS4yOS42LTEuOTguNzVhNDcuNDcgNDcuNDcgMCAwMC0yNi4zNSAxNi4zQTQ2LjMgNDYuMyAwIDAwMCAxMDguOWMwIDI1LjkyIDIxLjIgNDcgNDcuMjYgNDciIGZpbGw9IiM0NDkyYTgiLz48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNNTUuNTUgMTc5Ljc0YTcuNDIgNy40MiAwIDAwLTQuOTIgOS4yOGw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDEwMTQuMi00LjM1bC04Ljk0LTI5LjE3YTcuNDIgNy40MiAwIDAwLTkuMjgtNC45M00xMTcuNzQgMTc5Ljc0YTcuNDMgNy40MyAwIDAwLTQuOTMgOS4yOGw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwMTQuMi00LjM1bC04Ljk0LTI5LjE3YTcuNDMgNy40MyAwIDAwLTkuMjctNC45M00xNzkuOTIgMTc5Ljc0YTcuNDMgNy40MyAwIDAwLTQuOTIgOS4yOGw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwMTQuMi00LjM1bC04Ljk0LTI5LjE3YTcuNDMgNy40MyAwIDAwLTkuMjgtNC45MyIvPjwvZz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/sun-cloud-heavy-rain.svg":
+/*!**********************************************************!*\
+  !*** ./apps/weather_status/img/sun-cloud-heavy-rain.svg ***!
+  \**********************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjI5MS4zMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTUuNTcgOTIuNTRjMCA5LjI3IDMuNDMgMTguMDIgOS41NCAyNC43NmE2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzggNzUuNzIgNzUuNzIgMCAwMTI1LjYxLTQ1LjggMzYuOTcgMzYuOTcgMCAwMC01Ni4zNyAzMS40IiBmaWxsPSIjZGVjNjBmIi8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTI4OC42IDEyOS4zYTcuNDIgNy40MiAwIDAxLTIuNjMtMy44NUE1NS41IDU1LjUgMCAwMDIzMi45IDg1LjZjLTQuNSAwLTkgLjU0LTEzLjM0IDEuNjItMyAuNzUtNi4xNS0uNDUtNy45LTNhNjEuMSA2MS4xIDAgMDAtNTAuMzMtMjYuNDggNjAuODkgNjAuODkgMCAwMC00MS4xOCAxNS45OCA2MC44OCA2MC44OCAwIDAwLTE5LjYgMzkuMTkgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42Mi4zNC0xLjI5LjYtMS45OC43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjMgNDYuMjkgNDYuMjkgMCAwMC0xMC41MSAyOS41NWMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zM005NS4zNSAyNjMuNzdhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjVNMTU3LjUzIDI2My43N2E3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0yMTkuNzIgMjYzLjc3YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik04NS4wOCA3LjQ1djIwLjg5YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDEwLTE0Ljg1IDBNNjAuNDEgNDQuMzZhNy40MyA3LjQzIDAgMDA2LjQyLTExLjE0TDU2LjQgMTUuMTJhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40NGwxMC40NSAxOC4wOWE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU00MC42MSA1NEwyMi41MiA0My41NmE3LjQzIDcuNDMgMCAxMC03LjQzIDEyLjg2bDE4LjEgMTAuNDVBNy40MyA3LjQzIDAgMDA0MC42MiA1NE0zNS43MyA5Mi41NGMwLTQuMS0zLjMyLTcuNDMtNy40Mi03LjQzSDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMjAuOWM0LjEgMCA3LjQyLTMuMzIgNy40Mi03LjQyTTQwLjYxIDEzMS4wN2E3LjQzIDcuNDMgMCAxMC03LjQyLTEyLjg2bC0xOC4xIDEwLjQ0YTcuNDMgNy40MyAwIDEwNy40MyAxMi44N2wxOC4xLTEwLjQ1TTEyMC45IDQzLjM2YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4wOWE3LjQzIDcuNDMgMCAwMC0xMi44Ni03LjQybC0xMC40NSAxOC4xYTcuNDMgNy40MyAwIDAwMi43MiAxMC4xMyIvPjwvZz48ZyBmaWxsPSIjNjFjOWU3Ij48cGF0aCBkPSJNMTk0LjQxIDI5MC41OWE3LjQxIDcuNDEgMCAwMDcuMS05LjZsLTguOTQtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMTdhNy40MyA3LjQzIDAgMDA3LjEgNS4yNk0xMzIuNyAyODkuMzlhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk1LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjZNMjgwLjE3IDI2MS42YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTI1NC44NiAyODguNDFhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE4YTcuNDMgNy40MyAwIDAwNy4xIDUuMjUiLz48L2c+PC9zdmc+";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/sun-cloud-light-rain.svg":
+/*!**********************************************************!*\
+  !*** ./apps/weather_status/img/sun-cloud-light-rain.svg ***!
+  \**********************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjI5MS4zMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTUuNTcgOTIuNTRjMCA5LjI3IDMuNDMgMTguMDIgOS41NCAyNC43NmE2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzggNzUuNzIgNzUuNzIgMCAwMTI1LjYxLTQ1LjggMzYuOTcgMzYuOTcgMCAwMC01Ni4zNyAzMS40IiBmaWxsPSIjZGVjNjBmIi8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTI4OC42IDEyOS4zYTcuNDIgNy40MiAwIDAxLTIuNjMtMy44NUE1NS41IDU1LjUgMCAwMDIzMi45IDg1LjZjLTQuNSAwLTkgLjU0LTEzLjM0IDEuNjItMyAuNzUtNi4xNS0uNDUtNy45LTNhNjEuMSA2MS4xIDAgMDAtNTAuMzMtMjYuNDggNjAuODkgNjAuODkgMCAwMC00MS4xOCAxNS45OCA2MC44OCA2MC44OCAwIDAwLTE5LjYgMzkuMTkgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42Mi4zNC0xLjI5LjYtMS45OC43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjMgNDYuMjkgNDYuMjkgMCAwMC0xMC41MSAyOS41NWMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zM00xMjMuNTIgMjkxLjMzYTcuNDEgNy40MSAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTE4NS43IDI5MS4zM2E3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTMtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0yNDcuODkgMjkxLjMzYTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik04NS4wOCA3LjQ1djIwLjg5YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDEwLTE0Ljg1IDBNNjAuNDEgNDQuMzZhNy40MyA3LjQzIDAgMDA2LjQyLTExLjE0TDU2LjQgMTUuMTJhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40NGwxMC40NSAxOC4wOWE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU00MC42MSA1NEwyMi41MiA0My41NmE3LjQzIDcuNDMgMCAxMC03LjQzIDEyLjg2bDE4LjEgMTAuNDVBNy40MyA3LjQzIDAgMDA0MC42MiA1NE0zNS43MyA5Mi41NGMwLTQuMS0zLjMyLTcuNDMtNy40Mi03LjQzSDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMjAuOWM0LjEgMCA3LjQyLTMuMzIgNy40Mi03LjQyTTQwLjYxIDEzMS4wN2E3LjQzIDcuNDMgMCAxMC03LjQyLTEyLjg2bC0xOC4xIDEwLjQ0YTcuNDMgNy40MyAwIDEwNy40MyAxMi44N2wxOC4xLTEwLjQ1TTEyMC45IDQzLjM2YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4wOWE3LjQzIDcuNDMgMCAwMC0xMi44Ni03LjQybC0xMC40NSAxOC4xYTcuNDMgNy40MyAwIDAwMi43MiAxMC4xMyIvPjwvZz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/sun-cloud-rain.svg":
+/*!****************************************************!*\
+  !*** ./apps/weather_status/img/sun-cloud-rain.svg ***!
+  \****************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjI5MS4zMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTUuNTcgOTIuNTRjMCA5LjI3IDMuNDMgMTguMDIgOS41NCAyNC43NmE2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzggNzUuNzIgNzUuNzIgMCAwMTI1LjYxLTQ1LjggMzYuOTcgMzYuOTcgMCAwMC01Ni4zNyAzMS40IiBmaWxsPSIjZGVjNjBmIi8+PGcgZmlsbD0iIzYxYzllNyI+PHBhdGggZD0iTTI4OC42IDEyOS4zYTcuNDIgNy40MiAwIDAxLTIuNjMtMy44NUE1NS41IDU1LjUgMCAwMDIzMi45IDg1LjZjLTQuNSAwLTkgLjU0LTEzLjM0IDEuNjItMyAuNzUtNi4xNS0uNDUtNy45LTNhNjEuMSA2MS4xIDAgMDAtNTAuMzMtMjYuNDggNjAuODkgNjAuODkgMCAwMC00MS4xOCAxNS45OCA2MC44OCA2MC44OCAwIDAwLTE5LjYgMzkuMTkgNy40MiA3LjQyIDAgMDEtNC4yIDZjLS43My4zNS0xLjQ3LjczLTIuMiAxLjEzLS42Mi4zNC0xLjI5LjYtMS45OC43NWE0Ny40OCA0Ny40OCAwIDAwLTI2LjM1IDE2LjMgNDYuMjkgNDYuMjkgMCAwMC0xMC41MSAyOS41NWMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42IDQ2LjYgMCAwMC0xOC41Ni0zNy4zM00xMTYuOTIgMjY0Ljk3YTcuNDEgNy40MSAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1TTE3OS4xIDI2NC45N2E3LjQzIDcuNDMgMCAwMDcuMS05LjZsLTguOTMtMjkuMThhNy40MyA3LjQzIDAgMDAtMTQuMiA0LjM1bDguOTQgMjkuMThhNy40MyA3LjQzIDAgMDA3LjEgNS4yNU0yNDEuMjkgMjY0Ljk3YTcuNDMgNy40MyAwIDAwNy4xLTkuNmwtOC45NC0yOS4xOGE3LjQzIDcuNDMgMCAxMC0xNC4yIDQuMzVsOC45NCAyOS4xOGE3LjQzIDcuNDMgMCAwMDcuMSA1LjI1Ii8+PC9nPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik04NS4wOCA3LjQ1djIwLjg5YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDEwLTE0Ljg1IDBNNjAuNDEgNDQuMzZhNy40MyA3LjQzIDAgMDA2LjQyLTExLjE0TDU2LjQgMTUuMTJhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40NGwxMC40NSAxOC4wOWE3LjQyIDcuNDIgMCAwMDYuNDMgMy43MU00MC42MSA1NEwyMi41MiA0My41NmE3LjQzIDcuNDMgMCAxMC03LjQzIDEyLjg2bDE4LjEgMTAuNDVBNy40MyA3LjQzIDAgMDA0MC42MiA1NE0zNS43MyA5Mi41NGMwLTQuMS0zLjMyLTcuNDMtNy40Mi03LjQzSDcuNGE3LjQzIDcuNDMgMCAwMDAgMTQuODVoMjAuOWM0LjEgMCA3LjQyLTMuMzIgNy40Mi03LjQyTTQwLjYxIDEzMS4wN2E3LjQzIDcuNDMgMCAxMC03LjQyLTEyLjg2bC0xOC4xIDEwLjQ0YTcuNDMgNy40MyAwIDEwNy40MyAxMi44N2wxOC4xLTEwLjQ1TTEyMC45IDQzLjM2YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4wOWE3LjQzIDcuNDMgMCAwMC0xMi44Ni03LjQybC0xMC40NSAxOC4xYTcuNDMgNy40MyAwIDAwMi43MiAxMC4xMyIvPjwvZz48cGF0aCBkPSJNMjE1Ljk4IDI5MS43OWE3LjQxIDcuNDEgMCAwMDcuMS05LjZMMjE0LjE1IDI1M2E3LjQzIDcuNDMgMCAwMC0xNC4yIDQuMzVsOC45NSAyOS4xN2E3LjQzIDcuNDMgMCAwMDcuMSA1LjI2TTE1NC4yNyAyOTAuNTlhNy40MSA3LjQxIDAgMDA3LjEtOS42bC04Ljk0LTI5LjE4YTcuNDMgNy40MyAwIDAwLTE0LjIgNC4zNWw4Ljk0IDI5LjE3YTcuNDMgNy40MyAwIDAwNy4xIDUuMjYiIGZpbGw9IiM2MWM5ZTciLz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/sun-cloud.svg":
+/*!***********************************************!*\
+  !*** ./apps/weather_status/img/sun-cloud.svg ***!
+  \***********************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzA3LjE5IiBoZWlnaHQ9IjIxMy42MSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjg4LjYgMTI5LjM3YTcuMzggNy4zOCAwIDAxLTIuNjMtMy44NCA1NS41MSA1NS41MSAwIDAwLTUzLjA4LTM5Ljg3Yy00LjUgMC05IC41NS0xMy4zNCAxLjYzLTMgLjc1LTYuMTUtLjQ1LTcuOS0zYTYxLjEgNjEuMSAwIDAwLTkxLjUxLTEwLjUgNjAuODkgNjAuODkgMCAwMC0xOS42IDM5LjIgNy40NCA3LjQ0IDAgMDEtNC4yIDZjLS43My4zNC0xLjQ3LjcxLTIuMiAxLjExLS42Mi4zNS0xLjI5LjYtMS45OC43NWE0Ny41NCA0Ny41NCAwIDAwLTI2LjM1IDE2LjMgNDYuMzMgNDYuMzMgMCAwMC0xMC41MSAyOS41NmMwIDI1LjkyIDIxLjIgNDcgNDcuMjcgNDdIMjU5LjljMjYuMDYgMCA0Ny4yNi0yMS4wOCA0Ny4yNi00N2E0Ni42MyA0Ni42MyAwIDAwLTE4LjU2LTM3LjM0IiBmaWxsPSIjNjFjOWU3Ii8+PGcgZmlsbD0iI2RlYzYwZiI+PHBhdGggZD0iTTU1LjU3IDkyLjU3YTM2LjcgMzYuNyAwIDAwOS41NCAyNC43NiA2Mi4zNiA2Mi4zNiAwIDAxMjEuMjItMTAuMzkgNzUuNjggNzUuNjggMCAwMTI1LjYxLTQ1Ljc4IDM2Ljk3IDM2Ljk3IDAgMDAtNTYuMzcgMzEuNDFNOTIuNSAzNS43N2M0LjEgMCA3LjQzLTMuMzMgNy40My03LjQzVjcuNDVhNy40MiA3LjQyIDAgMTAtMTQuODUgMHYyMC45YzAgNC4wOSAzLjMzIDcuNDIgNy40MyA3LjQyTTUzLjk3IDQwLjdhNy40MiA3LjQyIDAgMTAxMi44Ny03LjQybC0xMC40NS0xOC4xYTcuNDMgNy40MyAwIDAwLTEyLjg2IDcuNDNsMTAuNDQgMTguMU0xNS4xIDU2LjQ0bDE4LjA5IDEwLjQ1YTcuNDcgNy40NyAwIDAwMTAuMTQtMi43MiA3LjQzIDcuNDMgMCAwMC0yLjcxLTEwLjE1bC0xOC4xLTEwLjQ1YTcuNDMgNy40MyAwIDAwLTcuNDMgMTIuODdNNy40MiAxMDAuMDRIMjguM2E3LjQzIDcuNDMgMCAwMDAtMTQuODZINy40MWE3LjQyIDcuNDIgMCAxMDAgMTQuODZNNDMuMzMgMTIwLjk3YTcuNDIgNy40MiAwIDAwLTEwLjE0LTIuNzJsLTE4LjEgMTAuNDRhNy40MyA3LjQzIDAgMDA3LjQzIDEyLjg2bDE4LjEtMTAuNDRhNy40MyA3LjQzIDAgMDAyLjcxLTEwLjE0TTEyMC45IDQzLjM3YTcuNDIgNy40MiAwIDAwMTAuMTUtMi43MmwxMC40My0xOC4xYTcuNDMgNy40MyAwIDAwLTEyLjg2LTcuNDJsLTEwLjQ1IDE4LjFhNy40MyA3LjQzIDAgMDAyLjcyIDEwLjE0Ii8+PC9nPjwvc3ZnPg==";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/sun-small-cloud.svg":
+/*!*****************************************************!*\
+  !*** ./apps/weather_status/img/sun-small-cloud.svg ***!
+  \*****************************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI1NyAyMTkuNzRhNC4zIDQuMyAwIDAxLTEuNTMtMi4yNCAzMi4zOCAzMi4zOCAwIDAwLTMwLjk2LTIzLjI2Yy0yLjYzIDAtNS4yNS4zMi03Ljc4Ljk1YTQuMzMgNC4zMyAwIDAxLTQuNjEtMS43NSAzNS42MyAzNS42MyAwIDAwLTUzLjM4LTYuMTMgMzUuNTIgMzUuNTIgMCAwMC0xMS40MyAyMi44NyA0LjM0IDQuMzQgMCAwMS0yLjQ1IDMuNWMtLjQyLjItLjg2LjQyLTEuMjguNjUtLjM2LjItLjc1LjM1LTEuMTUuNDRhMjcuNzMgMjcuNzMgMCAwMC0xNS4zNyA5LjUgMjcuMDMgMjcuMDMgMCAwMC02LjEzIDE3LjI1IDI3LjUyIDI3LjUyIDAgMDAyNy41NiAyNy40aDkxLjc3YzE1LjIgMCAyNy41Ny0xMi4yOSAyNy41Ny0yNy40YTI3LjIgMjcuMiAwIDAwLTEwLjgyLTIxLjc4IiBmaWxsPSIjNjFjOWU3IiBwYWludC1vcmRlcj0ic3Ryb2tlIGZpbGwgbWFya2VycyIvPjxnIGZpbGw9IiNkZWM2MGYiPjxwYXRoIGQ9Ik0xNDAuMiA3MC43M0E2OS44NiA2OS44NiAwIDAwNzAuNCAxNDAuNWMwIDMzLjMzIDIzLjUgNjEuMjcgNTQuOCA2OC4xNGE0MC42IDQwLjYgMCAwMTEwLjAzLTUuMSA0OC42MSA0OC42MSAwIDAxMTQuNy0yNS41OGguMDFhNDguNTkgNDguNTkgMCAwMTUzLjUtOC4wNSA2OS4zNSA2OS4zNSAwIDAwNi41Mi0yOS40MSA2OS44NiA2OS44NiAwIDAwLTY5Ljc4LTY5Ljc4em0tLjkgMTMxLjQ0bC0uMS4wNC0uMDQuMDMuMTMtLjA3ek0xMzIuOCAzOC45YTcuNDMgNy40MyAwIDAwMTQuODUgMFY3LjQ0YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBWMzguOU04OS41NCA1OS45MWE3LjQzIDcuNDMgMCAwMDYuNDMtMTEuMTRMODAuMjQgMjEuNTNhNy40MyA3LjQzIDAgMDAtMTIuODYgNy40M0w4My4xIDU2LjJhNy40MiA3LjQyIDAgMDA2LjQzIDMuNzFNMTguNzYgNzAuMTRhNy40MyA3LjQzIDAgMDAyLjcyIDEwLjE1TDQ4LjcyIDk2YTcuNDIgNy40MiAwIDEwNy40My0xMi44NkwyOC45IDY3LjQyYTcuNDMgNy40MyAwIDAwLTEwLjE0IDIuNzJNNDYuMjggMTQwLjI3YzAtNC4xLTMuMzMtNy40Mi03LjQzLTcuNDJINy40YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmM0LjEgMCA3LjQzLTMuMzMgNy40My03LjQzTTI3My4wNSAxMzIuODVoLTMxLjQ2YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmE3LjQzIDcuNDMgMCAwMDAtMTQuODVNNDguNzMgMTg0LjUxTDIxLjUgMjAwLjI0YTcuNDMgNy40MyAwIDEwNy40MiAxMi44NmwyNy4yNS0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQzLTEyLjg2TTI1MS41NCA2Ny40MkwyMjQuMyA4My4xNUE3LjQzIDcuNDMgMCAwMDIzMS43MiA5NmwyNy4yNC0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQyLTEyLjg2TTgzLjEgMjI0LjM0bC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDEyLjg3IDcuNDNsMTUuNzMtMjcuMjVhNy40MyA3LjQzIDAgMDAtMTIuODctNy40Mk0xODcuMiA1OC45MWE3LjQgNy40IDAgMDAxMC4xNC0yLjcxbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDEwLTEyLjg2LTcuNDJsLTE1LjczIDI3LjI0YTcuNDMgNy40MyAwIDAwMi43MSAxMC4xNCIvPjwvZz48L3N2Zz4=";
+
+/***/ }),
+
+/***/ "./apps/weather_status/img/sun.svg":
+/*!*****************************************!*\
+  !*** ./apps/weather_status/img/sun.svg ***!
+  \*****************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwLjUiIGhlaWdodD0iMjgwLjUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZGVjNjBmIj48cGF0aCBkPSJNMTQwLjIyIDIxMC4wNGMzOC40OCAwIDY5Ljc4LTMxLjMgNjkuNzgtNjkuNzhzLTMxLjMtNjkuNzgtNjkuNzgtNjkuNzhjLTM4LjQ3IDAtNjkuNzggMzEuMy02OS43OCA2OS43OHMzMS4zIDY5Ljc4IDY5Ljc4IDY5Ljc4TTEzMi44IDM4LjlhNy40MyA3LjQzIDAgMDAxNC44NSAwVjcuNDRhNy40MyA3LjQzIDAgMDAtMTQuODUgMFYzOC45TTEzMi44IDI0MS42M3YzMS40NmE3LjQzIDcuNDMgMCAwMDE0Ljg1IDB2LTMxLjQ2YTcuNDMgNy40MyAwIDAwLTE0Ljg1IDBNODkuNTQgNTkuOTFhNy40MyA3LjQzIDAgMDA2LjQzLTExLjE0TDgwLjI0IDIxLjUzYTcuNDMgNy40MyAwIDAwLTEyLjg2IDcuNDNMODMuMSA1Ni4yYTcuNDIgNy40MiAwIDAwNi40MyAzLjcxTTE4Ny4yIDIyMS42MmE3LjQzIDcuNDMgMCAwMC0yLjcyIDEwLjE0TDIwMC4yIDI1OWE3LjQyIDcuNDIgMCAxMDEyLjg2LTcuNDJsLTE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDAwLTEwLjE1LTIuNzFNMTguNzYgNzAuMTRhNy40MyA3LjQzIDAgMDAyLjcyIDEwLjE1TDQ4LjcyIDk2YTcuNDIgNy40MiAwIDEwNy40My0xMi44NkwyOC45IDY3LjQyYTcuNDMgNy40MyAwIDAwLTEwLjE0IDIuNzJNMjU4Ljk3IDIwMC4yNGwtMjcuMjUtMTUuNzNhNy40MyA3LjQzIDAgMDAtNy40MiAxMi44N2wyNy4yNCAxNS43M2E3LjQgNy40IDAgMDAxMC4xNC0yLjcyIDcuNDMgNy40MyAwIDAwLTIuNzEtMTAuMTVNNDYuMjggMTQwLjI3YzAtNC4xLTMuMzMtNy40Mi03LjQzLTcuNDJINy40YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmM0LjEgMCA3LjQzLTMuMzMgNy40My03LjQzTTI3My4wNSAxMzIuODVoLTMxLjQ2YTcuNDMgNy40MyAwIDAwMCAxNC44NWgzMS40NmE3LjQzIDcuNDMgMCAwMDAtMTQuODVNNDguNzMgMTg0LjUxTDIxLjUgMjAwLjI0YTcuNDMgNy40MyAwIDEwNy40MiAxMi44NmwyNy4yNS0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQzLTEyLjg2TTI1MS41NCA2Ny40MkwyMjQuMyA4My4xNUE3LjQzIDcuNDMgMCAwMDIzMS43MiA5NmwyNy4yNC0xNS43M2E3LjQzIDcuNDMgMCAwMC03LjQyLTEyLjg2TTgzLjEgMjI0LjM0bC0xNS43MyAyNy4yNGE3LjQzIDcuNDMgMCAwMDEyLjg3IDcuNDNsMTUuNzMtMjcuMjVhNy40MyA3LjQzIDAgMDAtMTIuODctNy40Mk0xODcuMiA1OC45MWE3LjQgNy40IDAgMDAxMC4xNC0yLjcxbDE1LjczLTI3LjI1YTcuNDMgNy40MyAwIDEwLTEyLjg2LTcuNDJsLTE1LjczIDI3LjI0YTcuNDMgNy40MyAwIDAwMi43MSAxMC4xNCIgZmlsbD0iI2RlYzYwZiIvPjwvZz48L3N2Zz4K";
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/amd define */
+/******/ 	!function() {
+/******/ 		__webpack_require__.amdD = function () {
+/******/ 			throw new Error('define cannot be used indirect');
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/amd options */
+/******/ 	!function() {
+/******/ 		__webpack_require__.amdO = {};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	!function() {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = function(result, chunkIds, fn, priority) {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every(function(key) { return __webpack_require__.O[key](chunkIds[j]); })) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	!function() {
+/******/ 		__webpack_require__.nmd = function(module) {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	!function() {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"weather_status-weather-status": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some(function(id) { return installedChunks[id] !== 0; })) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunknextcloud"] = self["webpackChunknextcloud"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["core-common"], function() { return __webpack_require__("./apps/weather_status/src/weather-status.js"); })
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
+/******/ })()
+;
+//# sourceMappingURL=weather_status-weather-status.js.map?v=c10014315f84b8a52dff

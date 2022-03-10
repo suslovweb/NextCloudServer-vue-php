@@ -138,7 +138,7 @@ module.exports = {
 
 	plugins: [
 		new VueLoaderPlugin(),
-		new ESLintPlugin(),
+		// new ESLintPlugin(),
 		new webpack.ProvidePlugin({
 			// Provide jQuery to jquery plugins as some are loaded before $ is exposed globally.
 			jQuery: 'jquery',

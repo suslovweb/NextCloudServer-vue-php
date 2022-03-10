@@ -25,7 +25,13 @@ module.exports = {
 		jsdom: true,
 		sinon: true,
 	},
-	rules: {
-		'node/no-unpublished-import': 'off',
-	},
+	// rules: {
+	// 	'node/no-unpublished-import': 'error',
+	// 	'node/no-unpublished-require': 'error',
+	// },
+	"rules": {
+		"eqeqeq": "off",
+		"curly": "error",
+		"quotes": ["error", "double"]
+	}
 }

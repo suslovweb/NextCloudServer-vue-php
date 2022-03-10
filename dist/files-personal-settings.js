@@ -1,3 +1,1028 @@
-/*! For license information please see files-personal-settings.js.LICENSE.txt */
-!function(){"use strict";var n,e={36091:function(n,e,r){var s,i=r(20144),o=r(22200),a=r(4820),l=r(20296),u=r.n(l),c=r(79753),f=r(26932),d=r(7811),p=r.n(d),h=r(1412),g=r.n(h),v=r(17499),m=null===(s=(0,o.getCurrentUser)())?(0,v.getLoggerBuilder)().setApp("files").build():(0,v.getLoggerBuilder)().setApp("files").setUid(s.uid).build();function b(n,e,t,r,s,i,o){try{var a=n[i](o),l=a.value}catch(n){return void t(n)}a.done?e(l):Promise.resolve(l).then(r,s)}var w=(0,f.fn)(t("files","Choose a file or folder to transfer")).setMultiSelect(!1).setModal(!0).setType(1).allowDirectories().build(),A={name:"TransferOwnershipDialogue",components:{Multiselect:p(),Button:g()},data:function(){return{directory:void 0,directoryPickerError:void 0,submitError:void 0,loadingUsers:!1,selectedUser:null,userSuggestions:{},config:{minSearchStringLength:parseInt(OC.config["sharing.minSearchStringLength"],10)||0}}},computed:{canSubmit:function(){return!!this.directory&&!!this.selectedUser},formatedUserSuggestions:function(){var n=this;return Object.keys(this.userSuggestions).map((function(e){var t=n.userSuggestions[e];return{user:t.uid,displayName:t.displayName,icon:"icon-user"}}))},submitButtonText:function(){if(!this.canSubmit)return t("files","Transfer");var n=this.readableDirectory.split("/");return t("files","Transfer {path} to {userid}",{path:n[n.length-1],userid:this.selectedUser.displayName})},readableDirectory:function(){return this.directory?this.directory.substring(1):""}},created:function(){this.findUserDebounced=u()(this.findUser,300),this.findUser("")},methods:{start:function(){var n=this;this.directoryPickerError=void 0,w.pick().then((function(n){return""===n?"/":n})).then((function(e){if(m.debug("path ".concat(e," selected for transferring ownership")),!e.startsWith("/"))throw new Error(t("files","Invalid path selected"));n.directory=e})).catch((function(e){m.error("Selecting object for transfer aborted: ".concat(e.message||"Unknown error"),{error:e}),n.directoryPickerError=e.message||t("files","Unknown error")}))},findUser:function(n){var e,t=this;return(e=regeneratorRuntime.mark((function e(){var r;return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(t.query=n.trim(),!(n.length<t.config.minSearchStringLength)){e.next=3;break}return e.abrupt("return");case 3:return t.loadingUsers=!0,e.prev=4,e.next=7,a.default.get((0,c.generateOcsUrl)("apps/files_sharing/api/v1/sharees"),{params:{format:"json",itemType:"file",search:n,perPage:20,lookup:!1}});case 7:r=e.sent,t.userSuggestions={},r.data.ocs.data.exact.users.concat(r.data.ocs.data.users).forEach((function(n){i.default.set(t.userSuggestions,n.value.shareWith,{uid:n.value.shareWith,displayName:n.label})})),e.next=15;break;case 12:e.prev=12,e.t0=e.catch(4),m.error("could not fetch users",{error:e.t0});case 15:return e.prev=15,t.loadingUsers=!1,e.finish(15);case 18:case"end":return e.stop()}}),e,null,[[4,12,15,18]])})),function(){var n=this,t=arguments;return new Promise((function(r,s){var i=e.apply(n,t);function o(n){b(i,r,s,o,a,"next",n)}function a(n){b(i,r,s,o,a,"throw",n)}o(void 0)}))})()},submit:function(){var n=this;this.canSubmit||m.warn("ignoring form submit"),this.submitError=void 0;var e={path:this.directory,recipient:this.selectedUser.user};m.debug("submit transfer ownership form",e);var r=(0,c.generateOcsUrl)("apps/files/api/v1/transferownership");a.default.post(r,e).then((function(n){return n.data})).then((function(e){m.info("Transfer ownership request sent",{data:e}),n.directory=void 0,n.selectedUser=null,(0,f.s$)(t("files","Ownership transfer request sent"))})).catch((function(e){var r;m.error("Could not send ownership transfer request",{error:e}),403===(null==e||null===(r=e.response)||void 0===r?void 0:r.status)?n.submitError=t("files","Cannot transfer ownership of a file or folder you don't own"):n.submitError=e.message||t("files","Unknown error")}))}}},y=A,C=r(93379),x=r.n(C),_=r(7795),U=r.n(_),S=r(90569),k=r.n(S),O=r(3565),E=r.n(O),T=r(19216),D=r.n(T),B=r(44589),P=r.n(B),j=r(10811),I={};I.styleTagTransform=P(),I.setAttributes=E(),I.insert=k().bind(null,"head"),I.domAPI=U(),I.insertStyleElement=D(),x()(j.Z,I),j.Z&&j.Z.locals&&j.Z.locals;var M=r(51900),N=(0,M.Z)(y,(function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[t("h3",[n._v(n._s(n.t("files","Transfer ownership of a file or folder"))+" ")]),n._v(" "),t("form",{on:{submit:function(e){return e.preventDefault(),n.submit.apply(null,arguments)}}},[t("p",{staticClass:"transfer-select-row"},[t("span",[n._v(n._s(n.readableDirectory))]),n._v(" "),void 0===n.directory?t("Button",{on:{click:function(e){return e.preventDefault(),n.start.apply(null,arguments)}}},[n._v("\n\t\t\t\t"+n._s(n.t("files","Choose file or folder to transfer"))+"\n\t\t\t")]):t("Button",{on:{click:function(e){return e.preventDefault(),n.start.apply(null,arguments)}}},[n._v("\n\t\t\t\t"+n._s(n.t("files","Change"))+"\n\t\t\t")]),n._v(" "),t("span",{staticClass:"error"},[n._v(n._s(n.directoryPickerError))])],1),n._v(" "),t("p",{staticClass:"new-owner-row"},[t("label",{attrs:{for:"targetUser"}},[t("span",[n._v(n._s(n.t("files","New owner")))])]),n._v(" "),t("Multiselect",{staticClass:"middle-align",attrs:{id:"targetUser",options:n.formatedUserSuggestions,multiple:!1,searchable:!0,placeholder:n.t("files","Search users"),"preselect-first":!0,"preserve-search":!0,loading:n.loadingUsers,"track-by":"user",label:"displayName","internal-search":!1,"clear-on-select":!1,"user-select":!0},on:{"search-change":n.findUserDebounced},model:{value:n.selectedUser,callback:function(e){n.selectedUser=e},expression:"selectedUser"}})],1),n._v(" "),t("p",[t("input",{staticClass:"primary",attrs:{type:"submit",disabled:!n.canSubmit},domProps:{value:n.submitButtonText}}),n._v(" "),t("span",{staticClass:"error"},[n._v(n._s(n.submitError))])])])])}),[],!1,null,"391e65b4",null),Z={name:"PersonalSettings",components:{TransferOwnershipDialogue:N.exports}},q=(0,M.Z)(Z,(function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{staticClass:"section",attrs:{id:"files-personal-settings"}},[t("h2",[n._v(n._s(n.t("files","Files")))]),n._v(" "),t("TransferOwnershipDialogue")],1)}),[],!1,null,null,null).exports;r.nc=btoa((0,o.getRequestToken)()),i.default.prototype.t=t,window.TESTING||(new(i.default.extend(q))).$mount("#files-personal-settings")},10811:function(n,e,t){var r=t(87537),s=t.n(r),i=t(23645),o=t.n(i)()(s());o.push([n.id,".middle-align[data-v-391e65b4]{vertical-align:middle}p[data-v-391e65b4]{margin-top:12px;margin-bottom:12px}.new-owner-row[data-v-391e65b4]{display:flex}.new-owner-row label[data-v-391e65b4]{display:flex;align-items:center}.new-owner-row label span[data-v-391e65b4]{margin-right:8px}.new-owner-row .multiselect[data-v-391e65b4]{flex-grow:1;max-width:280px}.transfer-select-row span[data-v-391e65b4]{margin-right:8px}","",{version:3,sources:["webpack://./apps/files/src/components/TransferOwnershipDialogue.vue"],names:[],mappings:"AAkOA,+BACC,qBAAA,CAED,mBACC,eAAA,CACA,kBAAA,CAED,gCACC,YAAA,CAEA,sCACC,YAAA,CACA,kBAAA,CAEA,2CACC,gBAAA,CAIF,6CACC,WAAA,CACA,eAAA,CAID,2CACC,gBAAA",sourcesContent:["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.middle-align {\n\tvertical-align: middle;\n}\np {\n\tmargin-top: 12px;\n\tmargin-bottom: 12px;\n}\n.new-owner-row {\n\tdisplay: flex;\n\n\tlabel {\n\t\tdisplay: flex;\n\t\talign-items: center;\n\n\t\tspan {\n\t\t\tmargin-right: 8px;\n\t\t}\n\t}\n\n\t.multiselect {\n\t\tflex-grow: 1;\n\t\tmax-width: 280px;\n\t}\n}\n.transfer-select-row {\n\tspan {\n\t\tmargin-right: 8px;\n\t}\n}\n"],sourceRoot:""}]),e.Z=o}},r={};function s(n){var t=r[n];if(void 0!==t)return t.exports;var i=r[n]={id:n,loaded:!1,exports:{}};return e[n].call(i.exports,i,i.exports,s),i.loaded=!0,i.exports}s.m=e,s.amdD=function(){throw new Error("define cannot be used indirect")},s.amdO={},n=[],s.O=function(e,t,r,i){if(!t){var o=1/0;for(c=0;c<n.length;c++){t=n[c][0],r=n[c][1],i=n[c][2];for(var a=!0,l=0;l<t.length;l++)(!1&i||o>=i)&&Object.keys(s.O).every((function(n){return s.O[n](t[l])}))?t.splice(l--,1):(a=!1,i<o&&(o=i));if(a){n.splice(c--,1);var u=r();void 0!==u&&(e=u)}}return e}i=i||0;for(var c=n.length;c>0&&n[c-1][2]>i;c--)n[c]=n[c-1];n[c]=[t,r,i]},s.n=function(n){var e=n&&n.__esModule?function(){return n.default}:function(){return n};return s.d(e,{a:e}),e},s.d=function(n,e){for(var t in e)s.o(e,t)&&!s.o(n,t)&&Object.defineProperty(n,t,{enumerable:!0,get:e[t]})},s.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(n){if("object"==typeof window)return window}}(),s.o=function(n,e){return Object.prototype.hasOwnProperty.call(n,e)},s.r=function(n){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(n,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(n,"__esModule",{value:!0})},s.nmd=function(n){return n.paths=[],n.children||(n.children=[]),n},s.j=623,function(){s.b=document.baseURI||self.location.href;var n={623:0};s.O.j=function(e){return 0===n[e]};var e=function(e,t){var r,i,o=t[0],a=t[1],l=t[2],u=0;if(o.some((function(e){return 0!==n[e]}))){for(r in a)s.o(a,r)&&(s.m[r]=a[r]);if(l)var c=l(s)}for(e&&e(t);u<o.length;u++)i=o[u],s.o(n,i)&&n[i]&&n[i][0](),n[i]=0;return s.O(c)},t=self.webpackChunknextcloud=self.webpackChunknextcloud||[];t.forEach(e.bind(null,0)),t.push=e.bind(null,t.push.bind(t))}();var i=s.O(void 0,[874],(function(){return s(36091)}));i=s.O(i)}();
-//# sourceMappingURL=files-personal-settings.js.map?v=a6690b8126c155b3b468
+/******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./apps/files/src/logger.js":
+/*!**********************************!*\
+  !*** ./apps/files/src/logger.js ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _nextcloud_auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nextcloud/auth */ "./node_modules/@nextcloud/auth/dist/index.js");
+/* harmony import */ var _nextcloud_logger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @nextcloud/logger */ "./node_modules/@nextcloud/logger/dist/index.js");
+/**
+ * @copyright 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
+ *
+ * @author Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @author Roeland Jago Douma <roeland@famdouma.nl>
+ *
+ * @license AGPL-3.0-or-later
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+
+
+var getLogger = function getLogger(user) {
+  if (user === null) {
+    return (0,_nextcloud_logger__WEBPACK_IMPORTED_MODULE_1__.getLoggerBuilder)().setApp('files').build();
+  }
+
+  return (0,_nextcloud_logger__WEBPACK_IMPORTED_MODULE_1__.getLoggerBuilder)().setApp('files').setUid(user.uid).build();
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (getLogger((0,_nextcloud_auth__WEBPACK_IMPORTED_MODULE_0__.getCurrentUser)()));
+
+/***/ }),
+
+/***/ "./apps/files/src/main-personal-settings.js":
+/*!**************************************************!*\
+  !*** ./apps/files/src/main-personal-settings.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
+/* harmony import */ var _nextcloud_auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nextcloud/auth */ "./node_modules/@nextcloud/auth/dist/index.js");
+/* harmony import */ var _components_PersonalSettings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/PersonalSettings */ "./apps/files/src/components/PersonalSettings.vue");
+/**
+ * @copyright 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @copyright 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
+ * @copyright 2019 Christoph Wurst <christoph@winzerhof-wurst.at>
+ *
+ * @author Roeland Jago Douma <roeland@famdouma.nl>
+ *
+ * @license AGPL-3.0-or-later
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+
+ // eslint-disable-next-line camelcase
+
+__webpack_require__.nc = btoa((0,_nextcloud_auth__WEBPACK_IMPORTED_MODULE_0__.getRequestToken)());
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.t = t;
+
+if (!window.TESTING) {
+  var View = vue__WEBPACK_IMPORTED_MODULE_2__["default"].extend(_components_PersonalSettings__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  new View().$mount('#files-personal-settings');
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/PersonalSettings.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/PersonalSettings.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TransferOwnershipDialogue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TransferOwnershipDialogue */ "./apps/files/src/components/TransferOwnershipDialogue.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'PersonalSettings',
+  components: {
+    TransferOwnershipDialogue: _TransferOwnershipDialogue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @nextcloud/axios */ "./node_modules/@nextcloud/axios/dist/index.js");
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! debounce */ "./node_modules/debounce/index.js");
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(debounce__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _nextcloud_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @nextcloud/router */ "./node_modules/@nextcloud/router/dist/index.js");
+/* harmony import */ var _nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @nextcloud/dialogs */ "./node_modules/@nextcloud/dialogs/dist/index.es.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/Multiselect */ "./node_modules/@nextcloud/vue/dist/Components/Multiselect.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @nextcloud/vue/dist/Components/Button */ "./node_modules/@nextcloud/vue/dist/Components/Button.js");
+/* harmony import */ var _nextcloud_vue_dist_Components_Button__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_nextcloud_vue_dist_Components_Button__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../logger */ "./apps/files/src/logger.js");
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+var picker = (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_3__.getFilePickerBuilder)(t('files', 'Choose a file or folder to transfer')).setMultiSelect(false).setModal(true).setType(1).allowDirectories().build();
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'TransferOwnershipDialogue',
+  components: {
+    Multiselect: (_nextcloud_vue_dist_Components_Multiselect__WEBPACK_IMPORTED_MODULE_4___default()),
+    Button: (_nextcloud_vue_dist_Components_Button__WEBPACK_IMPORTED_MODULE_5___default())
+  },
+  data: function data() {
+    return {
+      directory: undefined,
+      directoryPickerError: undefined,
+      submitError: undefined,
+      loadingUsers: false,
+      selectedUser: null,
+      userSuggestions: {},
+      config: {
+        minSearchStringLength: parseInt(OC.config['sharing.minSearchStringLength'], 10) || 0
+      }
+    };
+  },
+  computed: {
+    canSubmit: function canSubmit() {
+      return !!this.directory && !!this.selectedUser;
+    },
+    formatedUserSuggestions: function formatedUserSuggestions() {
+      var _this = this;
+
+      return Object.keys(this.userSuggestions).map(function (uid) {
+        var user = _this.userSuggestions[uid];
+        return {
+          user: user.uid,
+          displayName: user.displayName,
+          icon: 'icon-user'
+        };
+      });
+    },
+    submitButtonText: function submitButtonText() {
+      if (!this.canSubmit) {
+        return t('files', 'Transfer');
+      }
+
+      var components = this.readableDirectory.split('/');
+      return t('files', 'Transfer {path} to {userid}', {
+        path: components[components.length - 1],
+        userid: this.selectedUser.displayName
+      });
+    },
+    readableDirectory: function readableDirectory() {
+      if (!this.directory) {
+        return '';
+      }
+
+      return this.directory.substring(1);
+    }
+  },
+  created: function created() {
+    this.findUserDebounced = debounce__WEBPACK_IMPORTED_MODULE_1___default()(this.findUser, 300);
+    this.findUser('');
+  },
+  methods: {
+    start: function start() {
+      var _this2 = this;
+
+      this.directoryPickerError = undefined;
+      picker.pick().then(function (dir) {
+        return dir === '' ? '/' : dir;
+      }).then(function (dir) {
+        _logger__WEBPACK_IMPORTED_MODULE_6__["default"].debug("path ".concat(dir, " selected for transferring ownership"));
+
+        if (!dir.startsWith('/')) {
+          throw new Error(t('files', 'Invalid path selected'));
+        } // /ocs/v2.php/apps/files/api/v1/transferownership
+        // /ocs/v2.php/apps/files/api/v1/transferownership
+
+
+        _this2.directory = dir;
+      }).catch(function (error) {
+        _logger__WEBPACK_IMPORTED_MODULE_6__["default"].error("Selecting object for transfer aborted: ".concat(error.message || 'Unknown error'), {
+          error: error
+        });
+        _this2.directoryPickerError = error.message || t('files', 'Unknown error');
+      });
+    },
+    findUser: function findUser(query) {
+      var _this3 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+        var response;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _this3.query = query.trim();
+
+                if (!(query.length < _this3.config.minSearchStringLength)) {
+                  _context.next = 3;
+                  break;
+                }
+
+                return _context.abrupt("return");
+
+              case 3:
+                _this3.loadingUsers = true;
+                _context.prev = 4;
+                _context.next = 7;
+                return _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].get((0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_2__.generateOcsUrl)('apps/files_sharing/api/v1/sharees'), {
+                  params: {
+                    format: 'json',
+                    itemType: 'file',
+                    search: query,
+                    perPage: 20,
+                    lookup: false
+                  }
+                });
+
+              case 7:
+                response = _context.sent;
+                _this3.userSuggestions = {};
+                response.data.ocs.data.exact.users.concat(response.data.ocs.data.users).forEach(function (user) {
+                  vue__WEBPACK_IMPORTED_MODULE_7__["default"].set(_this3.userSuggestions, user.value.shareWith, {
+                    uid: user.value.shareWith,
+                    displayName: user.label
+                  });
+                });
+                _context.next = 15;
+                break;
+
+              case 12:
+                _context.prev = 12;
+                _context.t0 = _context["catch"](4);
+                _logger__WEBPACK_IMPORTED_MODULE_6__["default"].error('could not fetch users', {
+                  error: _context.t0
+                });
+
+              case 15:
+                _context.prev = 15;
+                _this3.loadingUsers = false;
+                return _context.finish(15);
+
+              case 18:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, null, [[4, 12, 15, 18]]);
+      }))();
+    },
+    submit: function submit() {
+      var _this4 = this;
+
+      if (!this.canSubmit) {
+        _logger__WEBPACK_IMPORTED_MODULE_6__["default"].warn('ignoring form submit');
+      }
+
+      this.submitError = undefined;
+      var data = {
+        path: this.directory,
+        recipient: this.selectedUser.user
+      };
+      _logger__WEBPACK_IMPORTED_MODULE_6__["default"].debug('submit transfer ownership form', data);
+      var url = (0,_nextcloud_router__WEBPACK_IMPORTED_MODULE_2__.generateOcsUrl)('apps/files/api/v1/transferownership');
+      _nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"].post(url, data).then(function (resp) {
+        return resp.data;
+      }).then(function (data) {
+        _logger__WEBPACK_IMPORTED_MODULE_6__["default"].info('Transfer ownership request sent', {
+          data: data
+        });
+        _this4.directory = undefined;
+        _this4.selectedUser = null;
+        (0,_nextcloud_dialogs__WEBPACK_IMPORTED_MODULE_3__.showSuccess)(t('files', 'Ownership transfer request sent'));
+      }).catch(function (error) {
+        var _error$response;
+
+        _logger__WEBPACK_IMPORTED_MODULE_6__["default"].error('Could not send ownership transfer request', {
+          error: error
+        });
+
+        if ((error === null || error === void 0 ? void 0 : (_error$response = error.response) === null || _error$response === void 0 ? void 0 : _error$response.status) === 403) {
+          _this4.submitError = t('files', 'Cannot transfer ownership of a file or folder you don\'t own');
+        } else {
+          _this4.submitError = error.message || t('files', 'Unknown error');
+        }
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ "./node_modules/css-loader/dist/runtime/noSourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".middle-align[data-v-76fb0136] {\n  vertical-align: middle;\n}\np[data-v-76fb0136] {\n  margin-top: 12px;\n  margin-bottom: 12px;\n}\n.new-owner-row[data-v-76fb0136] {\n  display: flex;\n}\n.new-owner-row label[data-v-76fb0136] {\n  display: flex;\n  align-items: center;\n}\n.new-owner-row label span[data-v-76fb0136] {\n  margin-right: 8px;\n}\n.new-owner-row .multiselect[data-v-76fb0136] {\n  flex-grow: 1;\n  max-width: 280px;\n}\n.transfer-select-row span[data-v-76fb0136] {\n  margin-right: 8px;\n}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_style_index_0_id_76fb0136_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss&");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_style_index_0_id_76fb0136_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_style_index_0_id_76fb0136_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_style_index_0_id_76fb0136_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_style_index_0_id_76fb0136_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./apps/files/src/components/PersonalSettings.vue":
+/*!********************************************************!*\
+  !*** ./apps/files/src/components/PersonalSettings.vue ***!
+  \********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PersonalSettings_vue_vue_type_template_id_1cf5236a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PersonalSettings.vue?vue&type=template&id=1cf5236a& */ "./apps/files/src/components/PersonalSettings.vue?vue&type=template&id=1cf5236a&");
+/* harmony import */ var _PersonalSettings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PersonalSettings.vue?vue&type=script&lang=js& */ "./apps/files/src/components/PersonalSettings.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PersonalSettings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PersonalSettings_vue_vue_type_template_id_1cf5236a___WEBPACK_IMPORTED_MODULE_0__.render,
+  _PersonalSettings_vue_vue_type_template_id_1cf5236a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "apps/files/src/components/PersonalSettings.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./apps/files/src/components/TransferOwnershipDialogue.vue":
+/*!*****************************************************************!*\
+  !*** ./apps/files/src/components/TransferOwnershipDialogue.vue ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TransferOwnershipDialogue_vue_vue_type_template_id_76fb0136_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true& */ "./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true&");
+/* harmony import */ var _TransferOwnershipDialogue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TransferOwnershipDialogue.vue?vue&type=script&lang=js& */ "./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=script&lang=js&");
+/* harmony import */ var _TransferOwnershipDialogue_vue_vue_type_style_index_0_id_76fb0136_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss& */ "./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _TransferOwnershipDialogue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TransferOwnershipDialogue_vue_vue_type_template_id_76fb0136_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _TransferOwnershipDialogue_vue_vue_type_template_id_76fb0136_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "76fb0136",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "apps/files/src/components/TransferOwnershipDialogue.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./apps/files/src/components/PersonalSettings.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./apps/files/src/components/PersonalSettings.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalSettings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PersonalSettings.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/PersonalSettings.vue?vue&type=script&lang=js&");
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalSettings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************!*\
+  !*** ./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TransferOwnershipDialogue.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=script&lang=js&");
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss&":
+/*!***************************************************************************************************************************!*\
+  !*** ./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss& ***!
+  \***************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_style_index_0_id_76fb0136_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=style&index=0&id=76fb0136&scoped=true&lang=scss&");
+
+
+/***/ }),
+
+/***/ "./apps/files/src/components/PersonalSettings.vue?vue&type=template&id=1cf5236a&":
+/*!***************************************************************************************!*\
+  !*** ./apps/files/src/components/PersonalSettings.vue?vue&type=template&id=1cf5236a& ***!
+  \***************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalSettings_vue_vue_type_template_id_1cf5236a___WEBPACK_IMPORTED_MODULE_0__.render; },
+/* harmony export */   "staticRenderFns": function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalSettings_vue_vue_type_template_id_1cf5236a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns; }
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalSettings_vue_vue_type_template_id_1cf5236a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PersonalSettings.vue?vue&type=template&id=1cf5236a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/PersonalSettings.vue?vue&type=template&id=1cf5236a&");
+
+
+/***/ }),
+
+/***/ "./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true&":
+/*!************************************************************************************************************!*\
+  !*** ./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true& ***!
+  \************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_template_id_76fb0136_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render; },
+/* harmony export */   "staticRenderFns": function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_template_id_76fb0136_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns; }
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TransferOwnershipDialogue_vue_vue_type_template_id_76fb0136_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true&");
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/PersonalSettings.vue?vue&type=template&id=1cf5236a&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/PersonalSettings.vue?vue&type=template&id=1cf5236a& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": function() { return /* binding */ render; },
+/* harmony export */   "staticRenderFns": function() { return /* binding */ staticRenderFns; }
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "section", attrs: { id: "files-personal-settings" } },
+    [
+      _c("h2", [_vm._v(_vm._s(_vm.t("files", "Files")))]),
+      _vm._v(" "),
+      _c("TransferOwnershipDialogue"),
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./apps/files/src/components/TransferOwnershipDialogue.vue?vue&type=template&id=76fb0136&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": function() { return /* binding */ render; },
+/* harmony export */   "staticRenderFns": function() { return /* binding */ staticRenderFns; }
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("h3", [
+      _vm._v(
+        _vm._s(_vm.t("files", "Transfer ownership of a file or folder")) + " "
+      ),
+    ]),
+    _vm._v(" "),
+    _c(
+      "form",
+      {
+        on: {
+          submit: function ($event) {
+            $event.preventDefault()
+            return _vm.submit.apply(null, arguments)
+          },
+        },
+      },
+      [
+        _c(
+          "p",
+          { staticClass: "transfer-select-row" },
+          [
+            _c("span", [_vm._v(_vm._s(_vm.readableDirectory))]),
+            _vm._v(" "),
+            _vm.directory === undefined
+              ? _c(
+                  "Button",
+                  {
+                    on: {
+                      click: function ($event) {
+                        $event.preventDefault()
+                        return _vm.start.apply(null, arguments)
+                      },
+                    },
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t\t" +
+                        _vm._s(
+                          _vm.t("files", "Choose file or folder to transfer")
+                        ) +
+                        "\n\t\t\t"
+                    ),
+                  ]
+                )
+              : _c(
+                  "Button",
+                  {
+                    on: {
+                      click: function ($event) {
+                        $event.preventDefault()
+                        return _vm.start.apply(null, arguments)
+                      },
+                    },
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t\t" +
+                        _vm._s(_vm.t("files", "Change")) +
+                        "\n\t\t\t"
+                    ),
+                  ]
+                ),
+            _vm._v(" "),
+            _c("span", { staticClass: "error" }, [
+              _vm._v(_vm._s(_vm.directoryPickerError)),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "p",
+          { staticClass: "new-owner-row" },
+          [
+            _c("label", { attrs: { for: "targetUser" } }, [
+              _c("span", [_vm._v(_vm._s(_vm.t("files", "New owner")))]),
+            ]),
+            _vm._v(" "),
+            _c("Multiselect", {
+              staticClass: "middle-align",
+              attrs: {
+                id: "targetUser",
+                options: _vm.formatedUserSuggestions,
+                multiple: false,
+                searchable: true,
+                placeholder: _vm.t("files", "Search users"),
+                "preselect-first": true,
+                "preserve-search": true,
+                loading: _vm.loadingUsers,
+                "track-by": "user",
+                label: "displayName",
+                "internal-search": false,
+                "clear-on-select": false,
+                "user-select": true,
+              },
+              on: { "search-change": _vm.findUserDebounced },
+              model: {
+                value: _vm.selectedUser,
+                callback: function ($$v) {
+                  _vm.selectedUser = $$v
+                },
+                expression: "selectedUser",
+              },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("p", [
+          _c("input", {
+            staticClass: "primary",
+            attrs: { type: "submit", disabled: !_vm.canSubmit },
+            domProps: { value: _vm.submitButtonText },
+          }),
+          _vm._v(" "),
+          _c("span", { staticClass: "error" }, [
+            _vm._v(_vm._s(_vm.submitError)),
+          ]),
+        ]),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/amd define */
+/******/ 	!function() {
+/******/ 		__webpack_require__.amdD = function () {
+/******/ 			throw new Error('define cannot be used indirect');
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/amd options */
+/******/ 	!function() {
+/******/ 		__webpack_require__.amdO = {};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	!function() {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = function(result, chunkIds, fn, priority) {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every(function(key) { return __webpack_require__.O[key](chunkIds[j]); })) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	!function() {
+/******/ 		__webpack_require__.nmd = function(module) {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	!function() {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"files-personal-settings": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some(function(id) { return installedChunks[id] !== 0; })) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunknextcloud"] = self["webpackChunknextcloud"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["core-common"], function() { return __webpack_require__("./apps/files/src/main-personal-settings.js"); })
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
+/******/ })()
+;
+//# sourceMappingURL=files-personal-settings.js.map?v=8150f2da90d68d105b9c
