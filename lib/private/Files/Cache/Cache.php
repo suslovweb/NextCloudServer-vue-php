@@ -191,6 +191,7 @@ class Cache implements ICache {
 		$data['storage_mtime'] = (int)$data['storage_mtime'];
 		$data['encryptedVersion'] = (int)$data['encrypted'];
 		$data['encrypted'] = (bool)$data['encrypted'];
+		$data['publish_check'] = (bool)$data['publish_check'];
 		$data['storage_id'] = $data['storage'];
 		$data['storage'] = (int)$data['storage'];
 		$data['mimetype'] = $mimetypeLoader->getMimetypeById($data['mimetype']);
@@ -426,7 +427,7 @@ class Cache implements ICache {
 	 */
 	protected function normalizeData(array $data): array {
 		$fields = [
-			'path', 'parent', 'name', 'mimetype', 'size', 'mtime', 'storage_mtime', 'encrypted',
+			'path', 'parent', 'name', 'mimetype', 'size', 'mtime', 'storage_mtime', 'encrypted', 'publish_check',
 			'etag', 'permissions', 'checksum', 'storage'];
 		$extensionFields = ['metadata_etag', 'creation_time', 'upload_time'];
 

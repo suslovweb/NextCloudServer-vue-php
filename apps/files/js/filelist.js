@@ -1865,6 +1865,7 @@
 			);
 			tr.find('.filesize').text(simpleSize);
 			tr.append(td);
+			console.log(fileData,'############')
 			return tr;
 		},
 

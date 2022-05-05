@@ -113,6 +113,10 @@ class CacheEntry implements ICacheEntry {
 		return isset($this->data['encrypted']) && $this->data['encrypted'];
 	}
 
+	public function isPublished() {
+		return $this->data['publish_check'];
+	}
+
 	public function getMetadataEtag(): ?string {
 		return $this->data['metadata_etag'];
 	}

@@ -140,6 +140,14 @@ interface ICacheEntry extends ArrayAccess {
 	public function isEncrypted();
 
 	/**
+	 * Check if the file is checked by admin
+	 *
+	 * @return bool
+	 * @custom value
+	 */
+	public function isPublished();
+
+	/**
 	 * Get the metadata etag for the file
 	 *
 	 * @return string | null

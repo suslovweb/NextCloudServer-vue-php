@@ -118,6 +118,7 @@ __webpack_require__.r(__webpack_exports__);
   Client.PROPERTY_SIZE = '{' + Client.NS_OWNCLOUD + '}size';
   Client.PROPERTY_GETCONTENTLENGTH = '{' + Client.NS_DAV + '}getcontentlength';
   Client.PROPERTY_ISENCRYPTED = '{' + Client.NS_DAV + '}is-encrypted';
+  Client.PROPERTY_ISPUBLISHED = '{' + Client.NS_DAV + '}is-published';
   Client.PROPERTY_SHARE_PERMISSIONS = '{' + Client.NS_OCS + '}share-permissions';
   Client.PROPERTY_QUOTA_AVAILABLE_BYTES = '{' + Client.NS_DAV + '}quota-available-bytes';
   Client.PROTOCOL_HTTP = 'http';
@@ -168,6 +169,10 @@ __webpack_require__.r(__webpack_exports__);
    * Encryption state
    */
   [Client.NS_NEXTCLOUD, 'is-encrypted'],
+  /**
+   * Publish state
+   */
+  [Client.NS_NEXTCLOUD, 'is-published'],
   /**
    * Share permissions
    */
@@ -335,6 +340,7 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       var props = response.propStat[0].properties;
+      console.log(props, "@@@@@@@@@@");
       var data = {
         id: props[Client.PROPERTY_INTERNAL_FILEID],
         path: OC.dirname(path) || '/',
@@ -371,6 +377,14 @@ __webpack_require__.r(__webpack_exports__);
 
       if (!_.isUndefined(isEncryptedProp)) {
         data.isEncrypted = isEncryptedProp === '1';
+      } else {
+        data.isEncrypted = false;
+      }
+
+      var isPublishedProp = props['{' + Client.NS_NEXTCLOUD + '}is-published'];
+
+      if (!_.isUndefined(isPublishedProp)) {
+        data.isPublished = isPublishedProp === '1';
       } else {
         data.isEncrypted = false;
       }
@@ -1220,4 +1234,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=core-files_client.js.map?v=800d40939f5303519baa
+//# sourceMappingURL=core-files_client.js.map?v=a9a414b8d7c2a506cbde

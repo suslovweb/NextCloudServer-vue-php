@@ -46,6 +46,7 @@ export default async function(url) {
 				<nc:has-preview />
 				<nc:mount-type />
 				<nc:is-encrypted />
+				<nc:is-published />
 				<ocs:share-permissions />
 				<oc:tags />
 				<oc:favorite />

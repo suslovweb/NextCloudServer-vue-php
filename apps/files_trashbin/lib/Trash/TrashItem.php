@@ -123,6 +123,10 @@ class TrashItem implements ITrashItem {
 		return $this->fileInfo->isEncrypted();
 	}
 
+	public function isPublished() {
+		return $this->fileInfo->isPublished();
+	}
+
 	public function getPermissions() {
 		return $this->fileInfo->getPermissions();
 	}

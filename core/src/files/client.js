@@ -103,6 +103,7 @@ import escapeHTML from 'escape-html'
 	Client.PROPERTY_SIZE	= '{' + Client.NS_OWNCLOUD + '}size'
 	Client.PROPERTY_GETCONTENTLENGTH	= '{' + Client.NS_DAV + '}getcontentlength'
 	Client.PROPERTY_ISENCRYPTED	= '{' + Client.NS_DAV + '}is-encrypted'
+	Client.PROPERTY_ISPUBLISHED	= '{' + Client.NS_DAV + '}is-published'
 	Client.PROPERTY_SHARE_PERMISSIONS	= '{' + Client.NS_OCS + '}share-permissions'
 	Client.PROPERTY_QUOTA_AVAILABLE_BYTES	= '{' + Client.NS_DAV + '}quota-available-bytes'
 
@@ -156,6 +157,10 @@ import escapeHTML from 'escape-html'
 		 * Encryption state
 		 */
 		[Client.NS_NEXTCLOUD, 'is-encrypted'],
+		/**
+		 * Publish state
+		 */
+		 [Client.NS_NEXTCLOUD, 'is-published'],
 		/**
 		 * Share permissions
 		 */
@@ -313,7 +318,7 @@ import escapeHTML from 'escape-html'
 			}
 
 			const props = response.propStat[0].properties
-
+console.log(props,"@@@@@@@@@@")
 			const data = {
 				id: props[Client.PROPERTY_INTERNAL_FILEID],
 				path: OC.dirname(path) || '/',
@@ -346,6 +351,13 @@ import escapeHTML from 'escape-html'
 			const isEncryptedProp = props['{' + Client.NS_NEXTCLOUD + '}is-encrypted']
 			if (!_.isUndefined(isEncryptedProp)) {
 				data.isEncrypted = isEncryptedProp === '1'
+			} else {
+				data.isEncrypted = false
+			}
+
+			const isPublishedProp = props['{' + Client.NS_NEXTCLOUD + '}is-published']
+			if (!_.isUndefined(isPublishedProp)) {
+				data.isPublished = isPublishedProp === '1'
 			} else {
 				data.isEncrypted = false
 			}

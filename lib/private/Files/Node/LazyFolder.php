@@ -306,6 +306,13 @@ class LazyFolder implements \OCP\Files\Folder {
 	/**
 	 * @inheritDoc
 	 */
+	public function isPublished() {
+		return $this->__call(__FUNCTION__, func_get_args());
+	}
+
+	/**
+	 * @inheritDoc
+	 */
 	public function getType() {
 		return $this->__call(__FUNCTION__, func_get_args());
 	}

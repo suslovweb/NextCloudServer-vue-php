@@ -162,6 +162,14 @@ interface FileInfo {
 	public function isEncrypted();
 
 	/**
+	 * Check whether the file is checked by admin
+	 *
+	 * @return bool
+	 * @custom value
+	 */
+	public function isPublished();
+
+	/**
 	 * Get the permissions of the file or folder as bitmasked combination of the following constants
 	 * \OCP\Constants::PERMISSION_CREATE
 	 * \OCP\Constants::PERMISSION_READ

@@ -528,7 +528,7 @@ function _ref() {
             return (0,_nextcloud_axios__WEBPACK_IMPORTED_MODULE_0__["default"])({
               method: 'PROPFIND',
               url: url,
-              data: "<?xml version=\"1.0\"?>\n\t\t\t<d:propfind  xmlns:d=\"DAV:\"\n\t\t\t\txmlns:oc=\"http://owncloud.org/ns\"\n\t\t\t\txmlns:nc=\"http://nextcloud.org/ns\"\n\t\t\t\txmlns:ocs=\"http://open-collaboration-services.org/ns\">\n\t\t\t<d:prop>\n\t\t\t\t<d:getlastmodified />\n\t\t\t\t<d:getetag />\n\t\t\t\t<d:getcontenttype />\n\t\t\t\t<d:resourcetype />\n\t\t\t\t<oc:fileid />\n\t\t\t\t<oc:permissions />\n\t\t\t\t<oc:size />\n\t\t\t\t<d:getcontentlength />\n\t\t\t\t<nc:has-preview />\n\t\t\t\t<nc:mount-type />\n\t\t\t\t<nc:is-encrypted />\n\t\t\t\t<ocs:share-permissions />\n\t\t\t\t<oc:tags />\n\t\t\t\t<oc:favorite />\n\t\t\t\t<oc:comments-unread />\n\t\t\t\t<oc:owner-id />\n\t\t\t\t<oc:owner-display-name />\n\t\t\t\t<oc:share-types />\n\t\t\t</d:prop>\n\t\t\t</d:propfind>"
+              data: "<?xml version=\"1.0\"?>\n\t\t\t<d:propfind  xmlns:d=\"DAV:\"\n\t\t\t\txmlns:oc=\"http://owncloud.org/ns\"\n\t\t\t\txmlns:nc=\"http://nextcloud.org/ns\"\n\t\t\t\txmlns:ocs=\"http://open-collaboration-services.org/ns\">\n\t\t\t<d:prop>\n\t\t\t\t<d:getlastmodified />\n\t\t\t\t<d:getetag />\n\t\t\t\t<d:getcontenttype />\n\t\t\t\t<d:resourcetype />\n\t\t\t\t<oc:fileid />\n\t\t\t\t<oc:permissions />\n\t\t\t\t<oc:size />\n\t\t\t\t<d:getcontentlength />\n\t\t\t\t<nc:has-preview />\n\t\t\t\t<nc:mount-type />\n\t\t\t\t<nc:is-encrypted />\n\t\t\t\t<nc:is-published />\n\t\t\t\t<ocs:share-permissions />\n\t\t\t\t<oc:tags />\n\t\t\t\t<oc:favorite />\n\t\t\t\t<oc:comments-unread />\n\t\t\t\t<oc:owner-id />\n\t\t\t\t<oc:owner-display-name />\n\t\t\t\t<oc:share-types />\n\t\t\t</d:prop>\n\t\t\t</d:propfind>"
             });
 
           case 2:
@@ -2284,4 +2284,4 @@ render._withStripped = true
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=files-sidebar.js.map?v=b3d053fa909d13b62728
+//# sourceMappingURL=files-sidebar.js.map?v=89a9c069fec65c2ae5b2

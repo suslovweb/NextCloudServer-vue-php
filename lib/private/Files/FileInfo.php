@@ -230,6 +230,13 @@ class FileInfo implements \OCP\Files\FileInfo, \ArrayAccess {
 	}
 
 	/**
+	 * @return bool
+	 */
+	public function isPublished() {
+		return $this->data['publish_check'];
+	}
+
+	/**
 	 * Return the currently version used for the HMAC in the encryption app
 	 *
 	 * @return int

@@ -4,6 +4,7 @@
 npm install
 
 # install php modules
+composer install
 
 # install dependencies
 make dev-setup
