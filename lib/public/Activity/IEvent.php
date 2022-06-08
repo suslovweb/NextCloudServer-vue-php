@@ -377,4 +377,18 @@ interface IEvent {
 	 * @since 20.0.0
 	 */
 	public function getGenerateNotification(): bool;
+
+	/**
+	 * Set the size of the file or folder in bytes
+	 *
+	 * @param int $size
+	 * @return IEvent
+	 */
+	public function setSize(int $size): self;
+
+	/**
+	 * Get the size of the file or folder in bytes
+	 * @return int
+	 */
+	public function getSize(): int;
 }

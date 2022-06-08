@@ -780,6 +780,7 @@ class ShareController extends AuthPublicShareController {
 			->setType('public_links')
 			->setSubject($subject, $parameters)
 			->setAffectedUser($affectedUser)
+			->setAuthor($this->session->get('loginname')?$this->session->get('loginname'):'anonymous')
 			->setObject('files', $fileId, $filePath);
 		$this->activityManager->publish($event);
 	}

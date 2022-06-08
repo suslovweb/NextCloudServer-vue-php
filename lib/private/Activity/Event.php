@@ -43,6 +43,8 @@ class Event implements IEvent {
 	/** @var string */
 	protected $author = '';
 	/** @var int */
+	protected $size = 0;
+	/** @var int */
 	protected $timestamp = 0;
 	/** @var string */
 	protected $subject = '';
@@ -179,6 +181,25 @@ class Event implements IEvent {
 	 */
 	public function getAuthor(): string {
 		return $this->author;
+	}
+
+	/**
+	 * Set the filesize
+	 *
+	 * @param int $size
+	 * @return IEvent
+	 * @throws \InvalidArgumentException if the filesize is invalid
+	 */
+	public function setSize(int $size): IEvent {
+		$this->size = $size;
+		return $this;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getSize(): int {
+		return $this->size;
 	}
 
 	/**
