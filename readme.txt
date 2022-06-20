@@ -1,18 +1,13 @@
-# node_version 14.18.3
+# download repo 
 
-# install node module
-npm install
+# replace '3rdparty' folder with the contents of 3rdparty.zip
 
-# install php modules
-composer install
+# unzip the contents of apps-activity.zip and apps-files_downloadactivity.zip to 'apps' folder
 
-# install dependencies
-make dev-setup
+# replace 'dist' folder with the contents of dist.zip
 
-# build for development
-make build-js
+# execute nextcloud.sql to mysql db 
 
-# build for development and watch edits
-make watch-js
+# serve php in the root folder
 
-# serve index.php in the root folder
+# set db name to nextcloud when install db
