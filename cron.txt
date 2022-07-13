@@ -1,0 +1,5 @@
+-run termianl:
+	crontab -e
+-add at the end:
+	*/5  *  *  *  * php -f /path/to/cron.php
+
