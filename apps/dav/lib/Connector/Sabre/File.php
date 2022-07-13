@@ -741,6 +741,18 @@ class File extends Node implements IFile {
 		return $this->info->getChecksum();
 	}
 
+	/** kjh
+	 * Get the path for this file
+	 *
+	 * @return string|null
+	 */
+	public function getPath() {
+		if (!$this->path) {
+			return null;
+		}
+		return $this->path;
+	}
+
 	protected function header($string) {
 		if (!\OC::$CLI) {
 			\header($string);
