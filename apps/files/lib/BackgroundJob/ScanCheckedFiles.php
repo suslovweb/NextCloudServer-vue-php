@@ -10,22 +10,15 @@
 
 namespace OCA\Files\BackgroundJob;
 
-use OC\Files\Utils\Scanner;
-use OCP\DB\QueryBuilder\IQueryBuilder;
-use OCP\EventDispatcher\IEventDispatcher;
-use OCP\IConfig;
 use OCP\IDBConnection;
 use OCP\ILogger;
-
+use Sabre\Uri;
 /**
  * 
  * @package OCA\Files\BackgroundJob
  */
 class ScanCheckedFiles extends \OC\BackgroundJob\TimedJob {
-	/** @var IConfig */
-	private $config;
-	/** @var IEventDispatcher */
-	private $dispatcher;
+	
 	/** @var ILogger */
 	private $logger;
 	private $connection;
@@ -34,22 +27,16 @@ class ScanCheckedFiles extends \OC\BackgroundJob\TimedJob {
 	public const USERS_PER_SESSION = 50;
 
 	/**
-	 * @param IConfig $config
-	 * @param IEventDispatcher $dispatcher
 	 * @param ILogger $logger
 	 * @param IDBConnection $connection
 	 */
 	public function __construct(
-		IConfig $config,
-		IEventDispatcher $dispatcher,
 		ILogger $logger,
 		IDBConnection $connection
 	) {
-		// Run once per 10 minutes
+		// Run once per 1 minutes
 		$this->setInterval(60 * 1);
 
-		$this->config = $config;
-		$this->dispatcher = $dispatcher;
 		$this->logger = $logger;
 		$this->connection = $connection;
 	}
@@ -61,9 +48,13 @@ class ScanCheckedFiles extends \OC\BackgroundJob\TimedJob {
 		try {
 			// save newly added file to publish table
 			$this->getFilelist($user);
+			// get server path
+			$path = $this->getServerPath();
 			// scan checked file
-			$filelist = scandir($_SERVER['DOCUMENT_ROOT'].'/after');
+			$filelist = scandir($path.'/after');
 			foreach($filelist as $k => $v) {
+				if($k < 2 ) continue;
+				if(!$v) continue;
 				$query = $this->connection->getQueryBuilder();
 				$query->select('origin_path')
 					->from('publish')
@@ -71,7 +62,7 @@ class ScanCheckedFiles extends \OC\BackgroundJob\TimedJob {
 					->setMaxResults(1);
 				
 				$origin_path = $query->execute()->fetchOne();
-				rename ($_SERVER['DOCUMENT_ROOT'].'/after/'.$v, $_SERVER['DOCUMENT_ROOT'].'/data/'.$origin_path);
+				rename ($path.'/after/'.$v, $path.'/data/'.$origin_path);
 				// update db field
 				$query = $this->connection->getQueryBuilder();
 				$query->update('publish')
@@ -93,46 +84,55 @@ class ScanCheckedFiles extends \OC\BackgroundJob\TimedJob {
 	 *
 	 * @return string|false
 	 */
-	private function getUserToScan() {
+	private function getUserToScan($userlist) {
 		$query = $this->connection->getQueryBuilder();
-		$query->select('user_id')
-			->from('filecache', 'f')
-			->innerJoin('f', 'mounts', 'm', $query->expr()->eq('storage_id', 'storage'))
-			->where($query->expr()->lt('size', $query->createNamedParameter(0, IQueryBuilder::PARAM_INT)))
-			->andWhere($query->expr()->gt('parent', $query->createNamedParameter(-1, IQueryBuilder::PARAM_INT)))
+		$query->select('uid')
+			->from('users')
+			->where($query->expr()->notIn('uid', $query->createNamedParameter($userlist)))
 			->setMaxResults(1);
 
 		return $query->execute()->fetchOne();
+	}
+
+	// get server path
+	private function getServerPath() {
+		list($serverPath,$cronFile) = Uri\split($_SERVER['PATH_TRANSLATED']);
+		return $serverPath;
 	}
 
 	// get filelist for a user
 	private function getFilelist($user) {
 		// get file list to check
 		$filelist =[];
-        if ($file = fopen($_SERVER['DOCUMENT_ROOT'].'/before/'.$user, "r")) {
+		$serverPath = $this->getServerPath();
+		$path = $serverPath.'/filelists/'.$user;
+
+        if ($file = fopen($path, "r")) {
             while(!feof($file)) {
                 $line = fgets($file);
-              array_push($filelist,$line);
+              	array_push($filelist,$line);
             }
             fclose($file);
-        } 
-		// reset file list
-		file_put_contents($_SERVER['DOCUMENT_ROOT'].'/before/'.$user, '', FILE_APPEND | LOCK_EX);
-		// save to db
-		foreach($filelist as $k => $v) {
-			if(!$v) continue;
-			$info = json_decode($v);
-		
-			$qb = $this->dbConnection->getQueryBuilder();
-			$qb->insert('publish')
-				->setValue('origin_path', $qb->createNamedParameter($info['origin_path']))
-				->setValue('filename', $qb->createNamedParameter($info['filename']))
-				->setValue('unique_name', $qb->createNamedParameter($info['unique_name']))
-				->setValue('is_checked', $qb->createNamedParameter($info['is_checked']))
-				->setValue('timestamp', $qb->createNamedParameter($info['timestamp']))
-				->setValue('uid', $qb->createNamedParameter($info['uid']));
+	
+			// save to db
+			foreach($filelist as $k => $v) {
+				if(!$v) continue;
+				$info = json_decode($v,true);
+			
+				$qb = $this->connection->getQueryBuilder();
+				$qb->insert('publish')
+					->setValue('origin_path', $qb->createNamedParameter($info['origin_path']))
+					->setValue('filename', $qb->createNamedParameter($info['filename']))
+					->setValue('unique_name', $qb->createNamedParameter($info['unique_name']))
+					->setValue('is_checked', $qb->createNamedParameter($info['is_checked']))
+					->setValue('timestamp', $qb->createNamedParameter($info['timestamp']))
+					->setValue('uid', $qb->createNamedParameter($info['uid']));
 
-			$qb->execute();
+				$qb->execute();
+			}
+
+			// reset file list
+			file_put_contents($path, '', LOCK_EX);
 		}
 	}
 
@@ -143,12 +143,14 @@ class ScanCheckedFiles extends \OC\BackgroundJob\TimedJob {
 	protected function run($argument) {
 
 		$usersScanned = 0;
+		$usersScannedList = [];
 		$lastUser = '';
-		$user = $this->getUserToScan();
+		$user = $this->getUserToScan($usersScannedList);
 		while ($user && $usersScanned < self::USERS_PER_SESSION && $lastUser !== $user) {
 			$this->runScanner($user);
 			$lastUser = $user;
-			$user = $this->getUserToScan();
+			array_push($usersScannedList,$user);
+			$user = $this->getUserToScan($usersScannedList);
 			$usersScanned += 1;
 		}
 

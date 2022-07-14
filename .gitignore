@@ -164,3 +164,9 @@ composer.phar
 
 # build
 dist
+after
+before
+filelists
+
+# zip
+*.zip
