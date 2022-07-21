@@ -22,9 +22,10 @@ function print_exception(Throwable $e, \OCP\IL10N $l): void {
 ?>
 <div class="error error-wide">
 	<h2><?php p($l->t('Internal Server Error')) ?></h2>
-	<p><?php p($l->t('The server was unable to complete your request.')) ?></p>
-	<p><?php p($l->t('If this happens again, please send the technical details below to the server administrator.')) ?></p>
-	<p><?php p($l->t('More details can be found in the server log.')) ?></p>
+	<!-- <p><?php p($l->t('The server was unable to complete your request.')) ?></p> -->
+	<!-- <p><?php p($l->t('If this happens again, please send the technical details below to the server administrator.')) ?></p> -->
+	<!-- <p><?php p($l->t('More details can be found in the server log.')) ?></p> -->
+	<p><?php p($l->t('The file is under review. Please wait')) ?></p>
 
 	<h3><?php p($l->t('Technical details')) ?></h3>
 	<ul>

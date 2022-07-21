@@ -331,6 +331,10 @@ table.multiselect thead th {
 	margin-right: 27%;
 }
 
+.bg-grey {
+	background-color: #f5f5f5;
+}
+
 table.multiselect #headerName {
 	position: relative;
 	width: 9999px; /* when we use 100%, the styling breaks on mobile … table styling */

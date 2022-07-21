@@ -2284,4 +2284,4 @@ render._withStripped = true
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=files-sidebar.js.map?v=89a9c069fec65c2ae5b2
+//# sourceMappingURL=files-sidebar.js.map?v=98f4e2f965eb9b1ba91b
